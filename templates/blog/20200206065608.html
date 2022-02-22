@@ -1,66 +1,66 @@
-<h2>googleマップをページの中に埋め込む</h2>
+<h2> Embed google map in page </ h2>
 
-googleマップをページの中に表示しましょう。
+Let's display the google map in the page.
 
-<h3>googleマップのサイト</h3>
+<h3> google map site </ h3>
 
-googleマップのサイトへ行きましょう。
+Let's go to the google map site.
 
-<a href="https://www.google.co.jp/maps">googleマップ</a>
+<a href="https://www.google.co.jp/maps"> google map </a>
 
-<h3>住所を入力</h3>
+<h3> Enter your address </ h3>
 
-検索エリアに住所を入力しましょう。
+Enter your address in the search area.
 
-<img src="/images/google-map/google-map-search.png">
+<img src = "/ images / google-map / google-map-search.png">
 
-<h3>共有ボタンをクリック</h3>
+<h3> Click the share button </ h3>
 
-共有ボタンをクリックします。
+Click the share button.
 
-<img src="/images/google-map/google-map-share.png">
+<img src = "/ images / google-map / google-map-share.png">
 
-<h3>地図を埋め込むをクリック</h3>
+<h3> Click Embed Map </ h3>
 
-地図を埋め込むをクリックします。
+Click Embed Map.
 
-<img src="/images/google-map/google-map-emb.png">
+<img src = "/ images / google-map / google-map-emb.png">
 
-<h3>HTMLをコピーをクリック</h3>
+<h3> Click Copy HTML </ h3>
 
-HTMLをコピーをクリックします。
+Click Copy HTML.
 
-<img src="/images/google-map/google-map-copyhtml.png">
+<img src = "/ images / google-map / google-map-copyhtml.png">
 
-<h3>自分のサイトに埋め込む</h3>
+<h3> Embed in your site </ h3>
 
-自分のサイトにコピーしたHTMLを、ペーストします。
+Paste the HTML you copied to your site.
 
-<h3>googleマップの地図の幅を100%にするには?</h3>
+<h3> How to make the map width of google map 100%? </ H3>
 
-地図の幅を100%にするにはCSSを使って「width:100%;」を設定します。もともとのwidth属性は削除しましょう。
+To make the map width 100%, use CSS to set "width: 100%;". Let's delete the original width attribute.
 
 <pre>
-<!-- 変更前 -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.693119529023!2d139.7520306508713!3d35.65993178010213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bc0efc0a2f9%3A0x57c8c1c9b9e6a938!2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT!5e0!3m2!1sja!2sjp!4v1580941259536!5m2!1sja!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+<!-Before change->
+    <iframe src = "https://www.google.com/maps/embed?pb=! 1m18! 1m12! 1m3! 1d3241.693119529023! 2d139.7520306508713! 3d35.65993178010213! 2m3! 1f0! 2f0! 3f0! 3m2! 1i1024! 2i768! 4f13.1! 3m3! 1m2! 1s0x60188bc0efc0a2f9% 3A0x57c8c1c9b9e6a938! 2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT! 5e0! 3m2! 1sja! 2sjp! 4v1580941259536! 5m2! 1sja! 2sjp "width =" 600 "height =" 400 "frameborder =" 0 "style = "border: 0;" allowfullscreen = ""> </ iframe>
     
-<!-- 変更後 -->
-    <iframe style="width:100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.693119529023!2d139.7520306508713!3d35.65993178010213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bc0efc0a2f9%3A0x57c8c1c9b9e6a938!2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT!5e0!3m2!1sja!2sjp!4v1580941259536!5m2!1sja!2sjp" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-</pre>
+<!-After change->
+    <iframe style = "width: 100%;" src = "https://www.google.com/maps/embed? pb =! 1m18! 1m12! 1m3! 1d3241.693119529023! 2d139.7520306508713! 3d35.65993178010213! 2m3 ! 1f0! 2f0! 3f0! 3m2! 1i1024! 2i768! 4f13.1! 3m3! 1m2! 1s0x60188bc0efc0a2f9% 3A0x57c8c1c9b9e6a938! 2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT! 5e0! 3m2! 1sja! 2sjp! 4v1580941259536! 5m2! 1sja! 2sjp "height =" 400 "frameborder = "0" style = "border: 0;" allowfullscreen = ""> </ iframe>
+</ pre>
 
-<h3>googleマップでスクロールしたときに、googleマップが反応してしまうのを防ぐには?</h3>
+<h3> How to prevent google map from reacting when scrolling with google map? </ h3>
 
-初期状態では、スクロールすると、「地図をズームするには、Ctrlキーを押しながら、スクロールしてください」と表示されたり、地図が拡大したり、googleマップが、意図せずに反応してしまいます。
+In the initial state, when scrolling, "To zoom the map, hold down the Ctrl key and scroll" is displayed, the map is enlarged, and the google map reacts unintentionally. ..
 
-これを防ぐ方法があります。CSSで「pointer-events」を「none」を指定します。
-
-<pre>
-    <iframe style="pointer-events:none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.693119529023!2d139.7520306508713!3d35.65993178010213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bc0efc0a2f9%3A0x57c8c1c9b9e6a938!2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT!5e0!3m2!1sja!2sjp!4v1580941259536!5m2!1sja!2sjp" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
-</pre>
-
-横幅を100%にしている場合は、合わせて記述します。
+There are ways to prevent this. Specify "none" for "pointer-events" in CSS.
 
 <pre>
-    <iframe style="width:100%;pointer-events:none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.693119529023!2d139.7520306508713!3d35.65993178010213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bc0efc0a2f9%3A0x57c8c1c9b9e6a938!2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT!5e0!3m2!1sja!2sjp!4v1580941259536!5m2!1sja!2sjp" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-</pre>
+    <iframe style = "pointer-events: none;" src = "https://www.google.com/maps/embed? pb =! 1m18! 1m12! 1m3! 1d3241.693119529023! 2d139.7520306508713! 3d35.65993178010213! 2m3! 1f0! 2f0! 3f0! 3m2! 1i1024! 2i768! 4f13.1! 3m3! 1m2! 1s0x60188bc0efc0a2f9% 3A0x57c8c1c9b9e6a938! 2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT! 5e0! 3m2! 1sja! 2sjp! 4v1580941259536! 5m2! 1sja! 2sjp "height =" 400 "frameborder = "0" style = "border: 0;" allowfullscreen = ""> </ iframe>
+
+</ pre>
+
+If the width is set to 100%, describe it together.
+
+<pre>
+    <iframe style = "width: 100%; pointer-events: none;" src = "https://www.google.com/maps/embed?pb=! 1m18! 1m12! 1m3! 1d3241.693119529023! 2d139.7520306508713 ! 3d35.65993178010213! 2m3! 1f0! 2f0! 3f0! 3m2! 1i1024! 2i768! 4f13.1! 3m3! 1m2! 1s0x60188bc0efc0a2f9% 3A0x57c8c1c9b9e6a938! 2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT! 5e0! 3m2! 1sja! 2sjp! 4v1580941259536! 5m2! 1sja! 2sjp "height = "400" frameborder = "0" style = "border: 0;" allowfullscreen = ""> </ iframe>
+</ pre>

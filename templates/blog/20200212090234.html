@@ -1,319 +1,319 @@
-<h2>フレックスレイアウト入門</h2>
+<h2> Introduction to flex layout </ h2>
 
-HTML5とCSS3のフレックスレイアウトを使ったレイアウト入門です。
+An introduction to layouts using HTML5 and CSS3 flex layouts.
 
-この記事の目標は、フレックスレイアウトを理解して使えるようになることです。
+The goal of this article is to help you understand and use flex layouts.
 
-補助的な目標として、フレックスレイアウトのバグを踏む機能を使わないで、シンプルにデザインできることを目指します。フレックスレイアウトは、ブラウザ間のバグが多いので、それを踏まないようにします。
+As an auxiliary goal, we aim to be simple in design without using the bug-stepping function of the flex layout. Flex layouts have a lot of bugs between browsers, so don't step on them.
 
-基本的な方針としては、幅を指定するときは常に、widthを使います。widthは、確定的に計算されるためでしょうか、ブラウザ間の互換性が高いです。calcの割り算は使いません。
-利便性と可読性とポータビリティとシンプルさの最適なバランスが目標です。
+The basic policy is to use width whenever you specify a width. Perhaps because width is calculated deterministically, it is highly compatible between browsers. Do not use calc division.
+The goal is the optimal balance of convenience, readability, portability and simplicity.
 
-<h3>divによるブロック要素の動作</h3>
+<h3> Block element behavior by div </ h3>
 
-まず最初にフレックスレイアウトの効果を見る前に、divによるブロック要素の動作を理解しておきましょう。
+Before we first look at the effects of flex layouts, let's understand how divs work with block elements.
 
-<div style="background:#fee">
-  焼肉
-</div>
-
-<pre>
-<div style="background:#eef">
-  焼肉
-</div>
-</pre>
-
-ブロック要素は、横に100%、伸びます。まずこれを理解しておきましょう。divはブロック要素であり、デフォルトで、横に100%に伸びます。
-
-divのCSSのデフォルト値は、以下と考えてください。
+<div style = "background: #fee">
+  Grilled meat
+</ div>
 
 <pre>
-display:block;
-width:100%;
-</pre>
+<div style = "background: #eef">
+  Grilled meat
+</ div>
+</ pre>
 
-<h3>フレックスレイアウトの指定</h3>
+The block element stretches 100% horizontally. Let's understand this first. A div is a block element and by default stretches 100% horizontally.
 
-フレックスレイアウト「display:flex」を指定します。どうなるでしょうか?
-
-<div style="background:#fee;display:flex;">
-  焼肉
-</div>
+Think of the CSS default value for a div as:
 
 <pre>
-<div style="background:#eef;display:flex;">
-  焼肉
-</div>
-</pre>
+display: block;
+width: 100%;
+</ pre>
 
-あれ? 何も起こりませんね。
+<h3> Specify flex layout </ h3>
 
-実は「dispaly:flex」は「display:inline-block」や「display:inline」と異なり、要素自体に対しては何も起こらないのです。要素自体に対しては、「display:block」が指定されているのと同じと考えてください。
+Flex Layout Specifies "display: flex". What will happen?
 
-「display:flex」は、子要素に対して、効果を持つと考えておきましょう。焼肉には、何かが効果があるらしいのだけれど、このままだと確認できませんね。
-
-<h3>フレックスレイアウトの子要素に対する効果</h3>
-
-子要素を追加して、フレックスレイアウトの効果を見てみましょう。フレックスレイアウトを使わない場合も比較としてみてみましょう。
-
-<h4>フレックスレイアウトなし</h4>
-
-フレックスレイアウトがない場合は、divはブロック要素なので、子要素も横幅が100%になります。
-
-<div style="background:#fee;">
-  <div style="background:red;">
-    焼肉
-  </div>
-  <div style="background:green;">
-    焼鳥
-  </div>
-</div>
+<div style = "background: #fee; display: flex;">
+  Grilled meat
+</ div>
 
 <pre>
-<div style="background:#fee;">
-  <div style="background:red;">
-    焼肉
-  </div>
-  <div style="background:green;">
-    焼鳥
-  </div>
-</div>
-</pre>
+<div style = "background: #eef; display: flex;">
+  Grilled meat
+</ div>
+</ pre>
 
-<h4>フレックスレイアウトあり</h4>
+What? Nothing happens.
 
-フレックスレイアウトにするとどうなるでしょうか? おや、キュキュッと左側につまりましたね。
+In fact, "dispaly: flex" is different from "display: inline-block" and "display: inline" in that nothing happens to the element itself. For the element itself, think of it as having "display: block" specified.
 
-<div style="background:#fee;display:flex;">
-  <div style="background:red;">
-    焼肉
-  </div>
-  <div style="background:green;">
-    焼鳥
-  </div>
-</div>
+Think of "display: flex" as having an effect on child elements. It seems that something is effective for yakiniku, but I can't confirm it as it is.
 
-<pre>
-<div style="background:#fee;display:flex;">
-  <div style="background:red;">
-    焼肉
-  </div>
-  <div style="background:green;">
-    焼鳥
-  </div>
-</div>
-</pre>
+<h3> Effect of flex layout on child elements </ h3>
 
-まるで子要素に「display:inline-block」を指定して、フロートで左寄せしたかのように見えますね。「overflow:hidden;」は、フロートを解除するためのものです。
+Let's add a child element and see the effect of the flex layout. Let's compare it even if you don't use the flex layout.
 
-<div style="background:#fee;overflow:hidden;">
-  <div style="background:red;display:inline-block;float:left;">
-    焼肉
-  </div>
-  <div style="background:green;display:inline-block;float:left">
-    焼鳥
-  </div>
-</div>
+<h4> No flex layout </ h4>
+
+Without the flex layout, the div is a block element, so the child elements are also 100% wide.
+
+<div style = "background: #fee;">
+  <div style = "background: red;">
+    Grilled meat
+  </ div>
+  <div style = "background: green;">
+    Yakitori
+  </ div>
+</ div>
 
 <pre>
-<div style="background:#fee;overflow:hidden;">
-  <div style="background:red;display:inline-block;float:left;">
-    焼肉
-  </div>
-  <div style="background:green;display:inline-block;float:left">
-    焼鳥
-  </div>
-</div>
-</pre>
+<div style = "background: #fee;">
+  <div style = "background: red;">
+    Grilled meat
+  </ div>
+  <div style = "background: green;">
+    Yakitori
+  </ div>
+</ div>
+</ pre>
 
-はたして違いはあるのでしょうか。フレックスレイアウトって、これを簡単に書くための構文なんでしょうか?
+<h4> With flex layout </ h4>
 
-<h3>子要素で最大の高さを持つ要素に他の要素の高さがそろえられる</h3>
+What happens if you use a flex layout?
 
-フレックスレイアウトの最大の嬉しいポイントは、子要素で最大の高さを持つ要素に他の要素の高さがそろえられるということです。
+<div style = "background: #fee; display: flex;">
+  <div style = "background: red;">
+    Grilled meat
+  </ div>
+  <div style = "background: green;">
+    Yakitori
+  </ div>
+</ div>
 
-言葉で、書いても難しいので見てみましょう。片方の要素に改行を入れてみます。
+<pre>
+<div style = "background: #fee; display: flex;">
+  <div style = "background: red;">
+    Grilled meat
+  </ div>
+  <div style = "background: green;">
+    Yakitori
+  </ div>
+</ div>
+</ pre>
 
-<h4>フレックスレイアウト</h4>
+It looks as if you specified "display: inline-block" for the child element and left-justified it with a float. "Overflow: hidden;" is for releasing the float.
 
-おお、高さがそろいました。
+<div style = "background: #fee; overflow: hidden;">
+  <div style = "background: red; display: inline-block; float: left;">
+    Grilled meat
+  </ div>
+  <div style = "background: green; display: inline-block; float: left">
+    Yakitori
+  </ div>
+</ div>
 
-<div style="background:#fee;display:flex;">
-  <div style="background:red;">
-    焼肉<br>
+<pre>
+<div style = "background: #fee; overflow: hidden;">
+  <div style = "background: red; display: inline-block; float: left;">
+    Grilled meat
+  </ div>
+  <div style = "background: green; display: inline-block; float: left">
+    Yakitori
+  </ div>
+</ div>
+</ pre>
+
+Is there any difference? Is flex layout a syntax to write this easily?
+
+<h3> The height of the child element with the maximum height is aligned with the height of other elements </ h3>
+
+The biggest nice thing about flex layouts is that the height of the child element is aligned with the height of the other elements.
+
+It's difficult to write in words, so let's take a look. Try inserting a line break in one of the elements.
+
+<h4> Flex layout </ h4>
+
+Oh, the heights are the same.
+
+<div style = "background: #fee; display: flex;">
+  <div style = "background: red;">
+    Yakiniku <br>
     No. 1
-  </div>
-  <div style="background:green;">
-    焼鳥
-  </div>
-</div>
+  </ div>
+  <div style = "background: green;">
+    Yakitori
+  </ div>
+</ div>
 
 <pre>
-<div style="background:#fee;display:flex;">
-  <div style="background:red;">
-    焼肉<br>
+<div style = "background: #fee; display: flex;">
+  <div style = "background: red;">
+    Yakiniku <br>
     No. 1
-  </div>
-  <div style="background:green;">
-    焼鳥
-  </div>
-</div>
-</pre>
+  </ div>
+  <div style = "background: green;">
+    Yakitori
+  </ div>
+</ div>
+</ pre>
 
-たとえば、商品の画像とタイトルを並べたいときに、文字が改行してしまうかを気にしないでよくなります。
+For example, when you want to line up a product image and title, you don't have to worry about line breaks.
 
-<h4>インラインブロックとフロート</h4>
+<h4> Inline blocks and floats </ h4>
 
-おお、高さが、残念なことになっています。これは、きっと望んでいることではないですね。
+Oh, the height is unfortunate. This is certainly not what you want.
 
-<div style="background:#fee;overflow:hidden;">
-  <div style="background:red;display:inline-block;float:left;">
-    焼肉<br>
+<div style = "background: #fee; overflow: hidden;">
+  <div style = "background: red; display: inline-block; float: left;">
+    Yakiniku <br>
     No. 1
-  </div>
-  <div style="background:green;display:inline-block;float:left">
-    焼鳥
-  </div>
-</div>
+  </ div>
+  <div style = "background: green; display: inline-block; float: left">
+    Yakitori
+  </ div>
+</ div>
 
 <pre>
-<div style="background:#fee;overflow:hidden;">
-  <div style="background:red;display:inline-block;float:left;">
-    焼肉<br>
+<div style = "background: #fee; overflow: hidden;">
+  <div style = "background: red; display: inline-block; float: left;">
+    Yakiniku <br>
     No. 1
-  </div>
-  <div style="background:green;display:inline-block;float:left">
-    焼鳥
-  </div>
-</div>
-</pre>
+  </ div>
+  <div style = "background: green; display: inline-block; float: left">
+    Yakitori
+  </ div>
+</ div>
+</ pre>
 
-<h3>子要素の幅を設定する</h3>
+<h3> Set the width of the child element </ h3>
 
-焼肉の部分と、焼鳥の部分に長さを設定してみましょう。焼肉の幅は、100pxにして、焼鳥の幅は、それ以外とします。
+Let's set the length for the grilled meat part and the yakitori part. The width of the grilled meat is 100px, and the width of the yakitori is other than that.
 
-<div style="background:#fee;display:flex;">
-  <div style="background:red;width:100px;">
-    焼肉<br>
+<div style = "background: #fee; display: flex;">
+  <div style = "background: red; width: 100px;">
+    Yakiniku <br>
     No. 1
-  </div>
-  <div style="background:green;width:calc(100% - 100px);">
-    焼鳥
-  </div>
-</div>
+  </ div>
+  <div style = "background: green; width: calc (100% -100px);">
+    Yakitori
+  </ div>
+</ div>
 
 <pre>
-<div style="background:#fee;display:flex;">
-  <div style="background:red;width:100px;">
-    焼肉<br>
+<div style = "background: #fee; display: flex;">
+  <div style = "background: red; width: 100px;">
+    Yakiniku <br>
     No. 1
-  </div>
-  <div style="background:green;width:calc(100% - 100px);">
-    焼鳥
-  </div>
-</div>
-</pre>
+  </ div>
+  <div style = "background: green; width: calc (100% -100px);">
+    Yakitori
+  </ div>
+</ div>
+</ pre>
 
-要素が他にもあるとどうなるでしょう? 少し工夫がいります。要素が2個に増えたので、それぞれの数値を手動で、2で割ってあげましょう。
+What if there are other elements? It's a little tricky. Now that we have two elements, let's manually divide each number by two.
 
-<div style="background:#fee;display:flex;">
-  <div style="background:red;width:100px;">
-    焼肉<br>
+<div style = "background: #fee; display: flex;">
+  <div style = "background: red; width: 100px;">
+    Yakiniku <br>
     No. 1
-  </div>
-  <div style="background:green;width:calc(50% - 50px);">
-    焼鳥
-  </div>
-  <div style="background:yellow;width:calc(50% - 50px)">
-    サラダ
-  </div>
-</div>
+  </ div>
+  <div style = "background: green; width: calc (50% -50px);">
+    Yakitori
+  </ div>
+  <div style = "background: yellow; width: calc (50% -50px)">
+    salad
+  </ div>
+</ div>
 
 <pre>
-<div style="background:#fee;display:flex;">
-  <div style="background:red;width:100px;">
-    焼肉<br>
+<div style = "background: #fee; display: flex;">
+  <div style = "background: red; width: 100px;">
+    Yakiniku <br>
     No. 1
-  </div>
-  <div style="background:green;width:calc(50% - 50px);">
-    焼鳥
-  </div>
-  <div style="background:yellow;width:calc(50% - 50px)">
-    サラダ
-  </div>
-</div>
-</pre>
+  </ div>
+  <div style = "background: green; width: calc (50% -50px);">
+    Yakitori
+  </ div>
+  <div style = "background: yellow; width: calc (50% -50px)">
+    salad
+  </ div>
+</ div>
+</ pre>
 
-ちょっと待って、あれっ「flex:1」を使えばいいんでないの? もちろんそうです。でも「flex:1」には、ブラウザ間で、動作が異なることがあるので、この記事では、バグを踏まない方法を解説しています。
+Wait a minute, why not use that "flex: 1"? Of course. However, "flex: 1" may behave differently between browsers, so this article explains how to avoid bugs.
 
-あれ、calcで割り算するときに「/ 2」すればいいのでは? calcで割り算を使うのは、ブラウザ間で、動作が異なることがあるので、バグを踏まないようにしています。
+Well, should I do "/ 2" when dividing by calc? Using division with calc may behave differently between browsers, so I try not to step on bugs.
 
-<h3>子要素を逆順にする</h3>
+<h3> Reverse the child elements </ h3>
 
-サイドバーを作成したい場合に、コンテンツの位置とサイドバーの位置を逆順にしたいという場合があります。
+If you want to create a sidebar, you may want to reverse the position of the content and the position of the sidebar.
 
-このような場合は「flex-direction: row-reverse;」を使います。この設定は「display:flex」を指定した要素に対して行います。
+In such a case, "flex-directi"on: row-reverse; "is used. This setting is made for the element for which "display: flex" is specified.
 
-逆順になりましたね。
+It's in reverse order.
 
-<div style="background:#fee;display:flex;flex-direction:row-reverse;">
-  <div style="background:red;width:100px;">
-    焼肉<br>
+<div style = "background: #fee; display: flex; flex-direction: row-reverse;">
+  <div style = "background: red; width: 100px;">
+    Yakiniku <br>
     No. 1
-  </div>
-  <div style="background:green;width:calc(100% - 100px);">
-    焼鳥
-  </div>
-</div>
+  </ div>
+  <div style = "background: green; width: calc (100% -100px);">
+    Yakitori
+  </ div>
+</ div>
 
 <pre>
-<div style="background:#fee;display:flex;flex-direction:row-reverse;">
-  <div style="background:red;width:100px;">
-    焼肉<br>
+<div style = "background: #fee; display: flex; flex-direction: row-reverse;">
+  <div style = "background: red; width: 100px;">
+    Yakiniku <br>
     No. 1
-  </div>
-  <div style="background:green;width:calc(100% - 100px);">
-    焼鳥
-  </div>
-</div>
-</pre>
+  </ div>
+  <div style = "background: green; width: calc (100% -100px);">
+    Yakitori
+  </ div>
+</ div>
+</ pre>
 
-<h3>複数行のフレックスレイアウト</h3>
+<h3> Multi-line flex layout </ h3>
 
-複数行のフレックスレイアウトについては、以下の記事で解説しました。
+The multi-line flex layout was explained in the following article.
 
-<a href="/blog/20200213070617.html">複数行のフレックスレイアウトをマスターする</a>
+<a href="/blog/20200213070617.html"> Master multi-line flex layout </a>
 
-<!--
+<!-
 
-<h3>フレックスレイアウトって何が嬉しいの?</h3>
+<h3> What makes you happy with the flex layout? </ H3>
 
-最大の嬉しいポイントは、子要素の高さが、自動的にそろうことです。
+The biggest pleasure is that the heights of the child elements are automatically aligned.
 
-<h3>フレックスレイアウトって何が苦しいの?</h3>
+<h3> What's wrong with flex layout? </ H3>
 
-ブラウザ間のバグの宝庫です。これを踏まない知識が必要です。
+A treasure trove of bugs between browsers. Knowledge that does not step on this is required.
 
-<h3>フレックスレイアウトのバグを踏まないために</h3>
+<h3> To avoid flex layout bugs </ h3>
 
-<h4>フレックスレイアウトの直接の子要素はでは、min-heightとmin-widthは使わない</h4>
+<h4> The direct child elements of the flex layout do not use min-height and min-width </ h4>
 
-IE11にバグがあります。
+There is a bug in IE11.
 
-<h4>フレックスレイアウトの直接の子要素はdiv要素にする</h4>
+<h4> Make the direct child element of the flex layout a div element </ h4>
 
-imgタグ、buttonタブ、fieldsetタグなど、div以外の要素を指定すると、Edge / FF / Safariでバグがあります。
+If you specify elements other than div such as img tag, button tab, fieldset tag, there is a bug in Edge / FF / Safari.
 
-<h4>align-itemsを使わない</h4>
+<h4> Do not use align-items </ h4>
 
-IE11にバグがあります。
+There is a bug in IE11.
 
-<h4>flex-basisを使わない</h4>
+<h4> Do not use flex-basis </ h4>
 
-ブラウザ間、バグ多し。
+There are many bugs between browsers.
 
-<h4>flex:1を使わない</h4>
+<h4> Do not use flex: 1 </ h4>
 
-IE11でバグがあります。
+There is a bug in IE11.
 
--->
+->

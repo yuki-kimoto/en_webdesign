@@ -1,54 +1,54 @@
-<h2>jQueryのダウンロードと読み込み方法</h2>
+<h2> How to download and load jQuery </ h2>
 
-JavaScriptのライブラリであるjQueryを読み込む方法を解説します。jQueryを使うと、HTMLタグ・CSSの操作や、ajax通信を短い記述で行えます。
+I will explain how to load jQuery, which is a JavaScript library. With jQuery, you can operate HTML tags / CSS and ajax communication with a short description.
 
-<h3>jQueryのダウンロード</h3>
+<h3> Download jQuery </ h3>
 
-jQueryをダウンロードして使う通常の方法です。
+This is the usual way to download and use jQuery.
 
-<a href="https://code.jquery.com/jquery/">jQueryのダウンロードページ</a>
+<a href="https://code.jquery.com/jquery/"> jQuery download page </a>
 
-2020年2月26日の最新バージョンは、jQuery Core 3.4.1です。jQuery Core 3.4.1の「minified」と呼ばれるリンクを右クリックして、名前を付けて保存しましょう。「minified」は、サイズが小さくされたjQueryです。
+The latest version on February 26, 2020 is jQuery Core 3.4.1. Right-click on the link called "minified" in jQuery Core 3.4.1 and save it as a name. "Minified" is a miniaturized jQuery.
 
-<a href="https://code.jquery.com/jquery/"><img src="/images/jquery/jquery-download.png"></a>
+<a href="https://code.jquery.com/jquery/"> <img src = "/ images / jquery / jquery-download.png"> </a>
 
-<h3>ドキュメントルートにjQueryを配置</h3>
+<h3> Place jQuery in the document root </ h3>
 
-サーバーのドキュメントルートにjQueryを配置しましょう。ドキュメントルートは、Webサーバーや、Webフレームワークごとに違います。ご自身の環境のドキュメントルートにjQueryを配置しましょう。
+Let's put jQuery in the document root of the server. Document roots are different for each web server and web framework. Place jQuery in the document root of your environment.
 
-わかりやすい用に、jsというディレクトリの中にjQueryを配置します。
-
-<pre>
-js/jquery-3.4.1.min.js
-</pre>
-
-<h3>jQueryの読み込み</h3>
-
-jQueryを読み込みましょう。HTMLヘッダでjQueryを読み込みましょう。
+For the sake of clarity, place jQuery in a directory called js.
 
 <pre>
-<script src="/js/jquery-3.4.1.min.js"></script>
-</pre>
+js / jquery-3.4.1.min.js
+</ pre>
 
-jQueryが正しく読み込まれているか確認するために「Hello, World!」を表示するコードを書いてみましょう。
+<h3> Loading jQuery </ h3>
+
+Let's load jQuery. Let's load jQuery in the HTML header.
 
 <pre>
-<script src="/js/jquery-3.4.1.min.js"></script>
+<script src = "/ js / jquery-3.4.1.min.js"> </ script>
+</ pre>
+
+Let's write a code that displays "Hello, World!" To make sure jQuery is loaded correctly.
+
+<pre>
+<script src = "/ js / jquery-3.4.1.min.js"> </ script>
 <script>
-  $(function () {
-    alert('Hello, World!');
+  $ (function () {
+    alert ('Hello, World!');
   });
-</script>
-</pre>
+</ script>
+</ pre>
 
-「Hello, World!」と表示されると、jQueryの読み込みが成功しています。
+When "Hello, World!" Is displayed, jQuery has been loaded successfully.
 
-<h3>CDNを使って、jQueryを読み込む</h3>
+<h3> Load jQuery using CDN </ h3>
 
-ダウンロードせずに、CDNを使ってjQueryを読み込む方法です。CDNは、他サイトで提供されているjQueryを自サイトで、読み込む方法です。
+How to load jQuery using a CDN without downloading. CDN is a method to load jQuery provided by other sites on your own site.
 
 <pre>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-</pre>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
+</ pre>
 
-HTML・CSS入門では、jQueryをダウンロードする方法を、Webサイト作成の標準的な方法として紹介しつつ、サンプルコードでは、コピー＆ペーストで試せるように、CDNを活用していきたいと思います。
+In the introduction to HTML / CSS, I will introduce how to download jQuery as a standard method for creating websites, and in the sample code, I would like to utilize the CDN so that I can try it by copy and paste.

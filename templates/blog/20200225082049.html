@@ -1,27 +1,27 @@
-<h2>iphone/safariで電話番号の文字が青くなってしまうのをCSSで解決</h2>
+<h2> CSS solves the problem that the letters of the phone number turn blue on iphone / safari </ h2>
 
-iphone/safariで電話番号の文字が勝手に青くなってしまうのを解決するには、電話番号をaタグで囲んで、スタイルシート(CSS)を設定します。
+To solve the problem that the characters of the phone number turn blue on iphone / safari, enclose the phone number in a tag and set the style sheet (CSS).
 
 <style>
-  .phone a {
-    color:orange;
-  }
-</style>
+   .phone a {
+     color: orange;
+   }
+</ style>
 
-<div class="phone">
-  <a>03-1234-5678</a>
-</div>
+<div class = "phone">
+   <a> 03-1234-5678 </a>
+</ div>
 
 <pre>
 <style>
-  .phone a {
-    color:orange;
-  }
-</style>
+   .phone a {
+     color: orange;
+   }
+</ style>
 
-<div class="phone">
-  <a>03-1234-5678</a>
-</div>
-</pre>
+<div class = "phone">
+   <a> 03-1234-5678 </a>
+</ div>
+</ pre>
 
-iphone/safariは、電話番号の場合に、自動的にaタグを挿入するので、あらかじめaタグを挿入することで、これを防ぎます。
+iphone / safari automatically inserts the a tag for phone numbers, so you can prevent this by inserting the a tag in advance.

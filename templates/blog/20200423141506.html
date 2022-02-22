@@ -1,74 +1,73 @@
-<div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+<div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Webデザイン</span>
+        <span itemprop = "name"> Web design </ span>
       </a>
-      <meta itemprop="position" content="1" />
-    </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <meta itemprop = "position" content = "1" />
+    </ li>
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200427085612.html">
-        <span itemprop="name">CSS</span>
+        <span itemprop = "name"> CSS </ span>
       </a>
-      <meta itemprop="position" content="2" />
-    </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <meta itemprop = "position" content = "2" />
+    </ li>
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200426085612.html">
-        <span itemprop="name">セレクタ</span>
+        <span itemprop = "name"> selector </ span>
       </a>
-      <meta itemprop="position" content="3" />
-    </li>
+      <meta itemprop = "position" content = "3" />
+    </ li>
     <li>
       here
-    </li>
-  </ul>
-</div>
+    </ li>
+  </ ul>
+</ div>
 
-<h2>子孫セレクタ - CSS入門【CSS3対応】</h2>
+<h2> Descendant Selector-Introduction to CSS [CSS3 compatible] </ h2>
 
-<b>子孫セレクタ</b>は、スタイルシート(CSS)を適用する要素を、子孫関係にある<a href="/blog/20200423134429.html">IDセレクタ</a>、<a href="/blog/20200422134429.html">クラスセレクタ</a>、<a href="/blog/20200421134429.html">要素セレクタ</a>を使って指定することができる機能です。
+<b> Descendant selector </ b> is a descendant relationship <a href="/blog/20200423134429.html"> ID selector </a>, <a href= It is a function that can be specified using "/blog/20200422134429.html"> class selector </a> and <a href="/blog/20200421134429.html"> element selector </a>.
 
-以下の例では「.food ul」という指定で「.food」の子孫である「ul」を指定しています。「.food li」という指定で「.food」の子孫である「li」を指定しています。
+In the following example, ".food ul" is specified to specify "ul" which is a descendant of ".food". The specification ".food li" specifies "li" which is a descendant of ".food".
 
 <style>
   .food ul {
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
   }
   .food li {
-    color:red;
-    list-style:none;
-    padding-left:5px;
+    color: red;
+    list-style: none;
+    padding-left: 5px;
   }
-</style>
+</ style>
 
-<div class="food">
+<div class = "food">
   <ul>
-    <li>焼肉</li>
-    <li>サラダ</li>
-    <li>うどん</li>
-  </ul>
-</div>
+    <li> Yakiniku </ li>
+    <li> Salad </ li>
+    <li> Udon </ li>
+  </ ul>
+</ div>
 
 <pre>
 <style>
   .food ul {
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
   }
   .food li {
-    color:red;
-    list-style:none;
-    padding-left:5px;
+    color: red;
+    list-style: none;
+    padding-left: 5px;
   }
-</style>
+</ style>
 
-<div class="food">
+<div class = "food">
   <ul>
-    <li>焼肉</li>
-    <li>サラダ</li>
-    <li>うどん</li>
-  </ul>
-</div>
-</pre>
+    <li> Yakiniku </ li>
+    <li> Salad </ li>
+    <li> Udon </ li>
+  </ ul>
+</ div>
+</ pre>
 
-子孫セレクタは、要素を指定するために頻繁に使います。クラス名とタグ名を組み合わせると、記述が簡潔になります。
-
+Descendant selectors are often used to specify elements. Combining the class name with the tag name simplifies the description.

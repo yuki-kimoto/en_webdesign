@@ -1,122 +1,122 @@
-<div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+<div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Webデザイン</span>
+        <span itemprop = "name"> Web design </ span>
       </a>
-      <meta itemprop="position" content="1" />
-    </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <meta itemprop = "position" content = "1" />
+    </ li>
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200328092718.html">
-        <span itemprop="name">HTML5</span>
+        <span itemprop = "name"> HTML5 </ span>
       </a>
-      <meta itemprop="position" content="2" />
-    </li>
+      <meta itemprop = "position" content = "2" />
+    </ li>
     <li>
       here
-    </li>
-  </ul>
-</div>
-<h2>【HTML5】headタグ - HTMLヘッダ</h2>
+    </ li>
+  </ ul>
+</ div>
+<h2> [HTML5] head tag --HTML header </ h2>
 
-HTMLヘッダは、<b>headタグ</b>の中に書きます。HTMLヘッダには、画面には表示されない補助的な情報を記述します。
+Write the HTML header inside the <b> head tag </ b>. In the HTML header, describe auxiliary information that is not displayed on the screen.
 
 <pre>
 <head>
-  HTMLヘッダ
-</head>
-</pre>
+  HTML header
+</ head>
+</ pre>
 
-<h3>HTMLヘッダは、HTMLタグの中に書く</h3>
+<h3> Write the HTML header inside the HTML tag </ h3>
 
-HTMLヘッダは、<a href="/blog/20200204092826.html">htmlタグ</a>の中に書きます。
+Write the HTML header inside the <a href="/blog/20200204092826.html"> html tag </a>.
 
 <pre>
 <html>
   <head>
-    HTMLヘッダ
-  </head>
+    HTML header
+  </ head>
   <body>
-    コンテンツ
-  </body>
-</html>
-</pre>
+    content
+  </ body>
+</ html>
+</ pre>
 
-<h3>HTMLヘッダに指定するもの</h3>
+<h3> What to specify in the HTML header </ h3>
 
-HTMLヘッダでは、以下を指定できます。
+In the HTML header, you can specify:
 
-<ul class="list">
-  <li>CSSの読み込み</li>
-  <li>JavaScript</li>
-  <li>タイトル</li>
-  <li>文字コード</li>
-  <li>サイトの説明</li>
-  <li>キーワード</li>
-  <li>ファビコン</li>
-  <li>ビューポート</li>
-</ul>
+<ul class = "list">
+  <li> CSS loading </ li>
+  <li> JavaScript </ li>
+  <li> Title </ li>
+  <li> Character code </ li>
+  <li> Site description </ li>
+  <li> Keyword </ li>
+  <li> Favicon </ li>
+  <li> Viewport </ li>
+</ ul>
 
 <pre>
 <html>
   <head>
-    <!-- meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="/images/kimoto-system-favicon.png">
-    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <!-Meta->
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+    <link rel = "icon" type = "image / x-icon" href = "/ images / kimoto-system-favicon.png">
+    <link rel = "stylesheet" type = "text / css" href = "/ css / common.css">
 
-    <script type="text/javascript" src="/js/jquery-1.9.0.min.js"></script>
-    <script type="text/javascript" src="/js/google-code-prettify/prettify.js"></script>
-    <link  type="text/css" rel="stylesheet" href="/js/google-code-prettify/prettify.css"/>
+    <script type = "text / javascript" src = "/ js / jquery-1.9.0.min.js"> </ script>
+    <script type = "text / javascript" src = "/ js / google-code-prettify / prettify.js"> </ script>
+    <link type = "text / css" rel = "stylesheet" href = "/ js / google-code-prettify / prettify.css" />
     <script>
-      $(function(){
-        // google code prettifyの有効化
-        $("pre").addClass("prettyprint");
-        function init(event){
-          prettyPrint();
+      $ (function () {
+        // Enable google code prettify
+        $ ("pre"). addClass ("prettyprint");
+        function init (event) {
+          prettyPrint ();
         }
-        if(window.addEventListener)window.addEventListener("load",init,false);
-        else if(window.attachEvent)window.attachEvent("onload",init);
+        if (window.addEventListener) window.addEventListener ("load", init, false);
+        else if (window.attachEvent) window.attachEvent ("onload", init);
         
-        $(".to-top").click(function() {
-          // ページの一番上までスクロールさせます。
-          $('body, html').animate({scrollTop: 0}, 300, 'linear');;
+        $ (". To-top"). click (function () {
+          // Scroll to the top of the page.
+          $ ('body, html'). animate ({scrollTop: 0}, 300,'linear') ;;
         });
       });
-    </script>
-  </head>
+    </ script>
+  </ head>
   <body>
-    コンテント
-  </body>
-</html>
-</pre>
+    Content
+  </ body>
+</ html>
+</ pre>
 
-<h3>metaタグ</h3>
+<h3> meta tag </ h3>
 
-文字コードやビューポートを指定する<a href="/blog/20200224112719.html">metaタグ</a>は、HTMLヘッダの中に書きます。
+The <a href="/blog/20200224112719.html"> meta tag </a> that specifies the character code and viewport is written in the HTML header.
 
 <pre>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-  </head>
-</html>
-</pre>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+  </ head>
+</ html>
+</ pre>
 
-<h3>HTMLのひな型</h3>
+<h3> HTML template </ h3>
 
-<a href="/blog/20200205092826.html">DOCTYPE宣言</a>と<a href="/blog/20200204092826.html">htmlタグ</a>、<b>headタグ</b>、<a href="/blog/20200203092826.html">bodyタグ</a>がHTMLのひな型になります。
+<a href="/blog/20200205092826.html"> DOCTYPE declaration </a> and <a href="/blog/20200204092826.html"> html tag </a>, <b> head tag </ b>, The <a href="/blog/20200203092826.html"> body tag </a> is the HTML template.
 
 <pre>
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html>
   <head>
-    HTMLヘッダ
-  </head>
+    HTML header
+  </ head>
   <body>
-    HTMLコンテンツ
-  </body>
-</html>
-</pre>
+    HTML content
+  </ body>
+</ html>
+</ pre>

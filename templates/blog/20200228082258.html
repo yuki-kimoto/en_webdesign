@@ -1,39 +1,39 @@
-<h2>iphone/safariで、テキストフィールドやボタンのデフォルトデザインが適用されてしまうのを解決</h2>
+<h2> Resolved the default design of text fields and buttons being applied on iphone / safari </ h2>
 
-iphone/safariで、テキストフィールドやボタンのデフォルトデザインが適用されてしまうのを解決するには、「-webkit-appearance:none;」を指定します。
+To solve the problem that the default design of text fields and buttons is applied in iphone / safari, specify "-webkit-appearance: none;".
 
-「*」ですべての要素に設定しておくのが簡単でしょう。
+It will be easy to set all the elements with "*".
 
 <pre>
-* {
-  -webkit-appearance:none;
+* {{
+  -webkit-appearance: none;
 }
-</pre>
+</ pre>
 
-これを指定すると、チェックボックスやラジオボタンが消えてしまうので注意してください。チェックボックスやラジオボタンを含めて、すべてオリジナルデザインにするときは、上の設定は便利です。
+Please note that if you specify this, the checkboxes and radio buttons will disappear. The above settings are useful when you want to make everything your original design, including checkboxes and radio buttons.
 
-<h4>指定なし</h4>
+<h4> Not specified </ h4>
 
-iphone/safariでは、よく見るとうっすり薄い影のようなものがでていますでしょうか? これはiphone/safariのデフォルトデザインです。
+Does iphone / safari have a faint shadow when you look closely? This is the default design of iphone / safari.
 
 <div>
-  <input type="text" style="border:1px solid green;">
-</div>
+  <input type = "text" style = "border: 1px solid green;">
+</ div>
 
 <pre>
 <div>
-  <input type="text" style="border:1px solid green;">
-</div>
-</pre>
+  <input type = "text" style = "border: 1px solid green;">
+</ div>
+</ pre>
 
-<h4>指定あり</h4>
+<h4> With designation </ h4>
 
 <div>
-  <input type="text" style="-webkit-appearance:none;border:1px solid green;">
-</div>
+  <input type = "text" style = "-webkit-appearance: none; border: 1px solid green;">
+</ div>
 
 <pre>
 <div>
-  <input type="text" style="-webkit-appearance:none;border:1px solid green;">
-</div>
-</pre>
+  <input type = "text" style = "-webkit-appearance: none; border: 1px solid green;">
+</ div>
+</ pre>

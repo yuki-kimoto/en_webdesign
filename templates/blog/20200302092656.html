@@ -1,89 +1,86 @@
-<div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+<div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Webデザイン</span>
+        <span itemprop = "name"> Web design </ span>
       </a>
-      <meta itemprop="position" content="1" />
-    </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <meta itemprop = "position" content = "1" />
+    </ li>
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200328092718.html">
-        <span itemprop="name">HTML5</span>
+        <span itemprop = "name"> HTML5 </ span>
       </a>
-      <meta itemprop="position" content="2" />
-    </li>
+      <meta itemprop = "position" content = "2" />
+    </ li>
     <li>
       here
-    </li>
-  </ul>
-</div>
-<h2>【HTML5】spanタグ - インライン要素の作成</h2>
+    </ li>
+  </ ul>
+</ div>
+<h2> [HTML5] span tag --Create inline element </ h2>
 
-spanタグは、インライン要素を作成します。
+The span tag creates an inline element.
 
-<span>インライン要素</span>
-
-<pre>
-<span>インライン要素</span>
-</pre>
-
-<h3>インライン要素の幅は、内側の要素の幅になる</h3>
-
-インライン要素の幅は、内側の要素の幅になります。
-
-こちら<span style="background:pink;">本日のディナー</span>になります。
+<span> Inline element </ span>
 
 <pre>
-こちら<span style="background:pink;">本日のディナー</span>になります。
-</pre>
+<span> Inline element </ span>
+</ pre>
 
-インライン要素では、幅や高さを指定することはできません。また上下のマージンを指定することはできません。この二つが、<a href="/blog/20200226082049.html">ブロック要素</a>との大きな違いです。
+<h3> The width of the inline element is the width of the inner element </ h3>
 
-<h3>どんなときにspanタグを使いますか?</h3>
+The width of the inline element is the width of the inner element.
 
-文字の大きさや色を一部分だけ変えたい場合です。
-
-<h4>電話番号</h4>
-
-Tel. だけは小さく、電話番号は大きく、色を付けたい場合。
-
-Tel. <span style="color:green;font-size:28px;letter-spacing:3px;">012-3456-7899</span>
+This is <span style = "background: pink;"> Today's dinner </ span>.
 
 <pre>
-Tel. <span style="color:green;font-size:28px;letter-spacing:3px;">012-3456-7899</span>
-</pre>
+This is <span style = "background: pink;"> Today's dinner </ span>.
+</ pre>
 
-<h3>インライン要素になるタグ</h3>
+You cannot specify the width or height of an inline element. Also, you cannot specify the upper and lower margins. These two are the big differences from <a href="/blog/20200226082049.html"> block elements </a>.
 
-spanタグ以外では、以下のタグがデフォルトでインライン要素になります。
+<h3> When do you use the span tag? </ h3>
 
-<ul class="list">
-  <li><a href="/blog/20200222082049.html">aタグ</a></li>
-  <li><a href="/blog/20200221093554.html">bタグ</a></li>
-</ul>
+You want to change only a part of the font size and color.
+
+<h4> Phone number </ h4>
+
+If only Tel. Is small, the phone number is large and you want to color it.
+
+Tel. <span style = "color: green; font-size: 28px; letter-spacing: 3px;"> 012-3456-7899 </ span>
 
 <pre>
-<ul class="list">
-  <li><a href="/blog/20200222082049.html">aタグ</a></li>
-  <li><a href="/blog/20200221093554.html">bタグ</a></li>
-</ul>
-</pre>
+Tel. <span style = "color: green; font-size: 28px; letter-spacing: 3px;"> 012-3456-7899 </ span>
+</ pre>
 
-<h4>aタグで、高さや幅が効かない</h4>
+<h3> Tag that becomes an inline element </ h3>
 
-aタグで、高さや幅が効かない場合は、aタグが、インライン要素だからです。その場合は「display:block;」で、ブロック要素にしましょう。
+Other than the span tag, the following tags are inline elements by default.
+
+<ul class = "list">
+  <li> <a href="/blog/20200222082049.html"> a tag </a> </ li>
+  <li> <a href="/blog/20200221093554.html"> b tag </a> </ li>
+</ ul>
+
+<pre>
+<ul class = "list">
+  <li> <a href="/blog/20200222082049.html"> a tag </a> </ li>
+  <li> <a href="/blog/20200221093554.html"> b tag </a> </ li>
+</ ul>
+</ pre>
+
+<h4> a tag does not work in height or width </ h4>
+
+If the height or width doesn't work for the a tag, it's because the a tag is an inline element. In that case, use "display: block;" to make it a block element.
 
 <ul>
-  <li><a href="/" style="display:block;width:100%;background:yellow;">aタグで作るボタン1</a></li>
-  <li><a href="/" style="display:block;width:100%;background:pink;">aタグで作るボタン2</a></li>
-</ul>
+  <li> <a href="/" style="display:block;width:100%;background:yellow;"> button created with a tag 1 </a> </ li>
+  <li> <a href="/" style="display:block;width:100%;background:pink;"> button made with a tag 2 </a> </ li>
+</ ul>
 
 <pre>
 <ul>
-  <li><a href="/" style="display:block;width:100%;background:yellow;">aタグで作るボタン1</a></li>
-  <li><a href="/" style="display:block;width:100%;background:pink;">aタグで作るボタン2</a></li>
-</ul>
-</pre>
-
-
-
+  <li> <a href="/" style="display:block;width:100%;background:yellow;"> button created with a tag 1 </a> </ li>
+  <li> <a href="/" style="display:block;width:100%;background:pink;"> button made with a tag 2 </a> </ li>
+</ ul>
+</ pre>

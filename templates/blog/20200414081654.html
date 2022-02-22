@@ -1,63 +1,62 @@
-<div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+<div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Webデザイン</span>
+        <span itemprop = "name"> Web design </ span>
       </a>
-      <meta itemprop="position" content="1" />
-    </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <meta itemprop = "position" content = "1" />
+    </ li>
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200427085612.html">
-        <span itemprop="name">CSS</span>
+        <span itemprop = "name"> CSS </ span>
       </a>
-      <meta itemprop="position" content="2" />
-    </li>
+      <meta itemprop = "position" content = "2" />
+    </ li>
     <li>
       here
-    </li>
-  </ul>
-</div>
+    </ li>
+  </ ul>
+</ div>
 
-<h2>box-sizing - ボーダー幅・パディングをブロックの幅・高さの内側に収める - CSS入門【CSS3対応】</h2>
+<h2> box-sizing --Border width / padding is stored inside the block width / height --Introduction to CSS [CSS3 compatible] </ h2>
 
-<b>box-sizing</b>を使うと、ボーダー幅・パディングをブロックの幅・高さの内側に収めることができます。
+You can use <b> box-sizing </ b> to fit the border width / padding inside the block width / height.
 
 <style>
-  * {
-    box-sizing:content-box;
+  * {{
+    box-sizing: content-box;
   }
-</style>
+</ style>
 
 <pre>
-box-sizing:border-box;
-</pre>
+box-sizing: border-box;
+</ pre>
 
-実際に違いを見てみましょう。「box-sizing:border-box;」を指定すると幅300pxの内側にボーダーとパディングが描画されるのに対して、指定がない場合は、幅300pxの外側にボーダーとパディングが描画されます。指定がある方が、はるかに直感的で、サイズ調整がしやすいですよね。
+Let's actually see the difference. If "box-sizing: border-box;" is specified, the border and padding are drawn inside the width of 300px, while if not specified, the border and padding are drawn outside the width of 300px. It's much more intuitive and easier to adjust the size if you specify it.
 
-<div style="width:300px;box-sizing:border-box;padding:30px;border:5px solid red">
-  「box-sizing: border-box;」指定あり
-</div>
+<div style = "width: 300px; box-sizing: border-box; padding: 30px; border: 5px solid red">
+  "Box-sizing: border-box;" is specified
+</ div>
 <br>
-<div style="width:300px;padding:30px;border:5px solid red">
-  「box-sizing: border-box;」指定なし
-</div>
+<div style = "width: 300px; padding: 30px; border: 5px solid red">
+  "Box-sizing: border-box;" not specified
+</ div>
 
 <pre>
-<div style="width:300px;box-sizing:border-box;padding:30px;border:5px solid red">
-  「box-sizing: border-box;」指定あり
-</div>
+<div style = "width: 300px; box-sizing: border-box; padding: 30px; border: 5px solid red">
+  "Box-sizing: border-box;" is specified
+</ div>
 <br>
-<div style="width:300px;padding:30px;border:5px solid red">
-  「box-sizing: border-box;」指定なし
-</div>
-</pre>
+<div style = "width: 300px; padding: 30px; border: 5px solid red">
+  "Box-sizing: border-box;" not specified
+</ div>
+</ pre>
 
 
-「box-sizing:border-box;」を指定しておくほうが、サイズ調整がやりやすいので、<a href="/blog/20200125070617.html">スタイルシート(CSS)のデフォルトの設定</a>として、<a href="/blog/20200411134139.html">全称セレクタ</a>で指定しておきましょう。
+It is easier to adjust the size by specifying "box-sizing: border-box;", so <a href="/blog/20200125070617.html"> Stylesheet (CSS) default settings </a> Let's specify it with <a href="/blog/20200411134139.html"> Categorical selector </a>.
 
 <pre>
-* {
+* {{
   box-sizing: border-box;
 }
-</pre>
-
+</ pre>

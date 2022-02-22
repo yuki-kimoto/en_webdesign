@@ -1,160 +1,160 @@
-<h2>【HTML5】テキストエリア(textarea) - 複数行テキスト入力のフォーム部品</h2>
+<h2> [HTML5] Textarea-Form part for multi-line text input </ h2>
 
-テキストエリアは、複数行のテキストを入力するためのフォーム部品です。テキストエリアを作成するには、textareaタグを使用します。
+The text area is a form part for entering multiple lines of text. Use the textarea tag to create a text area.
 
-<textarea name="message"></textarea>
+<textarea name = "message"> </ textarea>
 
 <pre>
-<textarea name="message"></textarea>
-</pre>
+<textarea name = "message"> </ textarea>
+</ pre>
 
-複数行のテキストを入力することができます。フォーム部品なので、name属性で、名前を付けておくことが一般的です。
+You can enter multiple lines of text. Since it is a form part, it is common to give it a name with the name attribute.
 
-<h3>テキストエリアは、インラインブロック要素</h3>
+<h3> Text area is an inline block element </ h3>
 
-テキストエリアは、デフォルトで、インラインブロック要素です。インラインブロック要素なので、左側に流れ、高さや幅を設定することができます。
+The text area is an inline block element by default. Since it is an inline block element, it flows to the left and you can set the height and width.
 
 <div>
-  <textarea name="message" style="width:100px;height:50px;"></textarea>
-  <textarea name="message" style="width:200px;height:80px;"></textarea>
-</div>
+  <textarea name = "message" style = "width: 100px; height: 50px;"> </ textarea>
+  <textarea name = "message" style = "width: 200px; height: 80px;"> </ textarea>
+</ div>
 
 <pre>
-<textarea name="message" style="width:100px;height:50px;"></textarea>
-<textarea name="message" style="width:200px;height:80px;"></textarea>
-</pre>
+<textarea name = "message" style = "width: 100px; height: 50px;"> </ textarea>
+<textarea name = "message" style = "width: 200px; height: 80px;"> </ textarea>
+</ pre>
 
-<h3>テキストエリアに、フォントサイズ、最小の高さ、パディングを設定する</h3>
+<h3> Set the font size, minimum height, and padding in the text area </ h3>
 
-デフォルトのテキストエリアは、スマートフォンをメインに考えると、少し小さいです。テキストエリアに、適切なフォントサイズ、最小の高さ、パディングをパディングを設定してみましょう。
+The default text area is a bit small, especially for smartphones. Let's set the appropriate font size, minimum height, and padding in the text area.
 
-<textarea style="padding:11px 5px 9px 5px;font-size:16px;min-height:200px;"></textarea>
-
-<pre>
-<textarea style="padding:11px 5px 9px 5px;font-size:16px;min-height:200px;"></textarea>
-</pre>
-
-<h3>iphone/safari対応するために、テキストエリアのフォントサイズは、16px以上に</h3>
-
-iphone/safari対応するために、テキストエリアのフォントサイズは、16px以上にしましょう。<a href="/blog/20200309145137.html">iphone/safariでフォーム入力時の自動拡大機能をoff</a>にするためのです。
-
-<h3>iphone/safariで、フォーム部品にデフォルトのデザインが適用されるのを防ぐ</h3>
-
-iphone/safariで、フォーム部品にデフォルトのデザインが適用されるのを防ぐには、「-webkit-appearance:none;」を指定します。<a href="/blog/20200228082258.html">iphone/safariで、テキストエリアやボタンのデフォルトデザインが適用されてしまうのを解決</a>を参考にしてください。
-
-<h3>テキストエリアのラベルをクリックしたときに、フォーカスが当たるようにする</h3>
-
-テキストエリアだけではなく、項目見出しをクリックしたときに、フォーカスが当たるようにするにはlabelタグを使います。textareaタグの中のid属性で指定した名前をlabelタグのfor属性に指定します。
-
-<label for="message">お問い合わせ内容:</label> <textarea name="message" id="message"></textarea>
+<textarea style = "padding: 11px 5px 9px 5px; font-size: 16px; min-height: 200px;"> </ textarea>
 
 <pre>
-<label for="message">お問い合わせ内容:</label> <input type="text" name="message" id="message">
-</pre>
+<textarea style = "padding: 11px 5px 9px 5px; font-size: 16px; min-height: 200px;"> </ textarea>
+</ pre>
 
-お問い合わせ内容というラベルをクリックしてみてください。テキストエリアに、フォーカスが当たります。
+<h3> To support iphone / safari, the font size of the text area should be 16px or more </ h3>
 
-<h3>フォーム送信時に、jQueryでフォームのテキストエリアの値を取得する</h3>
+In order to support iphone / safari, the font size of the text area should be 16px or more. <a href="/blog/20200309145137.html"> This is to turn off the automatic enlargement function when filling out a form on iphone / safari </a>.
 
-送信ボタンを押したタイミングで、テキストエリアの値を取得する<a href="/blog/20200219091414.html">jQuery</a>を使ったサンプルです。ajaxでPOSTリクエストを送信するときに、よく使います。取得した内容を、alertで表示しています。
+<h3> Prevent the default design from being applied to form parts on iphone / safari </ h3>
 
-<h4>フォームのすべての値を取得する方法</h4>
+In iphone / safari, specify "-webkit-appearance: none;" to prevent the default design from being applied to form parts. Please refer to <a href="/blog/20200228082258.html"> Resolving the default design of text areas and buttons applied in iphone / safari </a>.
 
-フォームのすべての値を取得する方法です。
+<h3> Make sure the focus is on when you click the label in the text area </ h3>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+Use the label tag to get focus when you click on an item heading, not just in the text area. Specify the name specified in the id attribute in the textarea tag in the for attribute of the label tag.
+
+<label for = "message"> Inquiry content: </ label> <textarea name = "message" id = "message"> </ textarea>
+
+<pre>
+<label for = "message"> Inquiry content: </ label> <input type = "text" name = "message" id = "message">
+</ pre>
+
+Please click on the label labeled Inquiry Content. The text area is in focus.
+
+<h3> Get the value of the text area of ​​the form with jQuery when submitting the form </ h3>
+
+This is a sample using <a href="/blog/20200219091414.html"> jQuery </a> to get the value of the text area when the submit button is pressed. It is often used when sending a POST request with ajax. The acquired contents are displayed by alert.
+
+<h4> How to get all the values ​​in a form </ h4>
+
+How to get all the values ​​in a form.
+
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
 <script>
-  $(function () {
-    $(document).on('click', '.form-text-field-all .submit_button', function () {
+  $ (function () {
+    $ (document) .on ('click','.form-text-field-all .submit_button', function () {
       
-      /* フォームのすべての値を取得する方法 */
-      var data = $(this).closest('form').serialize();
+      / * How to get all the values ​​in a form * /
+      var data = $ (this) .closest ('form') .serialize ();
       
-      alert(data);
+      alert (data);
     });
   });
-</script>
+</ script>
 
-<div class="form-text-field-all">
+<div class = "form-text-field-all">
   <form>
     <div>
-      お問い合わせ内容: <textarea name="message"></textarea>
-    </div>
-    <button type="button" class="submit_button">送信</button>
-  </form>
-</div>
+      Inquiry content: <textarea name = "message"> </ textarea>
+    </ div>
+    <button type = "button" class = "submit_button"> Submit </ button>
+  </ form>
+</ div>
 
 <pre>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
 <script>
-  $(function () {
-    $(document).on('click', '.form-text-field-all .submit_button', function () {
+  $ (function () {
+    $ (document) .on ('click','.form-text-field-all .submit_button', function () {
       
-      /* フォームのすべての値を取得する方法 */
-      var data = $(this).closest('form').serialize();
+      / * How to get all the values ​​in a form * /
+      var data = $ (this) .closest ('form') .serialize ();
       
-      alert(data);
+      alert (data);
     });
   });
-</script>
+</ script>
 
-<div class="form-text-field-all">
+<div class = "form-text-field-all">
   <form>
     <div>
-      お問い合わせ内容: <textarea name="message"></textarea>
-    </div>
-    <button type="button" class="submit_button">送信</button>
-  </form>
-</div>
-</pre>
+      Inquiry content: <textarea name = "message"> </ textarea>
+    </ div>
+    <button type = "button" class = "submit_button"> Submit </ button>
+  </ form>
+</ div>
+</ pre>
 
-on('click')をdocumentから始めているのは、動的なHTMLの書き換えに対応するためです。ドキュメントトップからたどると、HTMLの部分が動的に書き換えられた場合も、正しく動作します。buttonに「type="button"」を指定しておくと、<a href="/blog/20200313095039.html">フォームのボタンのサブミットの動作がなくなくす</a>ことができます。
+The reason for starting on ('click') from document is to support dynamic HTML rewriting. If you follow from the top of the document, it will work correctly even if the HTML part is dynamically rewritten. If you specify "type =" button "" for button, you can <a href="/blog/20200313095039.html"> eliminate the behavior of submitting the button of the form </a>.
 
-<h4>個別のテキストエリアの値を取得する方法</h4>
+<h4> How to get the value of an individual text area </ h4>
 
-個別のテキストエリアの値を取得する方法です。お問い合わせ内容だけを取得しています。
+How to get the value of an individual text area. I am getting only the contents of the inquiry.
 
 <script>
-  $(function () {
-    $(document).on('click', '.form-text-field-part .submit_button', function () {
+  $ (function () {
+    $ (document) .on ('click','.form-text-field-part .submit_button', function () {
       
-      /* お問い合わせ内容を取得 */
-      var message = $(this).closest('form').find('[name=message]').val();
+      / * Get your inquiry * /
+      var message = $ (this) .closest ('form'). find ('[name = message]'). val ();
       
-      alert(message);
+      alert (message);
     });
   });
-</script>
+</ script>
 
-<div class="form-text-field-part">
+<div class = "form-text-field-part">
   <form>
     <div>
-      お問い合わせ内容: <textarea name="message"></textarea>
-    </div>
-    <button type="button" class="submit_button">送信</button>
-  </form>
-</div>
+      Inquiry content: <textarea name = "message"> </ textarea>
+    </ div>
+    <button type = "button" class = "submit_button"> Submit </ button>
+  </ form>
+</ div>
 
 <pre>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
 <script>
-  $(function () {
-    $(document).on('click', '.form-text-field-part .submit_button', function () {
+  $ (function () {
+    $ (document) .on ('click','.form-text-field-part .submit_button', function () {
       
-      /* お問い合わせ内容を取得 */
-      var message = $(this).closest('form').find('[name=message]').val();
+      / * Get your inquiry * /
+      var message = $ (this) .closest ('form'). find ('[name = message]'). val ();
       
-      alert(message);
+      alert (message);
     });
   });
-</script>
+</ script>
 
-<div class="form-text-field-part">
+<div class = "form-text-field-part">
   <form>
     <div>
-      お問い合わせ内容: <textarea name="message"></textarea>
-    </div>
-    <button type="button" class="submit_button">送信</button>
-  </form>
-</div>
-</pre>
+      Inquiry content: <textarea name = "message"> </ textarea>
+    </ div>
+    <button type = "button" class = "submit_button"> Submit </ button>
+  </ form>
+</ div>
+</ pre>

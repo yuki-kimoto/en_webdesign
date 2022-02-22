@@ -1,20 +1,20 @@
-<h2>preタグで文字を折り返し改行する</h2>
+<h2> Pre tag wraps and breaks characters </ h2>
 
-preタグは、デフォルトでは、文字が改行されません。文字を右端で折り返すようにするにはCSSの「white-space」に「pre-wrap」を指定します。右側にビヨーンと、文字が飛び出ると格好悪いので調整しましょう。
-
-<pre>
-pre {
-  white-space: pre-wrap;
-}
-</pre>
-
-<h2>文字単位で改行したい</h2>
-
-単語単位ではなく、文字単位で改行をしたい場合は、上記に加えてCSSの「word-break」に「break-all」を設定します。とっても長い文字列が、右側にびよーんと飛び出ている状態を解消できます。
+By default, the pre tag does not break characters. To wrap the character at the right end, specify "pre-wrap" for "white-space" in CSS. Beyond on the right side, if the characters pop out, it looks bad, so let's adjust it.
 
 <pre>
 pre {
-  white-space: pre-wrap;
-  word-break:break-all;
+   white-space: pre-wrap;
 }
-</pre>
+</ pre>
+
+<h2> I want to start a new line in character units </ h2>
+
+If you want to start a new line in character units instead of word units, set "break-all" in CSS "word-break" in addition to the above. You can eliminate the situation where a very long character string pops out to the right.
+
+<pre>
+pre {
+   white-space: pre-wrap;
+   word-break: break-all;
+}
+</ pre>

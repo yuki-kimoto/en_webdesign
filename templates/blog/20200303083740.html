@@ -1,37 +1,37 @@
-<h2>ヘッダーを固定した場合に、アンカーがずれるのを簡単なHTMLとCSSで修正する方法</h2>
+<h2> How to fix the anchor shift with simple HTML and CSS when the header is fixed </ h2>
 
-ヘッダーを固定した場合に、アンカーがずれるのを簡単なCSSで修正する方法を紹介します。
+I will show you how to fix the anchor shift with simple CSS when the header is fixed.
 
-アンカーとというのは「#」で始まるページ内リンクのことです。
+Anchors are in-page links that start with "#".
 
-<a href="#design">アンカーリンク</a>
-
-<pre>
-<a href="#design">アンカーリンク</a>
-
-<h3 id="design">アンカーリンクのとび先</h3>
-</pre>
-
-ヘッダ固定デザインは、スマートフォンサイトを作成する場合に、ユーザー体験が改善されますので、PCサイトでも一般的に使われるようになりましたね。
-
-この場合に、アンカーを使って、リンクを張った場合に、固定ヘッダの裏に、移動先の見出しが隠れてしまうという事象が発生します。上要素の下マージンと下要素の上マージンがマージされてしまう場合に、下要素の上マージンが0と判定されてしまうためです。
-
-<h3>HTMLとCSSによる簡単な解決方法</h3>
-
-HTMLとCSSによる簡単な解決方法があります。それは、アンカーのとび先自体にidを設定するのではなくって、その手前に高さ1pxのブロック要素を作り、idを設定します。とび先自体には、十分な上マージンを設定しましょう。1pxであれば、デザイン的に、そんなに気にならないと思います。
+<a href="#design"> anchor link </a>
 
 <pre>
-<a href="#design">アンカーリンク</a>
+<a href="#design"> anchor link </a>
 
-<div id="design" style="height:1px"></div>
+<h3 id = "design"> Anchor link jump destination </ h3>
+</ pre>
 
-<h3 style="margin-top:50px">アンカーリンクのとび先</h3>
-</pre>
+The fixed header design improves the user experience when creating smartphone sites, so it has become popular on PC sites as well.
 
-このように書くことで、簡単に解決できます。
+In this case, if you use an anchor to create a link, the heading of the destination will be hidden behind the fixed header. This is because if the lower margin of the upper element and the upper margin of the lower element are merged, the upper margin of the lower element is determined to be 0.
 
-一つの注意点として、高さ1pxのブロックが入ることで、上要素の下マージンと下要素の上マージンされず合計されるので、上にある要素の下マージンを、減らす必要があることでしょう。
+<h3> Easy solution with HTML and CSS </ h3>
 
-<h3 id="design">アンカーリンクのとび先</h3>
+There is an easy solution with HTML and CSS. Instead of setting the id at the tip of the anchor itself, it creates a block element with a height of 1px in front of it and sets the id. Set a sufficient upper margin for the jump destination itself. If it is 1px, I don't think it will bother you so much in terms of design.
 
-ここがアンカーリンクのとび先です。
+<pre>
+<a href="#design"> anchor link </a>
+
+<div id = "design" style = "height: 1px"> </ div>
+
+<h3 style = "margin-top: 50px"> Anchor link jump destination </ h3>
+</ pre>
+
+By writing like this, you can easily solve it.
+
+One caveat is that by including a block with a height of 1px, the lower margin of the upper element and the upper margin of the lower element are not summed, so it will be necessary to reduce the lower margin of the upper element. ..
+
+<h3 id = "design"> Anchor link jump destination </ h3>
+
+This is where the anchor link jumps.

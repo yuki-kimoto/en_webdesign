@@ -1,65 +1,65 @@
-<div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+<div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Webデザイン</span>
+        <span itemprop = "name"> Web design </ span>
       </a>
-      <meta itemprop="position" content="1" />
-    </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <meta itemprop = "position" content = "1" />
+    </ li>
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200328092718.html">
-        <span itemprop="name">HTML5</span>
+        <span itemprop = "name"> HTML5 </ span>
       </a>
-      <meta itemprop="position" content="2" />
-    </li>
+      <meta itemprop = "position" content = "2" />
+    </ li>
     <li>
       here
-    </li>
-  </ul>
-</div>
-<h2>【HTML5】scriptタグ - JavaScriptを記述して実行する</h2>
+    </ li>
+  </ ul>
+</ div>
+<h2> [HTML5] script tag --Write and execute JavaScript </ h2>
 
-<b>scriptタグ</b>を使うと、JavaScriptを記述して実行できます。
+You can write and execute JavaScript using the <b> script tag </ b>.
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
 <script>
   
-  $(function () {
-    $('.js-hello').on('click', function () {
-      alert('こんにちは');
+  $ (function () {
+    $ ('.js-hello'). on ('click', function () {
+      alert ('Hello');
     });
   });
-</script>
+</ script>
 
 <div>
-  <button class="js-hello">スクリプトを実行</button>
-</div>
+  <button class = "js-hello"> Run script </ button>
+</ div>
 
 <pre>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
 <script>
   
-  $(function () {
-    $('.js-hello').on('click', function () {
-      alert('こんにちは');
+  $ (function () {
+    $ ('.js-hello'). on ('click', function () {
+      alert ('Hello');
     });
   });
-</script>
+</ script>
 
 <div>
-  <button class="js-hello">スクリプトを実行</button>
-</div>
-</pre>
+  <button class = "js-hello"> Run script </ button>
+</ div>
+</ pre>
 
-JavaScriptと<a href="/blog/20200312095039.html">jQuery</a>を使って、ボタンを押したときに「こんにちは」と表示しています。
+Using JavaScript and <a href="/blog/20200312095039.html"> jQuery </a>, "Hello" is displayed when the button is pressed.
 
-<h3>外部のJavaScriptファイルを読み込む</h3>
+<h3> Load an external JavaScript file </ h3>
 
-scriptタグの<b>src属性</b>を使うと、外部のJavaScriptファイルを読み込むことができます。
+You can use the <b> src attribute </ b> of the script tag to load an external JavaScript file.
 
 <pre>
-<script src="/js/myapi.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-</pre>
+<script src = "/ js / myapi.js"> </ script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
+</ pre>
 
-ローカルファイルでも、インターネット上のファイルでも、どちらでも大丈夫です。
+Either a local file or a file on the Internet is fine.

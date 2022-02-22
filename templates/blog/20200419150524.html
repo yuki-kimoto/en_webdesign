@@ -1,71 +1,71 @@
-<div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+<div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Webデザイン</span>
+        <span itemprop = "name"> Web design </ span>
       </a>
-      <meta itemprop="position" content="1" />
-    </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <meta itemprop = "position" content = "1" />
+    </ li>
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200427085612.html">
-        <span itemprop="name">CSS</span>
+        <span itemprop = "name"> CSS </ span>
       </a>
-      <meta itemprop="position" content="2" />
-    </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <meta itemprop = "position" content = "2" />
+    </ li>
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200426085612.html">
-        <span itemprop="name">セレクタ</span>
+        <span itemprop = "name"> selector </ span>
       </a>
-      <meta itemprop="position" content="3" />
-    </li>
+      <meta itemprop = "position" content = "3" />
+    </ li>
     <li>
       here
-    </li>
-  </ul>
-</div>
+    </ li>
+  </ ul>
+</ div>
 
-<h2>兄弟セレクタ - CSS入門【CSS3対応】</h2>
+<h2> Brother Selector-Introduction to CSS [CSS3 compatible] </ h2>
 
-兄弟セレクタは、「+」あるいは「~」で、2つのセレクターを接続し、同じ親要素の子で、1つ目の要素の直後にある2つ目の要素を指定します。
+A sibling selector is a "+" or "~" that connects two selectors and specifies the second element that is a child of the same parent element and immediately follows the first element.
 
-「+」の場合は、隣接している後ろの要素を指定し、「~」の場合は、隣接している必要はなく、後ろに現れる要素を指定します。
+If it is "+", specify the element behind it, and if it is "~", it does not need to be adjacent and specify the element that appears behind.
 
-「+」の場合だけ解説します。
+I will explain only in the case of "+".
 
 <style>
   img + p {
     color: red;
   }
-</style>
+</ style>
 
 <div>
-  <img src="/images/webdesign-logo.png">
+  <img src = "/ images / webdesign-logo.png">
   <p>
-    兄弟セレクタ
-  </p>
-</div>
+    Sibling selector
+  </ p>
+</ div>
 
 <pre>
 <style>
   img + p {
     color: red;
   }
-</style>
+</ style>
 
 <div>
-  <img src="/images/webdesign-logo.png">
+  <img src = "/ images / webdesign-logo.png">
   <p>
-    兄弟セレクタ
-  </p>
-</div>
-</pre>
+    Sibling selector
+  </ p>
+</ div>
+</ pre>
 
-imgの直後の兄弟要素であるpにスタイルシート(CSS)が適用されるていることに注目してください。
+Notice that the stylesheet (CSS) is applied to the sibling element p immediately after img.
 
-<h3>兄弟セレクタのサンプル</h3>
+<h3> Brother selector sample </ h3>
 
-実際に兄弟セレクタってどんな時に使うの?
+When do you actually use the sibling selector?
 
-実用例では、ブラウザに依存しないオリジナルの<a href="/blog/20200323095002.html">チェックボックス</a>、<a href="/blog/20200316094150.html">ラジオボタン</a>を作るときに使用します。
+In a practical example, the original browser-independent <a href="/blog/20200323095002.html"> checkbox </a>, <a href="/blog/20200316094150.html"> radio button </a> Used when making.
 
-リンク先にサンプルがあります。
+There is a sample at the link destination.

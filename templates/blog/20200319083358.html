@@ -1,216 +1,216 @@
-<h2>【HTML5】セレクト(select)フィールド - 項目を選択するフォーム部品</h2>
+<h2> [HTML5] Select field-Form part to select an item </ h2>
 
-セレクト(select)フィールドは、項目を選択するためのフォーム部品です。selectタグとoptionタグを使います。
+The select field is a form part for selecting an item. Use the select and option tags.
 
-<select name="price">
-  <option value="-1">価格を選択</option>
-  <option value="1000">1000円未満</option>
-  <option value="2000">1000円～2000円まで</option>
-  <option value="3000">2000円～3000円まで</option>
-  <option value="99999999">3000円以上</option>
-</select>
+<select name = "price">
+  <option value = "-1"> Select a price </ option>
+  <option value = "1000"> less than 1000 yen </ option>
+  <option value = "2000"> From 1000 yen to 2000 yen </ option>
+  <option value = "3000"> From 2000 yen to 3000 yen </ option>
+  <option value = "99999999"> 3000 yen or more </ option>
+</ select>
 
 <pre>
-<select name="price">
-  <option value="-1">価格を選択</option>
-  <option value="1000">1000円未満</option>
-  <option value="2000">1000円～2000円まで</option>
-  <option value="3000">2000円～3000円まで</option>
-  <option value="99999999">3000円以上</option>
-</select>
-</pre>
+<select name = "price">
+  <option value = "-1"> Select a price </ option>
+  <option value = "1000"> less than 1000 yen </ option>
+  <option value = "2000"> From 1000 yen to 2000 yen </ option>
+  <option value = "3000"> From 2000 yen to 3000 yen </ option>
+  <option value = "99999999"> 3000 yen or more </ option>
+</ select>
+</ pre>
 
-項目を選択することができます。フォーム部品なので、name属性で、名前を付けておくことが一般的です。
+You can select the item. Since it is a form part, it is common to give it a name with the name attribute.
 
-サーバーに送信したい値はvalue属性に指定します。
+Specify the value you want to send to the server in the value attribute.
 
-<h3>セレクトフィールドは、インラインブロック要素</h3>
+<h3> Select field is an inline block element </ h3>
 
-セレクトフィールドは、デフォルトで、インラインブロック要素です。インラインブロック要素なので、左側に流れ、高さや幅を設定することができます。
+Select fields are inline block elements by default. Since it is an inline block element, it flows to the left and you can set the height and width.
 
 <div>
-  <select name="price" style="width:150px;height:50px;">
-    <option value="-1">価格を選択</option>
-    <option value="1000">1000円未満</option>
-    <option value="2000">1000円～2000円まで</option>
-    <option value="3000">2000円～3000円まで</option>
-    <option value="99999999">3000円以上</option>
-  </select>
+  <select name = "price" style = "width: 150px; height: 50px;">
+    <option value = "-1"> Select a price </ option>
+    <option value = "1000"> less than 1000 yen </ option>
+    <option value = "2000"> From 1000 yen to 2000 yen </ option>
+    <option value = "3000"> From 2000 yen to 3000 yen </ option>
+    <option value = "99999999"> 3000 yen or more </ option>
+  </ select>
 
-  <select name="price" style="width:200px;height:80px;">
-    <option value="-1">価格を選択</option>
-    <option value="1000">1000円未満</option>
-    <option value="2000">1000円～2000円まで</option>
-    <option value="3000">2000円～3000円まで</option>
-    <option value="99999999">3000円以上</option>
-  </select>
-</div>
-
-<pre>
-<select name="price" style="width:150px;height:50px;">
-  <option value="-1">価格を選択</option>
-  <option value="1000">1000円未満</option>
-  <option value="2000">1000円～2000円まで</option>
-  <option value="3000">2000円～3000円まで</option>
-  <option value="99999999">3000円以上</option>
-</select>
-
-<select name="price" style="width:200px;height:80px;">
-  <option value="-1">価格を選択</option>
-  <option value="1000">1000円未満</option>
-  <option value="2000">1000円～2000円まで</option>
-  <option value="3000">2000円～3000円まで</option>
-  <option value="99999999">3000円以上</option>
-</select>
-</pre>
-
-<h3>セレクトフィールドに、フォントサイズ、パディングを設定する</h3>
-
-デフォルトのセレクトフィールドは、スマートフォンをメインに考えると、少し小さいです。セレクトフィールドに、適切なパディングを設定してみましょう。
-
-  <select name="price" style="padding:5px 5px 9px 5px;font-size:16px;">
-    <option value="-1">価格を選択</option>
-    <option value="1000">1000円未満</option>
-    <option value="2000">1000円～2000円まで</option>
-    <option value="3000">2000円～3000円まで</option>
-    <option value="99999999">3000円以上</option>
-  </select>
+  <select name = "price" style = "width: 200px; height: 80px;">
+    <option value = "-1"> Select a price </ option>
+    <option value = "1000"> less than 1000 yen </ option>
+    <option value = "2000"> From 1000 yen to 2000 yen </ option>
+    <option value = "3000"> From 2000 yen to 3000 yen </ option>
+    <option value = "99999999"> 3000 yen or more </ option>
+  </ select>
+</ div>
 
 <pre>
-<select name="price" style="padding:5px 5px 9px 5px;font-size:16px;">
-  <option value="-1">価格を選択</option>
-  <option value="1000">1000円未満</option>
-  <option value="2000">1000円～2000円まで</option>
-  <option value="3000">2000円～3000円まで</option>
-  <option value="99999999">3000円以上</option>
-</select>
-</pre>
+<select name = "price" style = "width: 150px; height: 50px;">
+  <option value = "-1"> Select a price </ option>
+  <option value = "1000"> less than 1000 yen </ option>
+  <option value = "2000"> From 1000 yen to 2000 yen </ option>
+  <option value = "3000"> From 2000 yen to 3000 yen </ option>
+  <option value = "99999999"> 3000 yen or more </ option>
+</ select>
 
-<h3>iphone/safari対応するために、セレクトフィールドのフォントサイズは、16px以上に</h3>
+<select name = "price" style = "width: 200px; height: 80px;">
+  <option value = "-1"> Select a price </ option>
+  <option value = "1000"> less than 1000 yen </ option>
+  <option value = "2000"> From 1000 yen to 2000 yen </ option>
+  <option value = "3000"> From 2000 yen to 3000 yen </ option>
+  <option value = "99999999"> 3000 yen or more </ option>
+</ select>
+</ pre>
 
-iphone/safari対応するために、セレクトフィールドのフォントサイズは、16px以上にしましょう。<a href="/blog/20200309145137.html">iphone/safariでフォーム入力時の自動拡大機能をoff</a>にするためのです。
+<h3> Set the font size and padding in the select field </ h3>
 
-<h3>iphone/safariで、フォーム部品にデフォルトのデザインが適用されるのを防ぐ</h3>
+The default select field is a bit small, especially for smartphones. Let's set the appropriate padding in the select field.
 
-iphone/safariで、フォーム部品にデフォルトのデザインが適用されるのを防ぐには、「-webkit-appearance:none;」を指定します。<a href="/blog/20200228082258.html">iphone/safariで、テキストフィールドやボタンのデフォルトデザインが適用されてしまうのを解決</a>を参考にしてください。
-
-<h3>フォーム送信時に、jQueryでフォームのセレクトフィールドの値を取得する</h3>
-
-送信ボタンを押したタイミングで、セレクトフィールドの値を取得する<a href="/blog/20200219091414.html">jQuery</a>を使ったサンプルです。ajaxでPOSTリクエストを送信するときに、よく使います。取得した内容を、alertで表示しています。
-
-<h4>フォームのすべての値を取得する方法</h4>
-
-フォームのすべての値を取得する方法です。
-
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script>
-  $(function () {
-    $(document).on('click', '.form-text-field-all .submit_button', function () {
-      
-      /* フォームのすべての値を取得する方法 */
-      var data = $(this).closest('form').serialize();
-      
-      alert(data);
-    });
-  });
-</script>
-
-<div class="form-text-field-all">
-  <form>
-    <select name="price">
-      <option value="-1">価格を選択</option>
-      <option value="1000">1000円未満</option>
-      <option value="2000">1000円～2000円まで</option>
-      <option value="3000">2000円～3000円まで</option>
-      <option value="99999999">3000円以上</option>
-    </select>
-    <button type="button" class="submit_button">送信</button>
-  </form>
-</div>
+  <select name = "price" style = "padding: 5px 5px 9px 5px; font-size: 16px;">
+    <option value = "-1"> Select a price </ option>
+    <option value = "1000"> less than 1000 yen </ option>
+    <option value = "2000"> From 1000 yen to 2000 yen </ option>
+    <option value = "3000"> From 2000 yen to 3000 yen </ option>
+    <option value = "99999999"> 3000 yen or more </ option>
+  </ select>
 
 <pre>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<select name = "price" style = "padding: 5px 5px 9px 5px; font-size: 16px;">
+  <option value = "-1"> Select a price </ option>
+  <option value = "1000"> less than 1000 yen </ option>
+  <option value = "2000"> From 1000 yen to 2000 yen </ option>
+  <option value = "3000"> From 2000 yen to 3000 yen </ option>
+  <option value = "99999999"> 3000 yen or more </ option>
+</ select>
+</ pre>
+
+<h3> In order to support iphone / safari, the font size of the select field should be 16px or more </ h3>
+
+In order to support iphone / safari, the font size of the select field should be 16px or more. <a href="/blog/20200309145137.html"> This is to turn off the automatic enlargement function when filling out a form on iphone / safari </a>.
+
+<h3> Prevent the default design from being applied to form parts on iphone / safari </ h3>
+
+In iphone / safari, specify "-webkit-appearance: none;" to prevent the default design from being applied to form parts. Please refer to <a href="/blog/20200228082258.html"> Resolved the default design of text fields and buttons applied in iphone / safari </a>.
+
+<h3> Get the value of the form's select field with jQuery when submitting the form </ h3>
+
+This is a sample using <a href="/blog/20200219091414.html"> jQuery </a> to get the value of the select field when the submit button is pressed. It is often used when sending a POST request with ajax. The acquired contents are displayed by alert.
+
+<h4> How to get all the values ​​in a form </ h4>
+
+How to get all the values ​​in a form.
+
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
 <script>
-  $(function () {
-    $(document).on('click', '.form-text-field-all .submit_button', function () {
+  $ (function () {
+    $ (document) .on ('click','.form-text-field-all .submit_button', function () {
       
-      /* フォームのすべての値を取得する方法 */
-      var data = $(this).closest('form').serialize();
+      / * How to get all the values ​​in a form * /
+      var data = $ (this) .closest ('form') .serialize ();
       
-      alert(data);
+      alert (data);
     });
   });
-</script>
+</ script>
 
-<div class="form-text-field-all">
+<div class = "form-text-field-all">
   <form>
-    <select name="price">
-      <option value="-1">価格を選択</option>
-      <option value="1000">1000円未満</option>
-      <option value="2000">1000円～2000円まで</option>
-      <option value="3000">2000円～3000円まで</option>
-      <option value="99999999">3000円以上</option>
-    </select>
-    <button type="button" class="submit_button">送信</button>
-  </form>
-</div>
-</pre>
-
-on('click')をdocumentから始めているのは、動的なHTMLの書き換えに対応するためです。ドキュメントトップからたどると、HTMLの部分が動的に書き換えられた場合も、正しく動作します。buttonに「type="button"」を指定しておくと、<a href="/blog/20200313095039.html">フォームのボタンのサブミットの動作がなくなくす</a>ことができます。
-
-<h4>個別のセレクトフィールドの値を取得する方法</h4>
-
-個別のセレクトフィールドの値を取得する方法です。価格だけを取得しています。
-
-<script>
-  $(function () {
-    $(document).on('click', '.form-text-field-part .submit_button', function () {
-      
-      /* 価格を取得 */
-      var price = $(this).closest('form').find('[name=price]').val();
-      
-      alert(price);
-    });
-  });
-</script>
-
-<div class="form-text-field-part">
-  <form>
-    <select name="price">
-      <option value="-1">価格を選択</option>
-      <option value="1000">1000円未満</option>
-      <option value="2000">1000円～2000円まで</option>
-      <option value="3000">2000円～3000円まで</option>
-      <option value="99999999">3000円以上</option>
-    </select>
-    <button type="button" class="submit_button">送信</button>
-  </form>
-</div>
+    <select name = "price">
+      <option value = "-1"> Select a price </ option>
+      <option value = "1000"> less than 1000 yen </ option>
+      <option value = "2000"> From 1000 yen to 2000 yen </ option>
+      <option value = "3000"> From 2000 yen to 3000 yen </ option>
+      <option value = "99999999"> 3000 yen or more </ option>
+    </ select>
+    <button type = "button" class = "submit_button"> Submit </ button>
+  </ form>
+</ div>
 
 <pre>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
 <script>
-  $(function () {
-    $(document).on('click', '.form-text-field-part .submit_button', function () {
+  $ (function () {
+    $ (document) .on ('click','.form-text-field-all .submit_button', function () {
       
-      /* 価格を取得 */
-      var price = $(this).closest('form').find('[name=price]').val();
+      / * How to get all the values ​​in a form * /
+      var data = $ (this) .closest ('form') .serialize ();
       
-      alert(price);
+      alert (data);
     });
   });
-</script>
+</ script>
 
-<div class="form-text-field-part">
+<div class = "form-text-field-all">
   <form>
-    <select name="price">
-      <option value="-1">価格を選択</option>
-      <option value="1000">1000円未満</option>
-      <option value="2000">1000円～2000円まで</option>
-      <option value="3000">2000円～3000円まで</option>
-      <option value="99999999">3000円以上</option>
-    </select>
-    <button type="button" class="submit_button">送信</button>
-  </form>
-</div>
-</pre>
+    <select name = "price">
+      <option value = "-1"> Select a price </ option>
+      <option value = "1000"> less than 1000 yen </ option>
+      <option value = "2000"> From 1000 yen to 2000 yen </ option>
+      <option value = "3000"> From 2000 yen to 3000 yen </ option>
+      <option value = "99999999"> 3000 yen or more </ option>
+    </ select>
+    <button type = "button" class = "submit_button"> Submit </ button>
+  </ form>
+</ div>
+</ pre>
+
+The reason for starting on ('click') from document is to support dynamic HTML rewriting. If you follow from the top of the document, it will work correctly even if the HTML part is dynamically rewritten. If you specify "type =" button "" for button, you can <a href="/blog/20200313095039.html"> eliminate the behavior of submitting the button of the form </a>...
+
+<h4> How to get the value of an individual select field </ h4>
+
+How to get the value of an individual select field. I'm only getting the price.
+
+<script>
+  $ (function () {
+    $ (document) .on ('click','.form-text-field-part .submit_button', function () {
+      
+      / * Get price * /
+      var price = $ (this) .closest ('form'). find ('[name = price]'). val ();
+      
+      alert (price);
+    });
+  });
+</ script>
+
+<div class = "form-text-field-part">
+  <form>
+    <select name = "price">
+      <option value = "-1"> Select a price </ option>
+      <option value = "1000"> less than 1000 yen </ option>
+      <option value = "2000"> From 1000 yen to 2000 yen </ option>
+      <option value = "3000"> From 2000 yen to 3000 yen </ option>
+      <option value = "99999999"> 3000 yen or more </ option>
+    </ select>
+    <button type = "button" class = "submit_button"> Submit </ button>
+  </ form>
+</ div>
+
+<pre>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
+<script>
+  $ (function () {
+    $ (document) .on ('click','.form-text-field-part .submit_button', function () {
+      
+      / * Get price * /
+      var price = $ (this) .closest ('form'). find ('[name = price]'). val ();
+      
+      alert (price);
+    });
+  });
+</ script>
+
+<div class = "form-text-field-part">
+  <form>
+    <select name = "price">
+      <option value = "-1"> Select a price </ option>
+      <option value = "1000"> less than 1000 yen </ option>
+      <option value = "2000"> From 1000 yen to 2000 yen </ option>
+      <option value = "3000"> From 2000 yen to 3000 yen </ option>
+      <option value = "99999999"> 3000 yen or more </ option>
+    </ select>
+    <button type = "button" class = "submit_button"> Submit </ button>
+  </ form>
+</ div>
+</ pre>

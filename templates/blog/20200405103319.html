@@ -1,123 +1,121 @@
-<h2>色の指定方法を理解しよう</h2>
+<h2> Let's understand how to specify the color </ h2>
 
-HTMLにおける<b>色</b>の指定方法を解説します。
+I will explain how to specify <b> color </ b> in HTML.
 
-<h3>色名</h3>
+<h3> Color name </ h3>
 
-色名をいくつか挙げてみます。
-
-<pre>
-color:red;
-color:blue;
-color:green;
-color:white;
-color:black;
-</pre>
-
-色名の指定は簡単なのですが、Webデザインにおいては、原則として、使わないと考えておいてください。
-
-基本はRGBのカラーコードを使うのが推奨です。
-
-whiteは、比較的使う場面があるかなという感じです。
-
-黒色は、濃さを調整するのに微調整をすることが多いので、カラーコードを使うのが推奨です。
-
-<h3>カラーコード</h3>
-
-カラーコードについて簡単に解説します。
-
-<h4>白は#ffffff</h4>
-
-赤と緑と青の強さが、すべて最大になると「白」になります。
-
-<div style="background:green;color:#ffffff">
-  白色
-</div>
+Here are some color names.
 
 <pre>
-<div style="background:green;color:#ffffff">
-  白色
-</div>
-</pre>
+color: red;
+color: blue;
+color: green;
+color: white;
+color: black;
+</ pre>
 
-簡単に「#fff」でもOKです。
+It's easy to specify a color name, but in principle, you shouldn't use it in web design.
 
-<h4>黒は#000000</h4>
+Basically, it is recommended to use RGB color code.
 
-赤と緑と青の強さが、すべて最小になると「黒」になります。
+I feel that white is relatively used in some situations.
 
-<div style="color:#000000">
-  黒色
-</div>
+For black, it is recommended to use a color code because it is often fine-tuned to adjust the darkness.
 
-<pre>
-<div style="color:#000000">
-  黒色
-</div>
-</pre>
+<h3> Color code </ h3>
 
-簡単に「#000」でもOKです。
+I will briefly explain the color code.
 
-<h4>原色の赤は#ff0000</h4>
+<h4> White is #ffffff </ h4>
 
-赤の強さ最大、それ以外が最小になると「原色の赤」になります。
+When the intensity of red, green and blue is maximized, it becomes "white".
 
-<div style="color:#ff0000">
-  原色の赤
-</div>
+<div style = "background: green; color: #ffffff">
+  White
+</ div>
 
 <pre>
-<div style="color:#ff0000">
-  原色の赤
-</div>
-</pre>
+<div style = "background: green; color: #ffffff">
+  White
+</ div>
+</ pre>
 
-簡単に「#f00」でもOKです。
+You can easily use "#fff".
 
-<h4>原色の緑は#ff0000</h4>
+<h4> Black is # 000000 </ h4>
 
-緑の強さ最大、それ以外が最小になると「原色の緑」になります。
+When the intensity of red, green and blue is all minimized, it becomes "black".
 
-<div style="color:#00ff00">
-  原色の緑
-</div>
-
-<pre>
-<div style="color:#00ff00">
-  原色の緑
-</div>
-</pre>
-
-簡単に「#0f0」でもOKです。
-
-<h4>原色の青は#0000ff</h4>
-
-青の強さ最大、それ以外が最小になると「原色の青」になります。
-
-<div style="color:#0000ff">
-  原色の青
-</div>
+<div style = "color: # 000000">
+  Black
+</ div>
 
 <pre>
-<div style="color:#0000ff">
-  原色の青
-</div>
-</pre>
+<div style = "color: # 000000">
+  Black
+</ div>
+</ pre>
 
-簡単に「#00f」でもOKです。
+You can easily use "# 000".
 
-<h4>色は赤緑青の強さの組み合わせで表現される</h4>
+<h4> The primary color red is # ff0000 </ h4>
 
-色は赤緑青の強さの組み合わせで表現されます。まず、これが基本なので、覚えておきましょう。
+When the intensity of red is maximum and the others are minimum, it becomes "primary red".
 
-<h4>カラーコードを取得するには?</h4>
+<div style = "color: # ff0000">
+  Primary color red
+</ div>
 
-カラーコードをgoogle色見本を使うのが、一番簡単です。
+<pre>
+<div style = "color: # ff0000">
+  Primary color red
+</ div>
+</ pre>
 
-<a href="https://www.google.com/search?safe=active&sxsrf=ALeKk03SFrRaguPaODkZF3koDfVqIuag8w%3A1585792636413&ei=fEaFXpvqGI6zmAW5lKn4DA&q=%E8%89%B2%E8%A6%8B%E6%9C%AC&oq=%E8%89%B2%E8%A6%8B%E6%9C%AC&gs_lcp=CgZwc3ktYWIQAzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQR1AAWABgs_gtaABwAngAgAEAiAEAkgEAmAEAqgEHZ3dzLXdpeg&sclient=psy-ab&ved=0ahUKEwibmJ_20cjoAhWOGaYKHTlKCs8Q4dUDCAs&uact=5">google色見本</a>
+You can easily use "# f00".
 
-どのような色が、どんなカラーコードになるか、みてみましょう。
+<h4> The primary color green is # ff0000 </ h4>
 
-赤、緑、青の強さが、どうなっているか、みてみましょう。
+When the intensity of green is maximum and the others are minimum, it becomes "primary green".
 
+<div style = "color: # 00ff00">
+  Primary color green
+</ div>
 
+<pre>
+<div style = "color: # 00ff00">
+  Primary color green
+</ div>
+</ pre>
+
+You can easily use "# 0f0".
+
+<h4> The primary color blue is # 0000ff </ h4>
+
+When the intensity of blue is maximum and the others are minimum, it becomes "primary blue".
+
+<div style = "color: # 0000ff">
+  Primary color blue
+</ div>
+
+<pre>
+<div style = "color: # 0000ff">
+  Primary color blue
+</ div>
+</ pre>
+
+You can easily use "# 00f".
+
+<h4> Color is expressed by a combination of red, green and blue intensities </ h4>
+
+Color is represented by a combination of red, green and blue intensities. First of all, this is the basics, so let's remember.
+
+<h4> How to get the color code? </ H4>
+
+It's easiest to use a google color swatch for the color code.
+
+<a href="https://www.google.com/search?safe=active&sxsrf=ALeKk03SFrRaguPaODkZF3koDfVqIuag8w%3A1585792636413&ei=fEaFXpvqGI6zmAW5lKn4DA&q=%E8%89%B2%E8%A6% % B2% E8% A6% 8B% E6% 9C% AC & gs_lcp = CgZwc3ktYWIQAzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQR1AAWABgs_gtaABwAngAgAEAiAEAkgEAmAEAqgEHZ3dzLXdpeg & sclient = psy-ab & ved = 0ahUKEwibmJ_20cjoAhWOGaYKHTlKCs8Q4dUDCAs & uact = 5 "> google swatch </a>
+
+Let's see what kind of color becomes what kind of color code.
+
+Let's see what the strength of red, green and blue is.

@@ -1,105 +1,104 @@
-<h2>斜めストライプを背景色に設定する方法</h2>
+<h2> How to set diagonal stripes as background color </ h2>
 
-斜めストライプを背景色に設定する方法です。斜めの大きな２回繰り返すグラデーションを作成して、背景サイズを小さな値にすることで、斜めストライプを背景色に設定できます。
+This is a method to set the diagonal stripe as the background color. You can set the diagonal stripes as the background color by creating a large diagonal gradient that repeats twice and setting the background size to a small value.
 
-<h3>斜めストライプを背景色に設定するCSS</h3>
+<h3> CSS to set diagonal stripes as background color </ h3>
 
-斜めストライプを背景色に設定するCSSです。ストライプ幅は、1pxです。
+CSS that sets diagonal stripes as the background color. The stripe width is 1px.
 
 <div>
   <style>
     .naname_stripe {
-      background: repeating-linear-gradient(-45deg,#fff 0%,#fff 25%,#DBEDFF 25%, #DBEDFF 50%);
-      background-size:4px 4px;
+      background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
+      background-size: 4px 4px;
     }
-  </style>
-  <div class="naname_stripe">
-    斜めストライプ背景色
-  </div>
-</div>
+  </ style>
+  <div class = "naname_stripe">
+    Diagonal stripe background color
+  </ div>
+</ div>
 
 <pre>
-background: repeating-linear-gradient(-45deg,#fff 0%,#fff 25%,#DBEDFF 25%, #DBEDFF 50%);
-background-size:4px 4px;
-</pre>
+background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
+background-size: 4px 4px;
+</ pre>
 
-<h3>ストライプ色を変えるには?</h3>
+<h3> How to change the stripe color? </ H3>
 
-#fffは間隔の白色です。その後ろの二つの「#DBEDFF」を変更しましょう。
+#fff is white at intervals. Let's change the two "#DBEDFF" after that.
 
 <div>
   <style>
     .naname_stripe_red {
-      background: repeating-linear-gradient(-45deg,#fff 0%,#fff 25%,red 25%, red 50%);
-      background-size:4px 4px;
+      background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, red 25%, red 50%);
+      background-size: 4px 4px;
     }
-  </style>
-  <div class="naname_stripe_red">
-    斜めストライプ背景色
-  </div>
-</div>
+  </ style>
+  <div class = "naname_stripe_red">
+    Diagonal stripe background color
+  </ div>
+</ div>
 
 <pre>
-background: repeating-linear-gradient(-45deg,#fff 0%,#fff 25%,red 25%, red 50%);
-background-size:4px 4px;
-</pre>
+background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, red 25%, red 50%);
+background-size: 4px 4px;
+</ pre>
 
-<h3>ストライプ幅を変えるには</h3>
+<h3> How to change the stripe width </ h3>
 
-background-sizeを使うことで調整できます。
+It can be adjusted by using background-size.
 
 <div>
   <style>
     .naname_stripe_8px {
-      background: repeating-linear-gradient(-45deg,#fff 0%,#fff 25%,#DBEDFF 25%, #DBEDFF 50%);
-      background-size:8px 8px;
+      background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
+      background-size: 8px 8px;
     }
-  </style>
-  <div class="naname_stripe_8px">
-    斜めストライプ背景色 - ストライプ2px
-  </div>
-</div>
+  </ style>
+  <div class = "naname_stripe_8px">
+    Diagonal stripe background color-stripes 2px
+  </ div>
+</ div>
 
 <pre>
-background: repeating-linear-gradient(-45deg,#fff 0%,#fff 25%,#DBEDFF 25%, #DBEDFF 50%);
-background-size:8px 8px;
-</pre>
+background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
+background-size: 8px 8px;
+</ pre>
 
 <div>
   <style>
     .naname_stripe_16px {
-      background: repeating-linear-gradient(-45deg,#fff 0%,#fff 25%,#DBEDFF 25%, #DBEDFF 50%);
-      background-size:16px 16px;
+      background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
+      background-size: 16px 16px;
     }
-  </style>
-  <div class="naname_stripe_16px">
-    斜めストライプ背景色 - ストライプ4px
-  </div>
-</div>
+  </ style>
+  <div class = "naname_stripe_16px">
+    Diagonal stripe background color-stripes 4px
+  </ div>
+</ div>
 
 <pre>
-background: repeating-linear-gradient(-45deg,#fff 0%,#fff 25%,#DBEDFF 25%, #DBEDFF 50%);
-background-size:16px 16px;
-</pre>
+background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
+background-size: 16px 16px;
+</ pre>
 
-<h3>背景サイズを指定しないとどうなるの?</h3>
+<h3> What happens if I don't specify the background size? </ H3>
 
-こうなります。
+It will be like this.
 
 <div>
   <style>
     .naname_stripe_nosize {
-      background: repeating-linear-gradient(-45deg,#fff 0%,#fff 25%,#DBEDFF 25%, #DBEDFF 50%);
+      background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
     }
-  </style>
-  <div class="naname_stripe_nosize">
-    背景サイズなし
-  </div>
-</div>
+  </ style>
+  <div class = "naname_stripe_nosize">
+    No background size
+  </ div>
+</ div>
 
 <pre>
-background: repeating-linear-gradient(-45deg,#fff 0%,#fff 25%,#DBEDFF 25%, #DBEDFF 50%);
-</pre>
+background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
+</ pre>
 
-4pxを指定すると、ストライプ幅は1pxになるのは、このような背景を4pxの正方形に入れようとしているからですね。
-
+If you specify 4px, the stripe width will be 1px because you are trying to put such a background in a 4px square.

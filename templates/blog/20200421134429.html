@@ -1,85 +1,85 @@
-<div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+<div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Webデザイン</span>
+        <span itemprop = "name"> Web design </ span>
       </a>
-      <meta itemprop="position" content="1" />
-    </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <meta itemprop = "position" content = "1" />
+    </ li>
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200427085612.html">
-        <span itemprop="name">CSS</span>
+        <span itemprop = "name"> CSS </ span>
       </a>
-      <meta itemprop="position" content="2" />
-    </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <meta itemprop = "position" content = "2" />
+    </ li>
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200426085612.html">
-        <span itemprop="name">セレクタ</span>
+        <span itemprop = "name"> selector </ span>
       </a>
-      <meta itemprop="position" content="3" />
-    </li>
+      <meta itemprop = "position" content = "3" />
+    </ li>
     <li>
       here
-    </li>
-  </ul>
-</div>
+    </ li>
+  </ ul>
+</ div>
 
-<h2>要素セレクタ - CSS入門【CSS3対応】</h2>
+<h2> Element Selector-Introduction to CSS [CSS3 compatible] </ h2>
 
-<b>要素セレクタ</b>は、要素をタグ名を指定するためのものです。
+The <b> element selector </ b> is for specifying the tag name of the element.
 
-要素セレクタはタグ名と同じです。
+The element selector is the same as the tag name.
 
 <pre>
 span {
-  color:red;
+  color: red;
 }
-</pre>
+</ pre>
 
-要素セレクタを使ってみましょう。
+Let's use the element selector.
 
 <style>
   span {
-    color:red;
+    color: red;
   }
-</style>
+</ style>
 
-<span>トマト</span>
+<span> tomato </ span>
 
 <pre>
 <style>
   span {
-    color:red;
+    color: red;
   }
-</style>
+</ style>
 
-<span>トマト</span>
-</pre>
+<span> tomato </ span>
+</ pre>
 
-<h3>クラスセレクタと要素セレクタの組み合わせ</h3>
+<h3> Combination of class selector and element selector </ h3>
 
-<a href="/blog/20200422134429.html">クラスセレクタ</a>と要素セレクタを組み合わせることもできます。
+You can also combine <a href="/blog/20200422134429.html"> class selectors </a> with element selectors.
 
 <style>
   li.active {
-    color:red;
+    color: red;
   }
-</style>
+</ style>
 
 <ul>
-  <li class="active">トマト</li>
-  <li>レタス</li>
-</ul>
+  <li class = "active"> tomato </ li>
+  <li> Lettuce </ li>
+</ ul>
 
 <pre>
 <style>
   li.active {
-    color:red;
+    color: red;
   }
-</style>
+</ style>
 
 <ul>
-  <li class="active">トマト</li>
-  <li>レタス</li>
-</ul>
-</pre>
+  <li class = "active"> tomato </ li>
+  <li> Lettuce </ li>
+</ ul>
+</ pre>

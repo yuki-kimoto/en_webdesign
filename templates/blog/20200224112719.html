@@ -1,97 +1,97 @@
-<div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+<div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Webデザイン</span>
+        <span itemprop = "name"> Web design </ span>
       </a>
-      <meta itemprop="position" content="1" />
-    </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <meta itemprop = "position" content = "1" />
+    </ li>
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200328092718.html">
-        <span itemprop="name">HTML5</span>
+        <span itemprop = "name"> HTML5 </ span>
       </a>
-      <meta itemprop="position" content="2" />
-    </li>
+      <meta itemprop = "position" content = "2" />
+    </ li>
     <li>
       here
-    </li>
-  </ul>
-</div>
-<h2>【HTML5】metaタグ - ページのメタ情報</h2>
+    </ li>
+  </ ul>
+</ div>
+<h2> [HTML5] meta tag-page meta information </ h2>
 
-metaタグでは、ページのメタ情報を記述します。以下はmetaタグで指定できる代表的なものです。
+The meta tag describes the meta information of the page. The following are typical ones that can be specified with the meta tag.
 
-<ul class="list">
-  <li>文字コード</li>
-  <li>ビューポート</li>
-</ul>
+<ul class = "list">
+  <li> Character code </ li>
+  <li> Viewport </ li>
+</ ul>
 
-<h3>metaタグはHTMLヘッダに記述</h3>
+<h3> meta tag is described in HTML header </ h3>
 
-metaタグは<a href="/blog/20200202092826.html">HTMLヘッダ</a>に記述します。
-
-<pre>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-  </head>
-</html>
-</pre>
-
-<h3>文字コードの指定</h3>
-
-「meta charset」で文字コードを指定できます。HTMLは、UTF-8で記述して、metaタグのcharsetで、UTF-8を記述しましょう。
-
-<pre>
-<meta charset="UTF-8">
-</pre>
-
-<h3>ビューポートの指定</h3>
-
-スマートフォン対応するWebサイトには、ビューポートを指定します。<a href="/blog/20200202092826.html">HTMLヘッダ</a>で以下の指定をすれば、スマートフォンの横幅に合わせて、描画してくれます。
-
-<pre>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-</pre>
-
-参考: <a href="/blog20200326090741.html">スマートフォン対応のビューポートの設定</a>
-
-<h3>metaタグのサンプル</h3>
-
-<a href="/blog/20200202092826.html">HTMLヘッダ</a>で、metaタグを使ったサンプルです。
+The meta tag is described in <a href="/blog/20200202092826.html"> HTML header </a>.
 
 <pre>
 <html>
   <head>
-    <!-- meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/kimoto-system-favicon.png">
-    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+  </ head>
+</ html>
+</ pre>
 
-    <script type="text/javascript" src="/js/jquery-1.9.0.min.js"></script>
-    <script type="text/javascript" src="/js/google-code-prettify/prettify.js"></script>
-    <link  type="text/css" rel="stylesheet" href="/js/google-code-prettify/prettify.css"/>
+<h3> Character code specification </ h3>
+
+You can specify the character code with "meta charset". Write HTML in UTF-8, and write UTF-8 in the charset of the meta tag.
+
+<pre>
+<meta charset = "UTF-8">
+</ pre>
+
+<h3> Specifying the viewport </ h3>
+
+Specify a viewport for websites that support smartphones. If you specify the following in <a href="/blog/20200202092826.html"> HTML header </a>, it will be drawn according to the width of your smartphone.
+
+<pre>
+<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+</ pre>
+
+Reference: <a href="/blog20200326090741.html"> Smartphone compatible viewport settings </a>
+
+<h3> Meta tag sample </ h3>
+
+<a href="/blog/20200202092826.html"> HTML header </a>, this is a sample using meta tag.
+
+<pre>
+<html>
+  <head>
+    <!-Meta->
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1.0">
+    <link rel = "icon" type = "image / x-icon" href = "/ images / kimoto-system-favicon.png">
+    <link rel = "stylesheet" type = "text / css" href = "/ css / common.css">
+
+    <script type = "text / javascript" src = "/ js / jquery-1.9.0.min.js"> </ script>
+    <script type = "text / javascript" src = "/ js / google-code-prettify / prettify.js"> </ script>
+    <link type = "text / css" rel = "stylesheet" href = "/ js / google-code-prettify / prettify.css" />
     <script>
-      $(function(){
-        // google code prettifyの有効化
-        $("pre").addClass("prettyprint");
-        function init(event){
-          prettyPrint();
+      $ (function () {
+        // Enable google code prettify
+        $ ("pre"). addClass ("prettyprint");
+        function init (event) {
+          prettyPrint ();
         }
-        if(window.addEventListener)window.addEventListener("load",init,false);
-        else if(window.attachEvent)window.attachEvent("onload",init);
+        if (window.addEventListener) window.addEventListener ("load", init, false);
+        else if (window.attachEvent) window.attachEvent ("onload", init);
         
-        $(".to-top").click(function() {
-          // ページの一番上までスクロールさせます。
-          $('body, html').animate({scrollTop: 0}, 300, 'linear');;
+        $ (". To-top"). click (function () {
+          // Scroll to the top of the page.
+          $ ('body, html'). animate ({scrollTop: 0}, 300,'linear') ;;
         });
       });
-    </script>
-  </head>
+    </ script>
+  </ head>
   <body>
-    コンテント
-  </body>
-</html>
-</pre>
+    Content
+  </ body>
+</ html>
+</ pre>

@@ -1,97 +1,97 @@
-<h2>PCで複数列の表、スマートフォンで一列の表を簡単に作る方法</h2>
+<h2> How to easily create a multi-column table on a PC and a single-column table on a smartphone </ h2>
 
-PCで複数列の表、スマートフォンで一列の表を簡単に作る方法を解説します。
+I will explain how to easily create a multi-column table on a PC and a single-column table on a smartphone.
 
-PC表示とスマフォ表示で、一番悩むのは、ボーダーのどこを消して、どこを表示すればよいかが非常にわかりにくいことです。
+The biggest problem with PC display and smartphone display is that it is very difficult to know where to erase and what to display on the border.
 
-これを短い記述で、簡単に行う方法を解説。項目数の、偶数・奇数を気にする必要もありません。
+Explains how to do this easily with a short description. You don't have to worry about even or odd numbers of items.
 
-<h3>PCにおける複数列表示</h3>
+<h3> Multi-column display on PC </ h3>
 
-PCにおけるボーダーありの複数列表示には、tableタグと「border-collapse: collapse;」を使います。「border-collapse: collapse;」は、隣接するボーダーを一つに結合してくれる機能です。tableの幅は、スマートフォン表示に対応するために、指定する必要があります。このサンプルでは100%にしています。
+Use the table tag and "border-collapse: collapse;" for multi-column display with borders on the PC. "Border-collapse: collapse;" is a function that combines adjacent borders into one. The width of the table must be specified to accommodate smartphone display. In this sample, it is set to 100%.
 
-<table style="border-collapse:collapse;width:100%;">
+<table style = "border-collapse: collapse; width: 100%;">
   <tr>
-    <td style="border:1px solid orange;">項目1</td>
-    <td style="border:1px solid orange;">項目2</td>
-  </tr>
+    <td style = "border: 1px solid orange;"> Item 1 </ td>
+    <td style = "border: 1px solid orange;"> Item 2 </ td>
+  </ tr>
   <tr>
-    <td style="border:1px solid orange;">項目3</td>
-    <td style="border:1px solid orange;">項目4</td>
-  </tr>
-</table>
+    <td style = "border: 1px solid orange;"> Item 3 </ td>
+    <td style = "border: 1px solid orange;"> Item 4 </ td>
+  </ tr>
+</ table>
 
 <pre>
-<table style="border-collapse:collapse;width:100%;">
+<table style = "border-collapse: collapse; width: 100%;">
   <tr>
-    <td style="border:1px solid orange;">項目1</td>
-    <td style="border:1px solid orange;">項目2</td>
-  </tr>
+    <td style = "border: 1px solid orange;"> Item 1 </ td>
+    <td style = "border: 1px solid orange;"> Item 2 </ td>
+  </ tr>
   <tr>
-    <td style="border:1px solid orange;">項目3</td>
-    <td style="border:1px solid orange;">項目4</td>
-  </tr>
-</table>
-</pre>
+    <td style = "border: 1px solid orange;"> Item 3 </ td>
+    <td style = "border: 1px solid orange;"> Item 4 </ td>
+  </ tr>
+</ table>
+</ pre>
 
-<h3>スマートフォンにおける単数列表示</h3>
+<h3> Singular column display on smartphones </ h3>
 
-スマートフォンにおける単数列表示をするには、まずtdタグを「display:block;」にします。するとtdのテーブルセルの機能が失われ単なるブロック要素になり、横幅は100%になります。「border-collapse: collapse;」の効果は失われ、ボーダーが二重に重なります。
+To display a singular column on a smartphone, first set the td tag to "display: block;". Then, the function of the table cell of td is lost and it becomes just a block element, and the width becomes 100%. The effect of "border-collapse: collapse;" is lost and the borders are doubled.
 
-<table style="border-collapse:collapse;width:100%;">
+<table style = "border-collapse: collapse; width: 100%;">
   <tr>
-    <td style="display:block;border:1px solid orange;">項目1</td>
-    <td style="display:block;border:1px solid orange;">項目2</td>
-  </tr>
+    <td style = "display: block; border: 1px solid orange;"> Item 1 </ td>
+    <td style = "display: block; border: 1px solid orange;"> Item 2 </ td>
+  </ tr>
   <tr>
-    <td style="display:block;border:1px solid orange;">項目3</td>
-    <td style="display:block;border:1px solid orange;">項目4</td>
-  </tr>
-</table>
+    <td style = "display: block; border: 1px solid orange;"> Item 3 </ td>
+    <td style = "display: block; border: 1px solid orange;"> Item 4 </ td>
+  </ tr>
+</ table>
 
 <pre>
-<table style="border-collapse:collapse;width:100%;">
+<table style = "border-collapse: collapse; width: 100%;">
   <tr>
-    <td style="display:block;border:1px solid orange;">項目1</td>
-    <td style="display:block;border:1px solid orange;">項目2</td>
-  </tr>
+    <td style = "display: block; border: 1px solid orange;"> Item 1 </ td>
+    <td style = "display: block; border: 1px solid orange;"> Item 2 </ td>
+  </ tr>
   <tr>
-    <td style="display:block;border:1px solid orange;">項目3</td>
-    <td style="display:block;border:1px solid orange;">項目4</td>
-  </tr>
-</table>
-</pre>
+    <td style = "display: block; border: 1px solid orange;"> Item 3 </ td>
+    <td style = "display: block; border: 1px solid orange;"> Item 4 </ td>
+  </ tr>
+</ table>
+</ pre>
 
-次に、tdタグの下のボーダーを削除し、tableタグの下側に下線を設定します。
+Then remove the border below the td tag and underline it below the table tag.
 
-<table style="border-collapse:collapse;width:100%;border-bottom:1px solid orange;">
+<table style = "border-collapse: collapse; width: 100%; border-bottom: 1px solid orange;">
   <tr>
-    <td style="display:block;border:1px solid orange;border-bottom:none;">項目1</td>
-    <td style="display:block;border:1px solid orange;border-bottom:none;">項目2</td>
-  </tr>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 1 </ td>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 2 </ td>
+  </ tr>
   <tr>
-    <td style="display:block;border:1px solid orange;border-bottom:none;">項目3</td>
-    <td style="display:block;border:1px solid orange;border-bottom:none;">項目4</td>
-  </tr>
-</table>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 3 </ td>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 4 </ td>
+  </ tr>
+</ table>
 
 <pre>
-<table style="border-collapse:collapse;width:100%;border-bottom:1px solid orange;">
+<table style = "border-collapse: collapse; width: 100%; border-bottom: 1px solid orange;">
   <tr>
-    <td style="display:block;border:1px solid orange;border-bottom:none;">項目1</td>
-    <td style="display:block;border:1px solid orange;border-bottom:none;">項目2</td>
-  </tr>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 1 </ td>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 2 </ td>
+  </ tr>
   <tr>
-    <td style="display:block;border:1px solid orange;border-bottom:none;">項目3</td>
-    <td style="display:block;border:1px solid orange;border-bottom:none;">項目4</td>
-  </tr>
-</table>
-</pre>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 3 </ td>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 4 </ td>
+  </ tr>
+</ table>
+</ pre>
 
-<h3>tableタグはレスポンシブデザインでは使わないほうが良いのではないですか?</h3>
+Isn't it better not to use the <h3> table tag in responsive design? </ h3>
 
-tableタグはレスポンシブデザインでは使わないほうがいいのではないですか?
+Isn't it better not to use the table tag in responsive design?
 
-はい、そのような考え方が存在します。
+Yes, such an idea exists.
 
-一方で、PerlゼミのHTML・CSS入門では、実際に短い文字数のHTMLとCSSで書け、複雑さを減らす方法を解説することを目標にしています。
+On the other hand, the Perl seminar's introduction to HTML / CSS aims to explain how to actually write in HTML and CSS with a short number of characters and reduce complexity.
