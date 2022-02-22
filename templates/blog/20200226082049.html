@@ -2,68 +2,68 @@
   <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
     <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop = "name"> Web design </ span>
-      </a>
+        <span itemprop = "name"> Web design </span>
+     </a>
       <meta itemprop = "position" content = "1" />
-    </ li>
+    </li>
     <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200328092718.html">
-        <span itemprop = "name"> HTML5 </ span>
-      </a>
+        <span itemprop = "name"> HTML5 </span>
+     </a>
       <meta itemprop = "position" content = "2" />
-    </ li>
+    </li>
     <li>
       here
-    </ li>
-  </ ul>
-</ div>
-<h2> [HTML5] div tag --Create block element </ h2>
+    </li>
+  </ul>
+</div>
+<h2> [HTML5] div tag --Create block element </h2>
 
 You can use the div tag to create block elements.
 
 <div>
   Block element
-</ div>
+</div>
 
 <pre>
 <div>
   Block element
-</ div>
-</ pre>
+</div>
+</pre>
 
-<h3> 100% width is the default for block elements </ h3>
+<h3> 100%width is the default for block elements </h3>
 
-100% width is the default for block elements.
+100%width is the default for block elements.
 
 <div style = "background: pink;">
   Block element
-</ div>
+</div>
 
 <pre>
 <div style = "background: pink;">
   Block element
-</ div>
-</ pre>
+</div>
+</pre>
 
-Let's place two block elements in a div. It grows 100% horizontally and becomes 2 lines.
+Let's place two block elements in a div. It grows 100%horizontally and becomes 2 lines.
 
 <div style = "background: pink;">
   Block element 1
-</ div>
+</div>
 <div style = "background: green">
   Block element 2
-</ div>
+</div>
 
 <pre>
 <div style = "background: pink;">
   Block element 1
-</ div>
+</div>
 <div style = "background: green;">
   Block element 2
-</ div>
-</ pre>
+</div>
+</pre>
 
-<h3> Block elements can set width, height, and top and bottom margins </ h3>
+<h3> Block elements can set width, height, and top and bottom margins </h3>
 
 Block elements can have width, height, and top and bottom margins.
 
@@ -73,208 +73,208 @@ Block elements can have width, height, and top and bottom margins.
   margin-bottom: 10px; <br>
   width: 80%; <br>
   height: 200px;
-</ div>
+</div>
 <div style = "background: green;">
   Block element 2
-</ div>
+</div>
 
 <pre>
 <div style = "background: pink; magin-top: 10px; margin-bottom: 10px; width: 80%; height: 300px;">
   Block element 1
-</ div>
+</div>
 <div style = "background: green;">
   Block element 2
-</ div>
-</ pre>
+</div>
+</pre>
 
 The same is true for inline block elements. On the other hand, inline elements cannot have width, height, and top and bottom margins.
 
 If you want to set margins, heights, and widths, use block elements, inline block elements, and flex elements instead of inline elements.
 
-<h3> CSS to set block elements </ h3>
+<h3> CSS to set block elements </h3>
 
 The CSS that sets the block element is "display: element type;". The default for div tags is block elements, but you can change them.
 
 <pre>
 <div style = "display: block;">
   Block element
-</ div>
+</div>
 <div style = "display: inline-block;">
   Inline block element
-</ div>
+</div>
 <div style = "display: inline;">
   Inline element
-</ div>
+</div>
 <div style = "display: flex;">
   Flex element
-</ div>
-</ pre>
+</div>
+</pre>
 
-<h3> Block elements other than div tags </ h3>
+<h3> Block elements other than div tags </h3>
 
 It is a frequently used tag that becomes a block element other than the div tag.
 
 <ul class = "list">
-  <li> <a href="/blog/20200220091414.html"> Heading tag --h1, h2, h3, h4, h5, h6 </a> </ li>
-  <li> p tag </ li>
-  <li> ul tag </ li>
-</ ul>
+  <li> <a href="/blog/20200220091414.html"> Heading tag --h1, h2, h3, h4, h5, h6</a> </li>
+  <li> p tag </li>
+  <li> ul tag </li>
+</ul>
 
-<h3> How to use block elements, inline block elements and flex elements properly? </ H3>
+<h3> How to use block elements, inline block elements and flex elements properly? </H3>
 
 How to use block elements, inline block elements and flex elements properly?
 
-<h4> 1 row 1 column is a block element </ h4>
+<h4> 1 row 1 column is a block element </h4>
 
 When it can be represented by 1 row and 1 column, use block elements.
 
 <div style = "background: pink;">
   Block element 1
-</ div>
+</div>
 
 <pre>
 <div style = "background: pink;">
   Block element 1
-</ div>
-</ pre>
+</div>
+</pre>
 
-<h4> Multiple rows and columns are block elements </ h4>
+<h4> Multiple rows and columns are block elements </h4>
 
 Block elements are also used for multiple rows and columns.
 
 <div style = "background: pink;">
   Block element 1
-</ div>
+</div>
 <div style = "background: green">
   Block element 2
-</ div>
+</div>
 
 <pre>
 <div style = "background: pink;">
   Block element 1
-</ div>
+</div>
 <div style = "background: green;">
   Block element 2
-</ div>
-</ pre>
+</div>
+</pre>
 
-<h4> 1 row and multiple columns are flex elements </ h4>
+<h4> 1 row and multiple columns are flex elements </h4>
 
 For one row and multiple columns, use the flex element.
 
 <div style = "display: flex;">
   <div style = "width: 50%; background: pink;">
     Column 1
-  </ div>
+  </div>
   <div style = "width: 50%; background: green;">
     Column 2
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "display: flex;">
   <div style = "width: 50%; background: pink;">
     Column 1
-  </ div>
+  </div>
   <div style = "width: 50%; background: green;">
     Column 2
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>
 
-<a href="/blog/20200212090234.html"> Introduction to Flex Layout </a> explains in detail.
+<a href="/blog/20200212090234.html"> Introduction to Flex Layout</a> explains in detail.
 
-<h4> Multiple rows and columns are flex elements </ h4>
+<h4> Multiple rows and columns are flex elements </h4>
 
 For multiple rows and columns, use the flex element and specify "flex-wrap: wrap;".
 
 <div style = "display: flex; flex-wrap: wrap;">
   <div style = "width: 50%; background: pink;">
     Row 1 Column 1
-  </ div>
+  </div>
   <div style = "width: 50%; background: green;">
     Row 1 column 2
-  </ div>
+  </div>
   <div style = "width: 50%; background: blue;">
     Row 2 column 1
-  </ div>
+  </div>
   <div style = "width: 50%; background: red;">
     Row 2 column 2
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "display: flex; flex-wrap: wrap;">
   <div style = "width: 50%; background: pink;">
     Row 1 Column 1
-  </ div>
+  </div>
   <div style = "width: 50%; background: green;">
     Row 1 column 2
-  </ div>
+  </div>
   <div style = "width: 50%; background: blue;">
     Row 2 column 1
-  </ div>
+  </div>
   <div style = "width: 50%; background: red;">
     Row 2 column 2
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>
 
-<a href="/blog/20200213070617.html"> Multi-line layout with flex layout </a> Explained in detail in the introduction.
+<a href="/blog/20200213070617.html"> Multi-line layout with flex layout</a> Explained in detail in the introduction.
 
 Inline block elements are unlikely to be used.
 
-How to make a button with <h3> div tag? </ H3>
+How to make a button with <h3> div tag? </H3>
 
 To create a button using the div tag, think as follows.
 
 ・ Determine the width
 ・ If the right margin and the left margin are set to automatic, it will move toward the center.
 
-<h4> Determine the width </ h4>
+<h4> Determine the width </h4>
 
-First, decide on the width of the button. 400px on a computer screen. On a smartphone screen, "from 100% width to 30px smaller".
+First, decide on the width of the button. 400px on a computer screen. On a smartphone screen, "from 100%width to 30px smaller".
 
 <div style = "width: 400px; background: pink;">
   Button for PC
-</ div>
+</div>
 
 <pre>
 <div style = "width: 400px; background: pink;">
   Button for PC
-</ div>
-</ pre>
+</div>
+</pre>
 
-<div style = "width: calc (100% -30px); background: pink;">
+<div style = "width: calc (100%-30px); background: pink;">
   Button for smartphone
-</ div>
+</div>
 
 <pre>
-<div style = "width: calc (100% -30px); background: pink;">
+<div style = "width: calc (100%-30px); background: pink;">
   Button for smartphone
-</ div>
-</ pre>
+</div>
+</pre>
 
-<h4> Automatic left and right margins </ h4>
+<h4> Automatic left and right margins </h4>
 
 If you set the left and right margins to automatic, the button will move to the center.
 
 <div style = "width: 400px; margin-left: auto; margin-right: auto; background: pink;">
   Button for PC
-</ div>
+</div>
 
 <pre>
 <div style = "width: 400px; margin-left: auto; margin-right: auto; background: pink;">
   Button for PC
-</ div>
-</ pre>
+</div>
+</pre>
 
-<div style = "width: calc (100% -30px); margin-left: auto; margin-right: auto; background: pink;">
+<div style = "width: calc (100%-30px); margin-left: auto; margin-right: auto; background: pink;">
   Button for smartphone
-</ div>
+</div>
 
 <pre>
-<div style = "width: calc (100% -30px); margin-left: auto; margin-right: auto; background: pink;">
+<div style = "width: calc (100%-30px); margin-left: auto; margin-right: auto; background: pink;">
   Button for smartphone
-</ div>
-</ pre>
+</div>
+</pre>

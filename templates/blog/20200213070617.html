@@ -1,10 +1,10 @@
-<h2> Master multi-line flex layout </ h2>
+<h2> Master multi-line flex layout </h2>
 
 Master multi-line flex layouts. Mastering a multi-line flex layout allows, for example, to arrange product images and product titles in multiple lines.
 
-It is assumed that you have read the <a href="/blog/20200212090234.html"> Introduction to Flex Layout </a> article.
+It is assumed that you have read the <a href="/blog/20200212090234.html"> Introduction to Flex Layout</a> article.
 
-<h3> Multi-line flex layout </ h3>
+<h3> Multi-line flex layout </h3>
 
 The flex layout can be multi-line. To make the flex layout multiple lines, first specify "flex-wrap: wrap" for the element that specified "display: flex".
 
@@ -12,39 +12,39 @@ The flex layout can be multi-line. To make the flex layout multiple lines, first
   <div style = "background: red;">
     Yakiniku <br>
     No. 1
-  </ div>
+  </div>
   <div style = "background: green;">
     Yakitori
-  </ div>
+  </div>
   <div style = "background: blue;">
     salad
-  </ div>
+  </div>
   <div style = "background: yellow;">
     ramen
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "background: #fee; display: flex; flex-wrap: wrap">
   <div style = "background: red;">
     Yakiniku <br>
     No. 1
-  </ div>
+  </div>
   <div style = "background: green;">
     Yakitori
-  </ div>
+  </div>
   <div style = "background: blue;">
     salad
-  </ div>
+  </div>
   <div style = "background: yellow;">
     ramen
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>
 
 Even if you specify "flex-wrap: wrap" in CSS, this alone will not result in multiple lines. After this, you need to specify the width.
 
-<h3> Arrange with equal width </ h3>
+<h3> Arrange with equal width </h3>
 
 Let's specify "width: 50%" as a child element and arrange them evenly.
 
@@ -52,132 +52,132 @@ Let's specify "width: 50%" as a child element and arrange them evenly.
   <div style = "background: red; width: 50%;">
     Yakiniku <br>
     No. 1
-  </ div>
+  </div>
   <div style = "background: green; width: 50%;">
     Yakitori
-  </ div>
+  </div>
   <div style = "background: blue; width: 50%;">
     salad
-  </ div>
+  </div>
   <div style = "background: yellow; width: 50%;">
     ramen
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "background: #fee; display: flex; flex-wrap: wrap">
   <div style = "background: red; width: 50%;">
     Yakiniku <br>
     No. 1
-  </ div>
+  </div>
   <div style = "background: green; width: 50%;">
     Yakitori
-  </ div>
+  </div>
   <div style = "background: blue; width: 50%;">
     salad
-  </ div>
+  </div>
   <div style = "background: yellow; width: 50%;">
     ramen
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>
 
 Oh, you lined up in two lines. You can put a product image and a product title in this child element.
 
-<h3> Example of header layout for smartphones </ h3>
+<h3> Example of header layout for smartphones </h3>
 
 Let's write a sample header layout for smartphones.
 
 Using the flex layout, you can switch the header between your PC and smartphone simply by switching the CSS.
 
-<h4> Header PC display </ h4>
+<h4> Header PC display </h4>
 
 Header PC display in flex layout. The fixed width of the site title and the uniform width of the menu list.
 
 <div style = "background: #fee; display: flex; flex-wrap: wrap">
   <div style = "background: red; width: 180px;">
     Perl club
-  </ div>
+  </div>
   <div style = "background: green; display: none;">
     Mebo
-  </ div>
-  <ul style = "width: calc (100% --180px); display: flex;">
+  </div>
+  <ul style = "width: calc (100%--180px); display: flex;">
     <li style = "background: blue; width: 33.3%;">
       About us
-    </ li>
+    </li>
     <li style = "background: yellow; width: 33.3%;">
       access
-    </ li>
+    </li>
     <li style = "background: pink; width: 33.4%;">
       inquiry
-    </ li>
-  </ ul>
-</ div>
+    </li>
+  </ul>
+</div>
 
 <pre>
 <div style = "background: #fee; display: flex; flex-wrap: wrap;">
   <div style = "background: red; width: 180px;">
     Perl club
-  </ div>
+  </div>
   <div style = "background: green; display: none;">
     Mebo
-  </ div>
-  <ul style = "width: calc (100% --180px); display: flex;">
+  </div>
+  <ul style = "width: calc (100%--180px); display: flex;">
     <li style = "background: blue; width: 33.3%;">
       About us
-    </ li>
+    </li>
     <li style = "background: yellow; width: 33.3%;">
       access
-    </ li>
+    </li>
     <li style = "background: pink; width: 33.4%;">
       inquiry
-    </ li>
-  </ ul>
-</ div>
-</ pre>
+    </li>
+  </ul>
+</div>
+</pre>
 
-<h4> Header smartphone display </ h4>
+<h4> Header smartphone display </h4>
 
 Header smartphone display in flex layout. The site title is variable, the menu button (mebo) has a fixed width, and the menu is from the second row onward. It is a layout that can be switched and displayed with the menu button.
 
 <div style = "background: #fee; display: flex; flex-wrap: wrap">
-  <div style = "background: red; width: calc (100% -40px);">
+  <div style = "background: red; width: calc (100%-40px);">
     Perl club
-  </ div>
+  </div>
   <div style = "background: green; width: 40px; height: 40px;">
     Mebo
-  </ div>
+  </div>
   <ul style = "width: 100%; display: flex; flex-wrap: wrap;">
     <li style = "background: blue; width: 100%;">
       About us
-    </ li>
+    </li>
     <li style = "background: yellow; width: 100%;">
       access
-    </ li>
+    </li>
     <li style = "background: pink; width: 100%;">
       inquiry
-    </ li>
-  </ ul>
-</ div>
+    </li>
+  </ul>
+</div>
 
 <pre>
 <div style = "background: #fee; display: flex; flex-wrap: wrap">
-  <div style = "background: red; width: calc (100% -40px);">
+  <div style = "background: red; width: calc (100%-40px);">
     Perl club
-  </ div>
+  </div>
   <div style = "background: green; width: 40px; height: 40px;">
     Mebo
-  </ div>
+  </div>
   <ul style = "width: 100%; display: flex; flex-wrap: wrap;">
     <li style = "background: blue; width: 100%;">
       About us
-    </ li>
+    </li>
     <li style = "background: yellow; width: 100%;">
       access
-    </ li>
+    </li>
     <li style = "background: pink; width: 100%;">
       inquiry
-    </ li>
-  </ ul>
-</ div>
-</ pre>
+    </li>
+  </ul>
+</div>
+</pre>

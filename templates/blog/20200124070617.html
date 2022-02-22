@@ -1,115 +1,115 @@
-<h2> Create a sidebar-Flex layout for smartphones </ h2>
+<h2> Create a sidebar-Flex layout for smartphones </h2>
 
-Let's create a sidebar using <a href="/blog/20200212090234.html"> flex layout </a>. You can support smartphones just by switching CSS. Confirmed in IE11.
+Let's create a sidebar using <a href="/blog/20200212090234.html"> flex layout</a>. You can support smartphones just by switching CSS. Confirmed in IE11.
 
-<h3> Sidebar right, fixed length, content left, variable length, PC display </ h3>
+<h3> Sidebar right, fixed length, content left, variable length, PC display </h3>
 
 Sidebar right, fixed length, content left, variable length PC display. I'm using a flex layout. The content uses calc to calculate the variable length width.
 
 <div style = "display: flex;">
-  <div style = "width: calc (100% --200px); background: pink;">
+  <div style = "width: calc (100%--200px); background: pink;">
     content
-  </ div>
+  </div>
   <div style = "width: 200px; background: green;">
     Sidebar <br>
     Item 1 <br>
     Item 2
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "display: flex;">
-  <div style = "width: calc (100% --200px); background: pink;">
+  <div style = "width: calc (100%--200px); background: pink;">
     content
-  </ div>
+  </div>
   <div style = "width: 200px; background: green;">
     Sidebar <br>
     Item 1 <br>
     Item 2
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>
 
-<h3> Sidebar left, fixed length, content right, variable length, PC display </ h3>
+<h3> Sidebar left, fixed length, content right, variable length, PC display </h3>
 
 Sidebar left, fixed length, content right, variable length PC display. You can use "flex-direction: row-reverse;" to change the order of left and right. Even if you put the sidebar on the left, consider SEO measures and smartphone compatibility, and write the content first.
 
 <div style = "display: flex; flex-direction: row-reverse;">
-  <div style = "width: calc (100% --200px); background: pink;">
+  <div style = "width: calc (100%--200px); background: pink;">
     content
-  </ div>
+  </div>
   <div style = "width: 200px; background: green;">
     Sidebar <br>
     Item 1 <br>
     Item 2
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "display: flex; flex-direction: row-reverse;">
-  <div style = "width: calc (100% --200px); background: pink;">
+  <div style = "width: calc (100%--200px); background: pink;">
     content
-  </ div>
+  </div>
   <div style = "width: 200px; background: green;">
     Sidebar <br>
     Item 1 <br>
     Item 2
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>
 
-<h3> Under the sidebar, on the content, smartphone display </ h3>
+<h3> Under the sidebar, on the content, smartphone display </h3>
 
-Below the sidebar, on the content, and on the smartphone. <a href="/blog/20200213070617.html"> Display multiple lines in flex layout </a>, so add "flex-wrap: wrap;" to make the sidebar and content 100% wide ..
+Below the sidebar, on the content, and on the smartphone. <a href="/blog/20200213070617.html"> Display multiple lines in flex layout</a>, so add "flex-wrap: wrap;" to make the sidebar and content 100%wide ..
 
 <div style = "display: flex; flex-wrap: wrap;">
   <div style = "width: 100%; background: pink;">
     content
-  </ div>
+  </div>
   <div style = "width: 100%; background: green;">
     Sidebar <br>
     Item 1 <br>
     Item 2
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "display: flex; flex-wrap: wrap;">
   <div style = "width: 100%; background: pink;">
     content
-  </ div>
+  </div>
   <div style = "width: 100%; background: green;">
     Sidebar <br>
     Item 1 <br>
     Item 2
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>
 
-<h3> Sidebar hidden, content only, smartphone display </ h3>
+<h3> Sidebar hidden, content only, smartphone display </h3>
 
-The sidebar is hidden, only the content is displayed on the smartphone. Hide the sidebar with "display: none;" to make the content 100% wide.
+The sidebar is hidden, only the content is displayed on the smartphone. Hide the sidebar with "display: none;" to make the content 100%wide.
 
 <div style = "display: flex;">
   <div style = "width: 100%; background: pink;">
     content
-  </ div>
+  </div>
   <div style = "display: none; background: green;">
     Sidebar <br>
     Item 1 <br>
     Item 2
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "display: flex;">
   <div style = "width: 100%; background: pink;">
     content
-  </ div>
+  </div>
   <div style = "display: none; background: green;">
     Sidebar <br>
     Item 1 <br>
     Item 2
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>

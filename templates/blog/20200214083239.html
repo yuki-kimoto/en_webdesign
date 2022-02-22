@@ -1,4 +1,4 @@
-<h2> Adjusting the vertical position of the image --Technique to align the vertical position of the icon and characters </ h3>
+<h2> Adjusting the vertical position of the image --Technique to align the vertical position of the icon and characters </h3>
 
 I will explain how to adjust the vertical position of the image. Once you understand this, you will be able to align the icons and characters neatly.
 
@@ -6,21 +6,21 @@ I will explain how to adjust the vertical position of the image. Once you unders
   img {
     -ms-interpolation-mode: nearest-neighbor;
   }
-</ style>
+</style>
 
-<h3> Default image vertical position </ h3>
+<h3> Default image vertical position </h3>
 
 First of all, let's understand the default of the vertical position of the image.
 
 <div style = "background: #eef">
   <img src = "/ images / image-vertical / example.png" width = "80"> Text
-</ div>
+</div>
 
 <pre>
 <div style = "background: #eef">
   <img src = "/ images / image-vertical / example.png" width = "80"> Text
-</ div>
-</ pre>
+</div>
+</pre>
 
 What I would like you to take a closer look at is that the lower part is empty. Please take a closer look. The lower side is vacant.
 
@@ -32,29 +32,29 @@ The upper space is calculated automatically. If there is another image or text t
 
 <div style = "background: #eef">
   <img src = "/ images / image-vertical / example.png" width = "80"> <img src = "/ images / image-vertical / example.png" width = "120"> Text
-</ div>
+</div>
 
 <pre>
 <div style = "background: #eef">
   <img src = "/ images / image-vertical / example.png" width = "80"> <img src = "/ images / image-vertical / example.png" width = "120"> Text
-</ div>
-</ pre>
+</div>
+</pre>
 
 First, remember the default vertical position of the image. It is drawn upwards from the baseline, the space above it is calculated automatically and will be 0 if there are no other elements higher than you.
 
-<h3> Erase the space below when there is only an image </ h3>
+<h3> Erase the space below when there is only an image </h3>
 
 The easiest way to get rid of the space below if you only have an image is to center the baseline. Use "vertical-align: middle;" to center the baseline.
 
 <div style = "background: #eef">
   <img src = "/ images / image-vertical / example.png" width = "80" style = "vertical-align: middle;">
-</ div>
+</div>
 
 <pre>
 <div style = "background: #eef">
   <img src = "/ images / image-vertical / example.png" width = "80" style = "vertical-align: middle;">
-</ div>
-</ pre>
+</div>
+</pre>
 
 This is useful when you only have an image, such as a company or service logo.
 
@@ -62,19 +62,19 @@ What if the text is present at the same time? Let's take a look.
 
 <div style = "background: #eef">
   <img src = "/ images / image-vertical / example.png" width = "80" style = "vertical-align: middle;"> Text
-</ div>
+</div>
 
 <pre>
 <div style = "background: #eef">
   <img src = "/ images / image-vertical / example.png" width = "80" style = "vertical-align: middle;"> Text
-</ div>
-</ pre>
+</div>
+</pre>
 
 Hmmm, please keep an eye on it. Does the vertical position of the text deviate from the vertical position of the image in Bimyo? Can you see it? Please take a closer look.
 
 Look in the middle of the vertical position of the letters. Then, move your line of sight to the right. It is slightly off the center position of the "text".
 
-<h3> Align the vertical position of the icon and text </ h3>
+<h3> Align the vertical position of the icon and text </h3>
 
 Align the vertical position of the icon and text. It is unavoidable that the baseline position may shift slightly depending on the type of text font, but try adjusting it to the center as much as possible.
 
@@ -82,12 +82,12 @@ Use "vertical-align: number of pixels;" to specify the vertical position. Let's 
 
 <div style = "background: #eef">
   <img src = "/ images / image-vertical / example.png" width = "60" style = "vertical-align: -23px;"> Text
-</ div>
+</div>
 
 <pre>
 <div style = "background: #eef">
   <img src = "/ images / image-vertical / example.png" width = "60" style = "vertical-align: -23px;"> Text
-</ div>
-</ pre>
+</div>
+</pre>
 
 The point is to set the number of negative pixels to vertical-align. Set the drawing position of the image from below the baseline.

@@ -2,121 +2,120 @@
   <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
     <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop = "name"> Web design </ span>
-      </a>
+        <span itemprop = "name"> Web design </span>
+     </a>
       <meta itemprop = "position" content = "1" />
-    </ li>
+    </li>
     <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200328092718.html">
-        <span itemprop = "name"> HTML5 </ span>
-      </a>
+        <span itemprop = "name"> HTML5 </span>
+     </a>
       <meta itemprop = "position" content = "2" />
-    </ li>
+    </li>
     <li>
       here
-    </ li>
-  </ ul>
-</ div>
-<h2> [HTML5] head tag --HTML header </ h2>
+    </li>
+  </ul>
+</div>
+<h2> [HTML5] head tag --HTML header </h2>
 
-Write the HTML header inside the <b> head tag </ b>. In the HTML header, describe auxiliary information that is not displayed on the screen.
+Write the HTML header inside the <b> head tag </b>. In the HTML header, describe auxiliary information that is not displayed on the screen.
 
 <pre>
 <head>
   HTML header
-</ head>
-</ pre>
+</head>
+</pre>
 
-<h3> Write the HTML header inside the HTML tag </ h3>
+<h3> Write the HTML header inside the HTML tag </h3>
 
-Write the HTML header inside the <a href="/blog/20200204092826.html"> html tag </a>.
+Write the HTML header inside the <a href="/blog/20200204092826.html"> html tag</a>.
 
 <pre>
 <html>
   <head>
     HTML header
-  </ head>
+  </head>
   <body>
     content
-  </ body>
-</ html>
-</ pre>
+  </body>
+</html>
+</pre>
 
-<h3> What to specify in the HTML header </ h3>
+<h3> What to specify in the HTML header </h3>
 
 In the HTML header, you can specify:
 
 <ul class = "list">
-  <li> CSS loading </ li>
-  <li> JavaScript </ li>
-  <li> Title </ li>
-  <li> Character code </ li>
-  <li> Site description </ li>
-  <li> Keyword </ li>
-  <li> Favicon </ li>
-  <li> Viewport </ li>
-</ ul>
+  <li> CSS loading </li>
+  <li> JavaScript </li>
+  <li> Title </li>
+  <li> Character code </li>
+  <li> Site description </li>
+  <li> Keyword </li>
+  <li> Favicon </li>
+  <li> Viewport </li>
+</ul>
 
 <pre>
 <html>
   <head>
-    <!-Meta->
-    <meta charset = "UTF-8">
+    <!-Meta->    <meta charset = "UTF-8">
     <meta name = "viewport" content = "width = device-width, initial-scale = 1">
     <link rel = "icon" type = "image / x-icon" href = "/ images / kimoto-system-favicon.png">
     <link rel = "stylesheet" type = "text / css" href = "/ css / common.css">
 
-    <script type = "text / javascript" src = "/ js / jquery-1.9.0.min.js"> </ script>
-    <script type = "text / javascript" src = "/ js / google-code-prettify / prettify.js"> </ script>
+    <script type = "text / javascript" src = "/ js / jquery-1.9.0.min.js"> </script>
+    <script type = "text / javascript" src = "/ js / google-code-prettify / prettify.js"> </script>
     <link type = "text / css" rel = "stylesheet" href = "/ js / google-code-prettify / prettify.css" />
     <script>
-      $ (function () {
+      $(function () {
         // Enable google code prettify
-        $ ("pre"). addClass ("prettyprint");
+        $("pre"). addClass ("prettyprint");
         function init (event) {
           prettyPrint ();
         }
         if (window.addEventListener) window.addEventListener ("load", init, false);
         else if (window.attachEvent) window.attachEvent ("onload", init);
         
-        $ (". To-top"). click (function () {
+        $(". To-top"). click (function () {
           // Scroll to the top of the page.
-          $ ('body, html'). animate ({scrollTop: 0}, 300,'linear') ;;
+          $('body, html'). animate ({scrollTop: 0}, 300,'linear') ;;
         });
       });
-    </ script>
-  </ head>
+    </script>
+  </head>
   <body>
     Content
-  </ body>
-</ html>
-</ pre>
+  </body>
+</html>
+</pre>
 
-<h3> meta tag </ h3>
+<h3> meta tag </h3>
 
-The <a href="/blog/20200224112719.html"> meta tag </a> that specifies the character code and viewport is written in the HTML header.
+The <a href="/blog/20200224112719.html"> meta tag</a> that specifies the character code and viewport is written in the HTML header.
 
 <pre>
 <html>
   <head>
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-  </ head>
-</ html>
-</ pre>
+  </head>
+</html>
+</pre>
 
-<h3> HTML template </ h3>
+<h3> HTML template </h3>
 
-<a href="/blog/20200205092826.html"> DOCTYPE declaration </a> and <a href="/blog/20200204092826.html"> html tag </a>, <b> head tag </ b>, The <a href="/blog/20200203092826.html"> body tag </a> is the HTML template.
+<a href="/blog/20200205092826.html"> DOCTYPE declaration</a> and <a href="/blog/20200204092826.html"> html tag</a>, <b> head tag </b>, The <a href="/blog/20200203092826.html"> body tag</a> is the HTML template.
 
 <pre>
 <! DOCTYPE html>
 <html>
   <head>
     HTML header
-  </ head>
+  </head>
   <body>
     HTML content
-  </ body>
-</ html>
-</ pre>
+  </body>
+</html>
+</pre>

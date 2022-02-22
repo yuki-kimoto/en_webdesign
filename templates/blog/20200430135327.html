@@ -2,33 +2,33 @@
   <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
     <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop = "name"> Web design </ span>
-      </a>
+        <span itemprop = "name"> Web design </span>
+     </a>
       <meta itemprop = "position" content = "1" />
-    </ li>
+    </li>
     <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200427085612.html">
-        <span itemprop = "name"> CSS </ span>
-      </a>
+        <span itemprop = "name"> CSS </span>
+     </a>
       <meta itemprop = "position" content = "2" />
-    </ li>
+    </li>
     <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200429173137.html">
-        <span itemprop = "name"> Pseudo class </ span>
-      </a>
+        <span itemprop = "name"> Pseudo class </span>
+     </a>
       <meta itemprop = "position" content = "2" />
-    </ li>
+    </li>
     <li>
       here
-    </ li>
-  </ ul>
-</ div>
+    </li>
+  </ul>
+</div>
 
-<h2> nth-child pseudo-class --Introduction to CSS [CSS3 compatible] </ h2>
+<h2> nth-child pseudo-class --Introduction to CSS [CSS3 compatible] </h2>
 
-The nth-child pseudo-class is a pseudo-class for setting the style by specifying the position of a specific sibling from the perspective of the parent. Often used in combination with the <a href="/blog/20200306145137.html"> li tag </a>.
+The nth-child pseudo-class is a pseudo-class for setting the style by specifying the position of a specific sibling from the perspective of the parent. Often used in combination with the <a href="/blog/20200306145137.html"> li tag</a>.
 
-<h4> Apply style only to even numbers </ h4>
+<h4> Apply style only to even numbers </h4>
 
 To apply the style only to even numbers, use ": nth-child (2n)". Specifies the case where the sibling position is a multiple of 2.
 
@@ -36,39 +36,39 @@ To apply the style only to even numbers, use ": nth-child (2n)". Specifies the c
   .my_list1 li: nth-child (2n) {
     background: #ddd;
   }
-</ style>
+</style>
 
 <div class = "my_list1">
   <ul>
-    <li> 1 </ li>
-    <li> 2 </ li>
-    <li> 3 </ li>
-    <li> 4 </ li>
-    <li> 5 </ li>
-    <li> 6 </ li>
-  </ ul>
-</ div>
+    <li> 1 </li>
+    <li> 2 </li>
+    <li> 3 </li>
+    <li> 4 </li>
+    <li> 5 </li>
+    <li> 6 </li>
+  </ul>
+</div>
 
 <pre>
 <style>
   .my_list1 li: nth-child (2n) {
     background: #ddd;
   }
-</ style>
+</style>
 
 <div class = "my_list1">
   <ul>
-    <li> 1 </ li>
-    <li> 2 </ li>
-    <li> 3 </ li>
-    <li> 4 </ li>
-    <li> 5 </ li>
-    <li> 6 </ li>
-  </ ul>
-</ div>
-</ pre>
+    <li> 1 </li>
+    <li> 2 </li>
+    <li> 3 </li>
+    <li> 4 </li>
+    <li> 5 </li>
+    <li> 6 </li>
+  </ul>
+</div>
+</pre>
 
-<h4> Apply style only to odd numbers </ h4>
+<h4> Apply style only to odd numbers </h4>
 
 To apply the style only to odd numbers, use ": nth-child (2n + 1)". Specifies the case where the sibling position is "multiple of 2 + 1".
 
@@ -76,38 +76,38 @@ To apply the style only to odd numbers, use ": nth-child (2n + 1)". Specifies th
   .my_list2 li: nth-child (2n + 1) {
     background: #ddd;
   }
-</ style>
+</style>
 
 <div class = "my_list2">
   <ul>
-    <li> 1 </ li>
-    <li> 2 </ li>
-    <li> 3 </ li>
-    <li> 4 </ li>
-    <li> 5 </ li>
-    <li> 6 </ li>
-  </ ul>
-</ div>
+    <li> 1 </li>
+    <li> 2 </li>
+    <li> 3 </li>
+    <li> 4 </li>
+    <li> 5 </li>
+    <li> 6 </li>
+  </ul>
+</div>
 
 <pre>
 <style>
   .my_list2 li: nth-child (2n + 1) {
     background: #ddd;
   }
-</ style>
+</style>
 
 <div class = "my_list2">
   <ul>
-    <li> 1 </ li>
-    <li> 2 </ li>
-    <li> 3 </ li>
-    <li> 4 </ li>
-    <li> 5 </ li>
-    <li> 6 </ li>
-  </ ul>
-</ div>
-</ pre>
+    <li> 1 </li>
+    <li> 2 </li>
+    <li> 3 </li>
+    <li> 4 </li>
+    <li> 5 </li>
+    <li> 6 </li>
+  </ul>
+</div>
+</pre>
 
-<h3> Details of nth-child pseudo-class </ h3>
+<h3> Details of nth-child pseudo-class </h3>
 
-<a href="https://developer.mozilla.org/ja/docs/Web/CSS/:nth-child">: nth-child () pseudo-class --MDN web docs </a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/:nth-child">: nth-child () pseudo-class --MDN web docs</a>

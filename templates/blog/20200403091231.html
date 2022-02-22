@@ -2,25 +2,25 @@
   <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
     <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop = "name"> Web design </ span>
-      </a>
+        <span itemprop = "name"> Web design </span>
+     </a>
       <meta itemprop = "position" content = "1" />
-    </ li>
+    </li>
     <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200427085612.html">
-        <span itemprop = "name"> CSS </ span>
-      </a>
+        <span itemprop = "name"> CSS </span>
+     </a>
       <meta itemprop = "position" content = "2" />
-    </ li>
+    </li>
     <li>
       here
-    </ li>
-  </ ul>
-</ div>
+    </li>
+  </ul>
+</div>
 
-<h2> [CSS3] opacity --Set opacity --Introduction to CSS [CSS3 compatible] </ h2>
+<h2> [CSS3] opacity --Set opacity --Introduction to CSS [CSS3 compatible] </h2>
 
-To set the opacity of an element, set <b> opacity </ b> in the style sheet (CSS). The maximum opacity is 1 and the minimum opacity is 0. In other words, the closer it gets to 0, the more transparent it becomes.
+To set the opacity of an element, set <b> opacity </b> in the style sheet (CSS). The maximum opacity is 1 and the minimum opacity is 0. In other words, the closer it gets to 0, the more transparent it becomes.
 
 <pre>
 / * Opacity 1-Same as default * /
@@ -37,56 +37,56 @@ opacity: 0.1;
 
 / * Opacity 0-Completely transparent * /
 opacity: 0;
-</ pre>
+</pre>
 
 Let's actually set the opacity. Those with 0 opacity disappear completely and are invisible.
 
 <div>
-<div style = "opacity: 1;"> Opacity 1-Same as default </ div>
+<div style = "opacity: 1;"> Opacity 1-Same as default </div>
 
-<div style = "opacity: 0.8;"> Opacity 0.8 --Slightly more transparent and shiny </ div>
+<div style = "opacity: 0.8;"> Opacity 0.8 --Slightly more transparent and shiny </div>
 
-<div style = "opacity: 0.4;"> Opacity 0.4-Increased transparency </ div>
+<div style = "opacity: 0.4;"> Opacity 0.4-Increased transparency </div>
 
-<div style = "opacity: 0.1;"> Opacity 0.1-fading </ div>
+<div style = "opacity: 0.1;"> Opacity 0.1-fading </div>
 
-<div style = "opacity: 0;"> Opacity 0-Completely transparent </ div>
-</ div>
+<div style = "opacity: 0;"> Opacity 0-Completely transparent </div>
+</div>
 
 <pre>
-<div style = "opacity: 1;"> Opacity 1-Same as default </ div>
+<div style = "opacity: 1;"> Opacity 1-Same as default </div>
 
-<div style = "opacity: 0.8;"> Opacity 0.8 --Slightly more transparent and shiny </ div>
+<div style = "opacity: 0.8;"> Opacity 0.8 --Slightly more transparent and shiny </div>
 
-<div style = "opacity: 0.4;"> Opacity 0.4-Increased transparency </ div>
+<div style = "opacity: 0.4;"> Opacity 0.4-Increased transparency </div>
 
-<div style = "opacity: 0.1;"> Opacity 0.1-fading </ div>
+<div style = "opacity: 0.1;"> Opacity 0.1-fading </div>
 
-<div style = "opacity: 0;"> Opacity 0-Completely transparent </ div>
-</ pre>
+<div style = "opacity: 0;"> Opacity 0-Completely transparent </div>
+</pre>
 
-<h3> Transparency applies to the entire element </ h3>
+<h3> Transparency applies to the entire element </h3>
 
 
 Transparency applies to the entire element. That is, transparency is applied, including everything, including backgrounds and borders.
 
-<div style = "opacity: 1; background: blue; border: 1px solid black;"> Opacity 1 --Same as default </ div>
+<div style = "opacity: 1; background: blue; border: 1px solid black;"> Opacity 1 --Same as default </div>
 
-<div style = "opacity: 0.8; background: blue; border: 1px solid black;"> Opacity 0.8 --Slightly more transparent and shiny </ div>
+<div style = "opacity: 0.8; background: blue; border: 1px solid black;"> Opacity 0.8 --Slightly more transparent and shiny </div>
 
-<div style = "opacity: 0.4; background: blue; border: 1px solid black;"> Opacity 0.4 --Increased transparency </ div>
+<div style = "opacity: 0.4; background: blue; border: 1px solid black;"> Opacity 0.4 --Increased transparency </div>
 
-<div style = "opacity: 0.1; background: blue; border: 1px solid black;"> Opacity 0.1 --disappearing </ div>
+<div style = "opacity: 0.1; background: blue; border: 1px solid black;"> Opacity 0.1 --disappearing </div>
 
-<div style = "opacity: 0; background: blue; border: 1px solid black;"> Opacity 0 --Completely transparent </ div>
+<div style = "opacity: 0; background: blue; border: 1px solid black;"> Opacity 0 --Completely transparent </div>
 
-<h3> Make the button glow when hovering </ h3>
+<h3> Make the button glow when hovering </h3>
 
 Let's make the button glow when hovering with the opacity setting. This is an easy way to let the user know that you are doing the action of hovering.
 
 <style>
   .button_hover {
-    width: calc (100% -30px);
+    width: calc (100%-30px);
     max-width: 600px;
     margin: 0 auto;
   }
@@ -102,16 +102,16 @@ Let's make the button glow when hovering with the opacity setting. This is an ea
   .button_hover a: hover {
     opacity: 0.8;
   }
-</ style>
+</style>
 
 <div class = "button_hover">
-  <a href="/"> To the top </a>
-</ div>
+  <a href="/"> To the top</a>
+</div>
 
 <pre>
 <style>
   .button_hover {
-    width: calc (100% -30px);
+    width: calc (100%-30px);
     max-width: 600px;
     margin: 0 auto;
   }
@@ -127,9 +127,9 @@ Let's make the button glow when hovering with the opacity setting. This is an ea
   .button_hover a: hover {
     opacity: 0.8;
   }
-</ style>
+</style>
 
 <div class = "button_hover">
-  <a href="/"> To the top </a>
-</ div>
-</ pre>
+  <a href="/"> To the top</a>
+</div>
+</pre>

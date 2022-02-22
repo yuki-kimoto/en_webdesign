@@ -1,8 +1,8 @@
-<h2> Create a menu with a fixed length on one side </ h2>
+<h2> Create a menu with a fixed length on one side </h2>
 
 Learn how to create a fixed-length menu on one side. In HTML5 and CSS3, it is now possible to calculate the window width, so we will use this. Menus are represented using the ul tag in a fixed-length sidebar.
 
-<h3> Creating a menu with a fixed length on one side </ h3>
+<h3> Creating a menu with a fixed length on one side </h3>
 
 Let's create a menu with a fixed length on one side. The width of the menu is fixed at 200px and is placed on the right side. The content on the left will grow automatically. In consideration of the case of considering SEO measures, write the content first and write the menu after that.
 
@@ -17,21 +17,21 @@ The point is to calculate the window width using calc. Using "display: flex" is 
     background: #afa
   }
   .sidefix_menu_main {
-    width: calc (100% --200px);
+    width: calc (100%--200px);
     background: #faf;
   }
-</ style>
+</style>
 
 <div class = "sidefix_menu">
   <div class = "sidefix_menu_main">
     content
-  </ div>
+  </div>
   <ul>
-    <li> Curry </ li>
-    <li> apples </ li>
-    <li> Yakiniku </ li>
-  </ ul>
-</ div>
+    <li> Curry </li>
+    <li> apples </li>
+    <li> Yakiniku </li>
+  </ul>
+</div>
 
 This is a sample that makes one side a fixed length menu.
 
@@ -45,24 +45,24 @@ This is a sample that makes one side a fixed length menu.
     background: #afa
   }
   .sidefix_menu_main {
-    width: calc (100% --200px);
+    width: calc (100%--200px);
     background: #faf;
   }
-</ style>
+</style>
 
 <div class = "sidefix_menu">
   <div class = "sidefix_menu_main">
     content
-  </ div>
+  </div>
   <ul>
-    <li> Curry </ li>
-    <li> apples </ li>
-    <li> Yakiniku </ li>
-  </ ul>
-</ div>
-</ pre>
+    <li> Curry </li>
+    <li> apples </li>
+    <li> Yakiniku </li>
+  </ul>
+</div>
+</pre>
 
-<h3> How can I swap the left and right sides of the menu? </ H3>
+<h3> How can I swap the left and right sides of the menu? </H3>
 
 To switch the left and right of the menu, just specify "flex-flow: row-reverse;" under the part where "display: flex" is specified.
 
@@ -78,23 +78,23 @@ Considering the case where SEO measures are also considered, even if the menu co
     background: #afa
   }
   .sidefix_menu__reverse_main {
-    width: calc (100% --200px);
+    width: calc (100%--200px);
     background: #faf;
   }
-</ style>
+</style>
 
 This is a sample that swaps the left and right of the menu.
 
 <div class = "sidefix_menu_reverse">
   <div class = "sidefix_menu__reverse_main">
     content
-  </ div>
+  </div>
   <ul>
-    <li> Curry </ li>
-    <li> apples </ li>
-    <li> Yakiniku </ li>
-  </ ul>
-</ div>
+    <li> Curry </li>
+    <li> apples </li>
+    <li> Yakiniku </li>
+  </ul>
+</div>
 
 <pre>
 <style>
@@ -107,19 +107,19 @@ This is a sample that swaps the left and right of the menu.
     background: #afa
   }
   .sidefix_menu__reverse_main {
-    width: calc (100% --200px);
+    width: calc (100%--200px);
     background: #faf;
   }
-</ style>
+</style>
 
 <div class = "sidefix_menu_reverse">
   <div class = "sidefix_menu__reverse_main">
     content
-  </ div>
+  </div>
   <ul>
-    <li> Curry </ li>
-    <li> apples </ li>
-    <li> Yakiniku </ li>
-  </ ul>
-</ div>
-</ pre>
+    <li> Curry </li>
+    <li> apples </li>
+    <li> Yakiniku </li>
+  </ul>
+</div>
+</pre>

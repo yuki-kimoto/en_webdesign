@@ -1,66 +1,64 @@
-<h2> Embed google map in page </ h2>
+<h2> Embed google map in page </h2>
 
 Let's display the google map in the page.
 
-<h3> google map site </ h3>
+<h3> google map site </h3>
 
 Let's go to the google map site.
 
-<a href="https://www.google.co.jp/maps"> google map </a>
+<a href="https://www.google.co.jp/maps"> google map</a>
 
-<h3> Enter your address </ h3>
+<h3> Enter your address </h3>
 
 Enter your address in the search area.
 
 <img src = "/ images / google-map / google-map-search.png">
 
-<h3> Click the share button </ h3>
+<h3> Click the share button </h3>
 
 Click the share button.
 
 <img src = "/ images / google-map / google-map-share.png">
 
-<h3> Click Embed Map </ h3>
+<h3> Click Embed Map </h3>
 
 Click Embed Map.
 
 <img src = "/ images / google-map / google-map-emb.png">
 
-<h3> Click Copy HTML </ h3>
+<h3> Click Copy HTML </h3>
 
 Click Copy HTML.
 
 <img src = "/ images / google-map / google-map-copyhtml.png">
 
-<h3> Embed in your site </ h3>
+<h3> Embed in your site </h3>
 
 Paste the HTML you copied to your site.
 
-<h3> How to make the map width of google map 100%? </ H3>
+<h3> How to make the map width of google map 100%? </H3>
 
 To make the map width 100%, use CSS to set "width: 100%;". Let's delete the original width attribute.
 
 <pre>
-<!-Before change->
-    <iframe src = "https://www.google.com/maps/embed?pb=! 1m18! 1m12! 1m3! 1d3241.693119529023! 2d139.7520306508713! 3d35.65993178010213! 2m3! 1f0! 2f0! 3f0! 3m2! 1i1024! 2i768! 4f13.1! 3m3! 1m2! 1s0x60188bc0efc0a2f9% 3A0x57c8c1c9b9e6a938! 2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT! 5e0! 3m2! 1sja! 2sjp! 4v1580941259536! 5m2! 1sja! 2sjp "width =" 600 "height =" 400 "frameborder =" 0 "style = "border: 0;" allowfullscreen = ""> </ iframe>
+<!-Before change->    <iframe src = "https://www.google.com/maps/embed?pb=! 1m18! 1m12! 1m3! 1d3241.693119529023! 2d139.7520306508713! 3d35.65993178010213! 2m3! 1f0! 2f0! 3f0! 3m2! 1i1024! 2i768! 4f13.1! 3m3! 1m2! 1s0x60188bc0efc0a2f9%3A0x57c8c1c9b9e6a938! 2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT! 5e0! 3m2! 1sja! 2sjp! 4v1580941259536! 5m2! 1sja! 2sjp "width =" 600 "height =" 400 "frameborder =" 0 "style = "border: 0;" allowfullscreen = ""> </iframe>
     
-<!-After change->
-    <iframe style = "width: 100%;" src = "https://www.google.com/maps/embed? pb =! 1m18! 1m12! 1m3! 1d3241.693119529023! 2d139.7520306508713! 3d35.65993178010213! 2m3 ! 1f0! 2f0! 3f0! 3m2! 1i1024! 2i768! 4f13.1! 3m3! 1m2! 1s0x60188bc0efc0a2f9% 3A0x57c8c1c9b9e6a938! 2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT! 5e0! 3m2! 1sja! 2sjp! 4v1580941259536! 5m2! 1sja! 2sjp "height =" 400 "frameborder = "0" style = "border: 0;" allowfullscreen = ""> </ iframe>
-</ pre>
+<!-After change->    <iframe style = "width: 100%;" src = "https://www.google.com/maps/embed? pb =! 1m18! 1m12! 1m3! 1d3241.693119529023! 2d139.7520306508713! 3d35.65993178010213! 2m3 ! 1f0! 2f0! 3f0! 3m2! 1i1024! 2i768! 4f13.1! 3m3! 1m2! 1s0x60188bc0efc0a2f9%3A0x57c8c1c9b9e6a938! 2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT! 5e0! 3m2! 1sja! 2sjp! 4v1580941259536! 5m2! 1sja! 2sjp "height =" 400 "frameborder = "0" style = "border: 0;" allowfullscreen = ""> </iframe>
+</pre>
 
-<h3> How to prevent google map from reacting when scrolling with google map? </ h3>
+<h3> How to prevent google map from reacting when scrolling with google map? </h3>
 
 In the initial state, when scrolling, "To zoom the map, hold down the Ctrl key and scroll" is displayed, the map is enlarged, and the google map reacts unintentionally. ..
 
 There are ways to prevent this. Specify "none" for "pointer-events" in CSS.
 
 <pre>
-    <iframe style = "pointer-events: none;" src = "https://www.google.com/maps/embed? pb =! 1m18! 1m12! 1m3! 1d3241.693119529023! 2d139.7520306508713! 3d35.65993178010213! 2m3! 1f0! 2f0! 3f0! 3m2! 1i1024! 2i768! 4f13.1! 3m3! 1m2! 1s0x60188bc0efc0a2f9% 3A0x57c8c1c9b9e6a938! 2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT! 5e0! 3m2! 1sja! 2sjp! 4v1580941259536! 5m2! 1sja! 2sjp "height =" 400 "frameborder = "0" style = "border: 0;" allowfullscreen = ""> </ iframe>
+    <iframe style = "pointer-events: none;" src = "https://www.google.com/maps/embed? pb =! 1m18! 1m12! 1m3! 1d3241.693119529023! 2d139.7520306508713! 3d35.65993178010213! 2m3! 1f0! 2f0! 3f0! 3m2! 1i1024! 2i768! 4f13.1! 3m3! 1m2! 1s0x60188bc0efc0a2f9%3A0x57c8c1c9b9e6a938! 2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT! 5e0! 3m2! 1sja! 2sjp! 4v1580941259536! 5m2! 1sja! 2sjp "height =" 400 "frameborder = "0" style = "border: 0;" allowfullscreen = ""> </iframe>
 
-</ pre>
+</pre>
 
 If the width is set to 100%, describe it together.
 
 <pre>
-    <iframe style = "width: 100%; pointer-events: none;" src = "https://www.google.com/maps/embed?pb=! 1m18! 1m12! 1m3! 1d3241.693119529023! 2d139.7520306508713 ! 3d35.65993178010213! 2m3! 1f0! 2f0! 3f0! 3m2! 1i1024! 2i768! 4f13.1! 3m3! 1m2! 1s0x60188bc0efc0a2f9% 3A0x57c8c1c9b9e6a938! 2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT! 5e0! 3m2! 1sja! 2sjp! 4v1580941259536! 5m2! 1sja! 2sjp "height = "400" frameborder = "0" style = "border: 0;" allowfullscreen = ""> </ iframe>
-</ pre>
+    <iframe style = "width: 100%; pointer-events: none;" src = "https://www.google.com/maps/embed?pb=! 1m18! 1m12! 1m3! 1d3241.693119529023! 2d139.7520306508713 ! 3d35.65993178010213! 2m3! 1f0! 2f0! 3f0! 3m2! 1i1024! 2i768! 4f13.1! 3m3! 1m2! 1s0x60188bc0efc0a2f9%3A0x57c8c1c9b9e6a938! 2z44CSMTA1LTAwMTIg5p2x5Lqs6YO95riv5Yy66Iqd5aSn6ZaA77yR5LiB55uu77yS4oiS77yS77yT! 5e0! 3m2! 1sja! 2sjp! 4v1580941259536! 5m2! 1sja! 2sjp "height = "400" frameborder = "0" style = "border: 0;" allowfullscreen = ""> </iframe>
+</pre>

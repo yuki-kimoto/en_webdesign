@@ -1,199 +1,199 @@
-<h2> [HTML5] Radio button-Form part to select an item </ h2>
+<h2> [HTML5] Radio button-Form part to select an item </h2>
 
 Radio buttons are form parts for selecting items. Specify "type =" radio "" in the input tag. If you select one, the other selection will be canceled.
 
-  <b> Price </ b>
+  <b> Price </b>
   <input type = "radio" name = "price" value = "1000"> Less than 1000 yen
   <input type = "radio" name = "price" value = "2000"> From 1000 yen to 2000 yen
   <input type = "radio" name = "price" value = "3000"> From 2000 yen to 3000 yen
   <input type = "radio" name = "price" value = "99999999"> 3000 yen or more
 
 <pre>
-<b> Price </ b>
+<b> Price </b>
 <input type = "radio" name = "price" value = "1000"> Less than 1000 yen
 <input type = "radio" name = "price" value = "2000"> From 1000 yen to 2000 yen
 <input type = "radio" name = "price" value = "3000"> From 2000 yen to 3000 yen
 <input type = "radio" name = "price" value = "99999999"> 3000 yen or more
-</ pre>
+</pre>
 
 You can select the item. Since it is a form part, it is common to give it a name with the name attribute. Note that the radio button does not include the label part of the item, only the selection part is the radio button.
 
 Specify the value you want to send to the server in the value attribute.
 
-Radio buttons have the same purpose as <a href="/blog/20200319083358.html"> select field (select) </a>, but if there are few items, make them radio buttons so that they can be seen from the beginning. Is also good.
+Radio buttons have the same purpose as <a href="/blog/20200319083358.html"> select field (select)</a>, but if there are few items, make them radio buttons so that they can be seen from the beginning. Is also good.
 
-<h3> Radio buttons are inline block elements </ h3>
+<h3> Radio buttons are inline block elements </h3>
 
 Radio buttons are inline block elements by default. Since it is an inline block element, it flows to the left.
 
 <div>
-  <b> Price </ b>
+  <b> Price </b>
   <input type = "radio" name = "price" value = "1000"> Less than 1000 yen
   <input type = "radio" name = "price" value = "2000"> From 1000 yen to 2000 yen
   <input type = "radio" name = "price" value = "3000"> From 2000 yen to 3000 yen
   <input type = "radio" name = "price" value = "99999999"> 3000 yen or more
-</ div>
+</div>
 
 <pre>
-  <b> Price </ b>
+  <b> Price </b>
   <input type = "radio" name = "price" value = "1000"> Less than 1000 yen
   <input type = "radio" name = "price" value = "2000"> From 1000 yen to 2000 yen
   <input type = "radio" name = "price" value = "3000"> From 2000 yen to 3000 yen
   <input type = "radio" name = "price" value = "99999999"> 3000 yen or more
-</ pre>
+</pre>
 
-<h3> Check radio buttons in advance </ h3>
+<h3> Check radio buttons in advance </h3>
 
 If you want to check the radio button in advance, specify "checked =" checked "".
 
-  <b> Price </ b>
+  <b> Price </b>
   <input type = "radio" name = "price" value = "1000" checked = "checked"> Less than 1000 yen
   <input type = "radio" name = "price" value = "2000"> From 1000 yen to 2000 yen
   <input type = "radio" name = "price" value = "3000"> From 2000 yen to 3000 yen
   <input type = "radio" name = "price" value = "99999999"> 3000 yen or more
 
 <pre>
-<b> Price </ b>
+<b> Price </b>
 <input type = "radio" name = "price" value = "1000" checked = "checked"> Less than 1000 yen
 <input type = "radio" name = "price" value = "2000"> From 1000 yen to 2000 yen
 <input type = "radio" name = "price" value = "3000"> From 2000 yen to 3000 yen
 <input type = "radio" name = "price" value = "99999999"> 3000 yen or more
-</ pre>
+</pre>
 
-<h3> Focus when clicking the label of each item of the radio button </ h3>
+<h3> Focus when clicking the label of each item of the radio button </h3>
 
 Use the label tag to focus when you click the label on the heading of each item of the radio button, not just the radio button itself. Specify the name specified in the id attribute in the input tag in the for attribute of the label tag.
 
-  <b> Price </ b>
-  <input type = "radio" name = "price" id = "price1" value = "1000"> <label for = "price1"> less than 1000 yen </ label>
-  <input type = "radio" name = "price" id = "price2" value = "2000"> <label for = "price2"> From 1000 yen to 2000 yen </ label>
-  <input type = "radio" name = "price" id = "price3" value = "3000"> <label for = "price3"> From 2000 yen to 3000 yen </ label>
-  <input type = "radio" name = "price" id = "price4" value = "99999999"> <label for = "price4"> 3000 yen or more </ label>
+  <b> Price </b>
+  <input type = "radio" name = "price" id = "price1" value = "1000"> <label for = "price1"> less than 1000 yen </label>
+  <input type = "radio" name = "price" id = "price2" value = "2000"> <label for = "price2"> From 1000 yen to 2000 yen </label>
+  <input type = "radio" name = "price" id = "price3" value = "3000"> <label for = "price3"> From 2000 yen to 3000 yen </label>
+  <input type = "radio" name = "price" id = "price4" value = "99999999"> <label for = "price4"> 3000 yen or more </label>
 
 <pre>
-<b> Price </ b>
-<input type = "radio" name = "price" id = "price1" value = "1000"> <label for = "price1"> less than 1000 yen </ label>
-<input type = "radio" name = "price" id = "price2" value = "2000"> <label for = "price2"> From 1000 yen to 2000 yen </ label>
-<input type = "radio" name = "price" id = "price3" value = "3000"> <label for = "price3"> From 2000 yen to 3000 yen </ label>
-<input type = "radio" name = "price" id = "price4" value = "99999999"> <label for = "price4"> 3000 yen or more </ label>
-</ pre>
+<b> Price </b>
+<input type = "radio" name = "price" id = "price1" value = "1000"> <label for = "price1"> less than 1000 yen </label>
+<input type = "radio" name = "price" id = "price2" value = "2000"> <label for = "price2"> From 1000 yen to 2000 yen </label>
+<input type = "radio" name = "price" id = "price3" value = "3000"> <label for = "price3"> From 2000 yen to 3000 yen </label>
+<input type = "radio" name = "price" id = "price4" value = "99999999"> <label for = "price4"> 3000 yen or more </label>
+</pre>
 
 Try clicking on each price label. The corresponding radio button will be focused and selected.
 
-<h3> Get the value of the form's radio button with jQuery when submitting the form </ h3>
+<h3> Get the value of the form's radio button with jQuery when submitting the form </h3>
 
-This is a sample using <a href="/blog/20200219091414.html"> jQuery </a> to get the value of the radio button when the submit button is pressed. It is often used when sending a POST request with ajax. The acquired contents are displayed by alert.
+This is a sample using <a href="/blog/20200219091414.html"> jQuery</a> to get the value of the radio button when the submit button is pressed. It is often used when sending a POST request with ajax. The acquired contents are displayed by alert.
 
-<h4> How to get all the values ​​in a form </ h4>
+<h4> How to get all the values ​​in a form </h4>
 
 How to get all the values ​​in a form.
 
-<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </script>
 <script>
-  $ (function () {
-    $ (document) .on ('click','.form-text-field-all .submit_button', function () {
+  $(function () {
+    $(document) .on ('click','.form-text-field-all .submit_button', function () {
       
       / * How to get all the values ​​in a form * /
-      var data = $ (this) .closest ('form') .serialize ();
+      var data = $(this) .closest ('form') .serialize ();
       
       alert (data);
     });
   });
-</ script>
+</script>
 
 <div class = "form-text-field-all">
   <form>
-    <b> Price </ b>
+    <b> Price </b>
     <input type = "radio" name = "price" value = "1000"> Less than 1000 yen
     <input type = "radio" name = "price" value = "2000"> From 1000 yen to 2000 yen
     <input type = "radio" name = "price" value = "3000"> From 2000 yen to 3000 yen
     <input type = "radio" name = "price" value = "99999999"> 3000 yen or more
-    <button type = "button" class = "submit_button"> Submit </ button>
-  </ form>
-</ div>
+    <button type = "button" class = "submit_button"> Submit </button>
+  </form>
+</div>
 
 <pre>
-<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </script>
 <script>
-  $ (function () {
-    $ (document) .on ('click','.form-text-field-all .submit_button', function () {
+  $(function () {
+    $(document) .on ('click','.form-text-field-all .submit_button', function () {
       
       / * How to get all the values ​​in a form * /
-      var data = $ (this) .closest ('form') .serialize ();
+      var data = $(this) .closest ('form') .serialize ();
       
       alert (data);
     });
   });
-</ script>
+</script>
 
 <div class = "form-text-field-all">
   <form>
-    <b> Price </ b>
+    <b> Price </b>
     <input type = "radio" name = "price" value = "1000"> Less than 1000 yen
     <input type = "radio" name = "price" value = "2000"> From 1000 yen to 2000 yen
     <input type = "radio" name = "price" value = "3000"> From 2000 yen to 3000 yen
     <input type = "radio" name = "price" value = "99999999"> 3000 yen or more
-    <button type = "button" class = "submit_button"> Submit </ button>
-  </ form>
-</ div>
-</ pre>
+    <button type = "button" class = "submit_button"> Submit </button>
+  </form>
+</div>
+</pre>
 
-The reason for starting on ('click') from document is to support dynamic HTML rewriting. If you follow from the top of the document, it will work correctly even if the HTML part is dynamically rewritten. If "type =" button "" is specified for button, <a href="/blog/20200313095039.html"> behavior of submitting the button of the formCan be eliminated </a>.
+The reason for starting on ('click') from document is to support dynamic HTML rewriting. If you follow from the top of the document, it will work correctly even if the HTML part is dynamically rewritten. If "type =" button "" is specified for button, <a href="/blog/20200313095039.html"> behavior of submitting the button of the formCan be eliminated</a>.
 
-<h4> How to get the value of the specified radio button </ h4>
+<h4> How to get the value of the specified radio button </h4>
 
 How to get the value of the specified radio button. I'm only getting the price.
 
 <script>
-  $ (function () {
-    $ (document) .on ('click','.form-text-field-part .submit_button', function () {
+  $(function () {
+    $(document) .on ('click','.form-text-field-part .submit_button', function () {
       
       / * Get price * /
-      var price = $ (this) .closest ('form'). find ('[name = price]: checked'). val ();
+      var price = $(this) .closest ('form'). find ('[name = price]: checked'). val ();
       
       alert (price);
     });
   });
-</ script>
+</script>
 
 <div class = "form-text-field-part">
   <form>
-    <b> Price </ b>
+    <b> Price </b>
     <input type = "radio" name = "price" value = "1000"> Less than 1000 yen
     <input type = "radio" name = "price" value = "2000"> From 1000 yen to 2000 yen
     <input type = "radio" name = "price" value = "3000"> From 2000 yen to 3000 yen
     <input type = "radio" name = "price" value = "99999999"> 3000 yen or more
-    <button type = "button" class = "submit_button"> Submit </ button>
-  </ form>
-</ div>
+    <button type = "button" class = "submit_button"> Submit </button>
+  </form>
+</div>
 
 <pre>
-<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </script>
 <script>
-  $ (function () {
-    $ (document) .on ('click','.form-text-field-part .submit_button', function () {
+  $(function () {
+    $(document) .on ('click','.form-text-field-part .submit_button', function () {
       
       / * Get price * /
-      var price = $ (this) .closest ('form'). find ('[name = price]: checked'). val ();
+      var price = $(this) .closest ('form'). find ('[name = price]: checked'). val ();
       
       alert (price);
     });
   });
-</ script>
+</script>
 
 <div class = "form-text-field-part">
   <form>
-    <b> Price </ b>
+    <b> Price </b>
     <input type = "radio" name = "price" value = "1000"> Less than 1000 yen
     <input type = "radio" name = "price" value = "2000"> From 1000 yen to 2000 yen
     <input type = "radio" name = "price" value = "3000"> From 2000 yen to 3000 yen
     <input type = "radio" name = "price" value = "99999999"> 3000 yen or more
-    <button type = "button" class = "submit_button"> Submit </ button>
-  </ form>
-</ div>
-</ pre>
+    <button type = "button" class = "submit_button"> Submit </button>
+  </form>
+</div>
+</pre>
 
-<h3> Make the radio button an original design </ h3>
+<h3> Make the radio button an original design </h3>
 
 Radio buttons are easy to use with a mouse click, but on smartphones, they feel a little difficult to use.
 
@@ -241,23 +241,23 @@ Below is a sample of how to make a radio button an original design. The checked 
     padding: 10px 20px;
     cursor: pointer;
   }
-</ style>
+</style>
 
-  <b> Price </ b>
+  <b> Price </b>
   <ul class = "original_radio">
     <li>
-      <input type = "radio" name = "price" id = "original_price1" value = "1000"> <label for = "original_price1"> less than 1000 yen </ label>
-    </ li>
+      <input type = "radio" name = "price" id = "original_price1" value = "1000"> <label for = "original_price1"> less than 1000 yen </label>
+    </li>
     <li>
-      <input type = "radio" name = "price" id = "original_price2" value = "2000"> <label for = "original_price2"> From 1000 yen to 2000 yen </ label>
-    </ li>
+      <input type = "radio" name = "price" id = "original_price2" value = "2000"> <label for = "original_price2"> From 1000 yen to 2000 yen </label>
+    </li>
     <li>
-      <input type = "radio" name = "price" id = "original_price3" value = "3000"> <label for = "original_price3"> From 2000 yen to 3000 yen </ label>
-    </ li>
+      <input type = "radio" name = "price" id = "original_price3" value = "3000"> <label for = "original_price3"> From 2000 yen to 3000 yen </label>
+    </li>
     <li>
-      <input type = "radio" name = "price" id = "original_price4" value = "99999999"> <label for = "original_price4"> 3000 yen or more </ label>
-    </ li>
-  </ ul>
+      <input type = "radio" name = "price" id = "original_price4" value = "99999999"> <label for = "original_price4"> 3000 yen or more </label>
+    </li>
+  </ul>
 
 <pre>
 <style>
@@ -294,21 +294,21 @@ Below is a sample of how to make a radio button an original design. The checked 
     padding: 10px 20px;
     cursor: pointer;
   }
-</ style>
+</style>
 
-<b> Price </ b>
+<b> Price </b>
 <ul class = "original_radio">
   <li>
-    <input type = "radio" name = "price" id = "original_price1" value = "1000"> <label for = "original_price1"> less than 1000 yen </ label>
-  </ li>
+    <input type = "radio" name = "price" id = "original_price1" value = "1000"> <label for = "original_price1"> less than 1000 yen </label>
+  </li>
   <li>
-    <input type = "radio" name = "price" id = "original_price2" value = "2000"> <label for = "original_price2"> From 1000 yen to 2000 yen </ label>
-  </ li>
+    <input type = "radio" name = "price" id = "original_price2" value = "2000"> <label for = "original_price2"> From 1000 yen to 2000 yen </label>
+  </li>
   <li>
-    <input type = "radio" name = "price" id = "original_price3" value = "3000"> <label for = "original_price3"> From 2000 yen to 3000 yen </ label>
-  </ li>
+    <input type = "radio" name = "price" id = "original_price3" value = "3000"> <label for = "original_price3"> From 2000 yen to 3000 yen </label>
+  </li>
   <li>
-    <input type = "radio" name = "price" id = "original_price4" value = "99999999"> <label for = "original_price4"> 3000 yen or more </ label>
-  </ li>
-</ ul>
-</ pre>
+    <input type = "radio" name = "price" id = "original_price4" value = "99999999"> <label for = "original_price4"> 3000 yen or more </label>
+  </li>
+</ul>
+</pre>

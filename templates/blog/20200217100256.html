@@ -1,4 +1,4 @@
-<h2> How to easily create a multi-column table on a PC and a single-column table on a smartphone </ h2>
+<h2> How to easily create a multi-column table on a PC and a single-column table on a smartphone </h2>
 
 I will explain how to easily create a multi-column table on a PC and a single-column table on a smartphone.
 
@@ -6,89 +6,89 @@ The biggest problem with PC display and smartphone display is that it is very di
 
 Explains how to do this easily with a short description. You don't have to worry about even or odd numbers of items.
 
-<h3> Multi-column display on PC </ h3>
+<h3> Multi-column display on PC </h3>
 
 Use the table tag and "border-collapse: collapse;" for multi-column display with borders on the PC. "Border-collapse: collapse;" is a function that combines adjacent borders into one. The width of the table must be specified to accommodate smartphone display. In this sample, it is set to 100%.
 
 <table style = "border-collapse: collapse; width: 100%;">
   <tr>
-    <td style = "border: 1px solid orange;"> Item 1 </ td>
-    <td style = "border: 1px solid orange;"> Item 2 </ td>
-  </ tr>
+    <td style = "border: 1px solid orange;"> Item 1 </td>
+    <td style = "border: 1px solid orange;"> Item 2 </td>
+  </tr>
   <tr>
-    <td style = "border: 1px solid orange;"> Item 3 </ td>
-    <td style = "border: 1px solid orange;"> Item 4 </ td>
-  </ tr>
-</ table>
+    <td style = "border: 1px solid orange;"> Item 3 </td>
+    <td style = "border: 1px solid orange;"> Item 4 </td>
+  </tr>
+</table>
 
 <pre>
 <table style = "border-collapse: collapse; width: 100%;">
   <tr>
-    <td style = "border: 1px solid orange;"> Item 1 </ td>
-    <td style = "border: 1px solid orange;"> Item 2 </ td>
-  </ tr>
+    <td style = "border: 1px solid orange;"> Item 1 </td>
+    <td style = "border: 1px solid orange;"> Item 2 </td>
+  </tr>
   <tr>
-    <td style = "border: 1px solid orange;"> Item 3 </ td>
-    <td style = "border: 1px solid orange;"> Item 4 </ td>
-  </ tr>
-</ table>
-</ pre>
+    <td style = "border: 1px solid orange;"> Item 3 </td>
+    <td style = "border: 1px solid orange;"> Item 4 </td>
+  </tr>
+</table>
+</pre>
 
-<h3> Singular column display on smartphones </ h3>
+<h3> Singular column display on smartphones </h3>
 
 To display a singular column on a smartphone, first set the td tag to "display: block;". Then, the function of the table cell of td is lost and it becomes just a block element, and the width becomes 100%. The effect of "border-collapse: collapse;" is lost and the borders are doubled.
 
 <table style = "border-collapse: collapse; width: 100%;">
   <tr>
-    <td style = "display: block; border: 1px solid orange;"> Item 1 </ td>
-    <td style = "display: block; border: 1px solid orange;"> Item 2 </ td>
-  </ tr>
+    <td style = "display: block; border: 1px solid orange;"> Item 1 </td>
+    <td style = "display: block; border: 1px solid orange;"> Item 2 </td>
+  </tr>
   <tr>
-    <td style = "display: block; border: 1px solid orange;"> Item 3 </ td>
-    <td style = "display: block; border: 1px solid orange;"> Item 4 </ td>
-  </ tr>
-</ table>
+    <td style = "display: block; border: 1px solid orange;"> Item 3 </td>
+    <td style = "display: block; border: 1px solid orange;"> Item 4 </td>
+  </tr>
+</table>
 
 <pre>
 <table style = "border-collapse: collapse; width: 100%;">
   <tr>
-    <td style = "display: block; border: 1px solid orange;"> Item 1 </ td>
-    <td style = "display: block; border: 1px solid orange;"> Item 2 </ td>
-  </ tr>
+    <td style = "display: block; border: 1px solid orange;"> Item 1 </td>
+    <td style = "display: block; border: 1px solid orange;"> Item 2 </td>
+  </tr>
   <tr>
-    <td style = "display: block; border: 1px solid orange;"> Item 3 </ td>
-    <td style = "display: block; border: 1px solid orange;"> Item 4 </ td>
-  </ tr>
-</ table>
-</ pre>
+    <td style = "display: block; border: 1px solid orange;"> Item 3 </td>
+    <td style = "display: block; border: 1px solid orange;"> Item 4 </td>
+  </tr>
+</table>
+</pre>
 
 Then remove the border below the td tag and underline it below the table tag.
 
 <table style = "border-collapse: collapse; width: 100%; border-bottom: 1px solid orange;">
   <tr>
-    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 1 </ td>
-    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 2 </ td>
-  </ tr>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 1 </td>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 2 </td>
+  </tr>
   <tr>
-    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 3 </ td>
-    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 4 </ td>
-  </ tr>
-</ table>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 3 </td>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 4 </td>
+  </tr>
+</table>
 
 <pre>
 <table style = "border-collapse: collapse; width: 100%; border-bottom: 1px solid orange;">
   <tr>
-    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 1 </ td>
-    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 2 </ td>
-  </ tr>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 1 </td>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 2 </td>
+  </tr>
   <tr>
-    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 3 </ td>
-    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 4 </ td>
-  </ tr>
-</ table>
-</ pre>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 3 </td>
+    <td style = "display: block; border: 1px solid orange; border-bottom: none;"> Item 4 </td>
+  </tr>
+</table>
+</pre>
 
-Isn't it better not to use the <h3> table tag in responsive design? </ h3>
+Isn't it better not to use the <h3> table tag in responsive design? </h3>
 
 Isn't it better not to use the table tag in responsive design?
 

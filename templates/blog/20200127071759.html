@@ -1,8 +1,8 @@
-<h2> How to set diagonal stripes as background color </ h2>
+<h2> How to set diagonal stripes as background color </h2>
 
 This is a method to set the diagonal stripe as the background color. You can set the diagonal stripes as the background color by creating a large diagonal gradient that repeats twice and setting the background size to a small value.
 
-<h3> CSS to set diagonal stripes as background color </ h3>
+<h3> CSS to set diagonal stripes as background color </h3>
 
 CSS that sets diagonal stripes as the background color. The stripe width is 1px.
 
@@ -12,18 +12,18 @@ CSS that sets diagonal stripes as the background color. The stripe width is 1px.
       background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
       background-size: 4px 4px;
     }
-  </ style>
+  </style>
   <div class = "naname_stripe">
     Diagonal stripe background color
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
 background-size: 4px 4px;
-</ pre>
+</pre>
 
-<h3> How to change the stripe color? </ H3>
+<h3> How to change the stripe color? </H3>
 
 #fff is white at intervals. Let's change the two "#DBEDFF" after that.
 
@@ -33,18 +33,18 @@ background-size: 4px 4px;
       background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, red 25%, red 50%);
       background-size: 4px 4px;
     }
-  </ style>
+  </style>
   <div class = "naname_stripe_red">
     Diagonal stripe background color
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, red 25%, red 50%);
 background-size: 4px 4px;
-</ pre>
+</pre>
 
-<h3> How to change the stripe width </ h3>
+<h3> How to change the stripe width </h3>
 
 It can be adjusted by using background-size.
 
@@ -54,16 +54,16 @@ It can be adjusted by using background-size.
       background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
       background-size: 8px 8px;
     }
-  </ style>
+  </style>
   <div class = "naname_stripe_8px">
     Diagonal stripe background color-stripes 2px
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
 background-size: 8px 8px;
-</ pre>
+</pre>
 
 <div>
   <style>
@@ -71,18 +71,18 @@ background-size: 8px 8px;
       background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
       background-size: 16px 16px;
     }
-  </ style>
+  </style>
   <div class = "naname_stripe_16px">
     Diagonal stripe background color-stripes 4px
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
 background-size: 16px 16px;
-</ pre>
+</pre>
 
-<h3> What happens if I don't specify the background size? </ H3>
+<h3> What happens if I don't specify the background size? </H3>
 
 It will be like this.
 
@@ -91,14 +91,14 @@ It will be like this.
     .naname_stripe_nosize {
       background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
     }
-  </ style>
+  </style>
   <div class = "naname_stripe_nosize">
     No background size
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 background: repeating-linear-gradient (-45deg, #fff 0%, #fff 25%, #DBEDFF 25%, #DBEDFF 50%);
-</ pre>
+</pre>
 
 If you specify 4px, the stripe width will be 1px because you are trying to put such a background in a 4px square.

@@ -1,4 +1,4 @@
-<h2> Introduction to flex layout </ h2>
+<h2> Introduction to flex layout </h2>
 
 An introduction to layouts using HTML5 and CSS3 flex layouts.
 
@@ -9,42 +9,42 @@ As an auxiliary goal, we aim to be simple in design without using the bug-steppi
 The basic policy is to use width whenever you specify a width. Perhaps because width is calculated deterministically, it is highly compatible between browsers. Do not use calc division.
 The goal is the optimal balance of convenience, readability, portability and simplicity.
 
-<h3> Block element behavior by div </ h3>
+<h3> Block element behavior by div </h3>
 
 Before we first look at the effects of flex layouts, let's understand how divs work with block elements.
 
 <div style = "background: #fee">
   Grilled meat
-</ div>
+</div>
 
 <pre>
 <div style = "background: #eef">
   Grilled meat
-</ div>
-</ pre>
+</div>
+</pre>
 
-The block element stretches 100% horizontally. Let's understand this first. A div is a block element and by default stretches 100% horizontally.
+The block element stretches 100%horizontally. Let's understand this first. A div is a block element and by default stretches 100%horizontally.
 
 Think of the CSS default value for a div as:
 
 <pre>
 display: block;
 width: 100%;
-</ pre>
+</pre>
 
-<h3> Specify flex layout </ h3>
+<h3> Specify flex layout </h3>
 
 Flex Layout Specifies "display: flex". What will happen?
 
 <div style = "background: #fee; display: flex;">
   Grilled meat
-</ div>
+</div>
 
 <pre>
 <div style = "background: #eef; display: flex;">
   Grilled meat
-</ div>
-</ pre>
+</div>
+</pre>
 
 What? Nothing happens.
 
@@ -52,89 +52,89 @@ In fact, "dispaly: flex" is different from "display: inline-block" and "display:
 
 Think of "display: flex" as having an effect on child elements. It seems that something is effective for yakiniku, but I can't confirm it as it is.
 
-<h3> Effect of flex layout on child elements </ h3>
+<h3> Effect of flex layout on child elements </h3>
 
 Let's add a child element and see the effect of the flex layout. Let's compare it even if you don't use the flex layout.
 
-<h4> No flex layout </ h4>
+<h4> No flex layout </h4>
 
-Without the flex layout, the div is a block element, so the child elements are also 100% wide.
+Without the flex layout, the div is a block element, so the child elements are also 100%wide.
 
 <div style = "background: #fee;">
   <div style = "background: red;">
     Grilled meat
-  </ div>
+  </div>
   <div style = "background: green;">
     Yakitori
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "background: #fee;">
   <div style = "background: red;">
     Grilled meat
-  </ div>
+  </div>
   <div style = "background: green;">
     Yakitori
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>
 
-<h4> With flex layout </ h4>
+<h4> With flex layout </h4>
 
 What happens if you use a flex layout?
 
 <div style = "background: #fee; display: flex;">
   <div style = "background: red;">
     Grilled meat
-  </ div>
+  </div>
   <div style = "background: green;">
     Yakitori
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "background: #fee; display: flex;">
   <div style = "background: red;">
     Grilled meat
-  </ div>
+  </div>
   <div style = "background: green;">
     Yakitori
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>
 
 It looks as if you specified "display: inline-block" for the child element and left-justified it with a float. "Overflow: hidden;" is for releasing the float.
 
 <div style = "background: #fee; overflow: hidden;">
   <div style = "background: red; display: inline-block; float: left;">
     Grilled meat
-  </ div>
+  </div>
   <div style = "background: green; display: inline-block; float: left">
     Yakitori
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "background: #fee; overflow: hidden;">
   <div style = "background: red; display: inline-block; float: left;">
     Grilled meat
-  </ div>
+  </div>
   <div style = "background: green; display: inline-block; float: left">
     Yakitori
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>
 
 Is there any difference? Is flex layout a syntax to write this easily?
 
-<h3> The height of the child element with the maximum height is aligned with the height of other elements </ h3>
+<h3> The height of the child element with the maximum height is aligned with the height of other elements </h3>
 
 The biggest nice thing about flex layouts is that the height of the child element is aligned with the height of the other elements.
 
 It's difficult to write in words, so let's take a look. Try inserting a line break in one of the elements.
 
-<h4> Flex layout </ h4>
+<h4> Flex layout </h4>
 
 Oh, the heights are the same.
 
@@ -142,27 +142,27 @@ Oh, the heights are the same.
   <div style = "background: red;">
     Yakiniku <br>
     No. 1
-  </ div>
+  </div>
   <div style = "background: green;">
     Yakitori
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "background: #fee; display: flex;">
   <div style = "background: red;">
     Yakiniku <br>
     No. 1
-  </ div>
+  </div>
   <div style = "background: green;">
     Yakitori
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>
 
 For example, when you want to line up a product image and title, you don't have to worry about line breaks.
 
-<h4> Inline blocks and floats </ h4>
+<h4> Inline blocks and floats </h4>
 
 Oh, the height is unfortunate. This is certainly not what you want.
 
@@ -170,25 +170,25 @@ Oh, the height is unfortunate. This is certainly not what you want.
   <div style = "background: red; display: inline-block; float: left;">
     Yakiniku <br>
     No. 1
-  </ div>
+  </div>
   <div style = "background: green; display: inline-block; float: left">
     Yakitori
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "background: #fee; overflow: hidden;">
   <div style = "background: red; display: inline-block; float: left;">
     Yakiniku <br>
     No. 1
-  </ div>
+  </div>
   <div style = "background: green; display: inline-block; float: left">
     Yakitori
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>
 
-<h3> Set the width of the child element </ h3>
+<h3> Set the width of the child element </h3>
 
 Let's set the length for the grilled meat part and the yakitori part. The width of the grilled meat is 100px, and the width of the yakitori is other than that.
 
@@ -196,23 +196,23 @@ Let's set the length for the grilled meat part and the yakitori part. The width 
   <div style = "background: red; width: 100px;">
     Yakiniku <br>
     No. 1
-  </ div>
-  <div style = "background: green; width: calc (100% -100px);">
+  </div>
+  <div style = "background: green; width: calc (100%-100px);">
     Yakitori
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "background: #fee; display: flex;">
   <div style = "background: red; width: 100px;">
     Yakiniku <br>
     No. 1
-  </ div>
-  <div style = "background: green; width: calc (100% -100px);">
+  </div>
+  <div style = "background: green; width: calc (100%-100px);">
     Yakitori
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>
 
 What if there are other elements? It's a little tricky. Now that we have two elements, let's manually divide each number by two.
 
@@ -220,35 +220,35 @@ What if there are other elements? It's a little tricky. Now that we have two ele
   <div style = "background: red; width: 100px;">
     Yakiniku <br>
     No. 1
-  </ div>
-  <div style = "background: green; width: calc (50% -50px);">
+  </div>
+  <div style = "background: green; width: calc (50%-50px);">
     Yakitori
-  </ div>
-  <div style = "background: yellow; width: calc (50% -50px)">
+  </div>
+  <div style = "background: yellow; width: calc (50%-50px)">
     salad
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "background: #fee; display: flex;">
   <div style = "background: red; width: 100px;">
     Yakiniku <br>
     No. 1
-  </ div>
-  <div style = "background: green; width: calc (50% -50px);">
+  </div>
+  <div style = "background: green; width: calc (50%-50px);">
     Yakitori
-  </ div>
-  <div style = "background: yellow; width: calc (50% -50px)">
+  </div>
+  <div style = "background: yellow; width: calc (50%-50px)">
     salad
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>
 
 Wait a minute, why not use that "flex: 1"? Of course. However, "flex: 1" may behave differently between browsers, so this article explains how to avoid bugs.
 
 Well, should I do "/ 2" when dividing by calc? Using division with calc may behave differently between browsers, so I try not to step on bugs.
 
-<h3> Reverse the child elements </ h3>
+<h3> Reverse the child elements </h3>
 
 If you want to create a sidebar, you may want to reverse the position of the content and the position of the sidebar.
 
@@ -260,59 +260,59 @@ It's in reverse order.
   <div style = "background: red; width: 100px;">
     Yakiniku <br>
     No. 1
-  </ div>
-  <div style = "background: green; width: calc (100% -100px);">
+  </div>
+  <div style = "background: green; width: calc (100%-100px);">
     Yakitori
-  </ div>
-</ div>
+  </div>
+</div>
 
 <pre>
 <div style = "background: #fee; display: flex; flex-direction: row-reverse;">
   <div style = "background: red; width: 100px;">
     Yakiniku <br>
     No. 1
-  </ div>
-  <div style = "background: green; width: calc (100% -100px);">
+  </div>
+  <div style = "background: green; width: calc (100%-100px);">
     Yakitori
-  </ div>
-</ div>
-</ pre>
+  </div>
+</div>
+</pre>
 
-<h3> Multi-line flex layout </ h3>
+<h3> Multi-line flex layout </h3>
 
 The multi-line flex layout was explained in the following article.
 
-<a href="/blog/20200213070617.html"> Master multi-line flex layout </a>
+<a href="/blog/20200213070617.html"> Master multi-line flex layout</a>
 
 <!-
 
-<h3> What makes you happy with the flex layout? </ H3>
+<h3> What makes you happy with the flex layout? </H3>
 
 The biggest pleasure is that the heights of the child elements are automatically aligned.
 
-<h3> What's wrong with flex layout? </ H3>
+<h3> What's wrong with flex layout? </H3>
 
 A treasure trove of bugs between browsers. Knowledge that does not step on this is required.
 
-<h3> To avoid flex layout bugs </ h3>
+<h3> To avoid flex layout bugs </h3>
 
-<h4> The direct child elements of the flex layout do not use min-height and min-width </ h4>
+<h4> The direct child elements of the flex layout do not use min-height and min-width </h4>
 
 There is a bug in IE11.
 
-<h4> Make the direct child element of the flex layout a div element </ h4>
+<h4> Make the direct child element of the flex layout a div element </h4>
 
 If you specify elements other than div such as img tag, button tab, fieldset tag, there is a bug in Edge / FF / Safari.
 
-<h4> Do not use align-items </ h4>
+<h4> Do not use align-items </h4>
 
 There is a bug in IE11.
 
-<h4> Do not use flex-basis </ h4>
+<h4> Do not use flex-basis </h4>
 
 There are many bugs between browsers.
 
-<h4> Do not use flex: 1 </ h4>
+<h4> Do not use flex: 1 </h4>
 
 There is a bug in IE11.
 

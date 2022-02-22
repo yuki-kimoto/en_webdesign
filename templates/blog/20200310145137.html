@@ -1,50 +1,50 @@
-<h2> Text field change detection with jQuery --Basics of Incremental Search </ h2>
+<h2> Text field change detection with jQuery --Basics of Incremental Search </h2>
 
 How to detect changes in text fields with jQuery. This is the basic knowledge when implementing incremental search.
 
 You can use the input event to detect that the text has changed.
 
-<h3> Sample to detect text field changes with jQuery </ h3>
+<h3> Sample to detect text field changes with jQuery </h3>
 
 This is a sample that detects changes in text fields with jQuery. When I type in the text field, "The text field has changed" is displayed.
 
-<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </script>
 <script>
-  $ (function () {
+  $(function () {
     / * Detects key input * /
-    $ (document) .on ('input','[name = foo]', function () {
-      var foo_text = $ ('[name = foo]'). val ();
-      $ ('.changed_text'). text ('Change detection:' + foo_text);
+    $(document) .on ('input','[name = foo]', function () {
+      var foo_text = $('[name = foo]'). val ();
+      $('.changed_text'). text ('Change detection:' + foo_text);
     });
   });
-</ script>
+</script>
 
 <div class = "changed_text">
   Change detection:
-</ div>
+</div>
 
 <input type = "text" name = "foo">
 
 <pre>
-<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </script>
 <script>
-  $ (function () {
+  $(function () {
     / * Detects key input * /
-    $ (document) .on ('input','[name = foo]', function () {
-      var foo_text = $ ('[name = foo]'). val ();
-      $ ('.changed_text'). text ('Change detection:' + foo_text);
+    $(document) .on ('input','[name = foo]', function () {
+      var foo_text = $('[name = foo]'). val ();
+      $('.changed_text'). text ('Change detection:' + foo_text);
     });
   });
-</ script>
+</script>
 
 <div class = "changed_text">
   Change detection:
-</ div>
+</div>
 
 <input type = "text" name = "foo">
-</ pre>
+</pre>
 
-<h3> Wait if the next character is entered by changing the text field </ h3>
+<h3> Wait if the next character is entered by changing the text field </h3>
 
 The above method will pick up all input events as they are typed.
 
@@ -61,60 +61,60 @@ Wait 1 second and detect if the next input has not been made. If the following i
 Implement using the setTimeout function and closures to store previous values ​​in closure variables.
 
 <script>
-  $ (function () {
+  $(function () {
     / * Detects key input * /
-    $ (document) .on ('input','[name = foo_wait]', function () {
+    $(document) .on ('input','[name = foo_wait]', function () {
       / * Save the current value of the text field in a closure variable * /
-      var save_one_second_before_wait_text = $ ('[name = foo_wait]'). val ();
+      var save_one_second_before_wait_text = $('[name = foo_wait]'). val ();
       
       / * Run Closure * /
       var closure = function () {
         setTimeout (function () {
-          var foo_wait_text = $ ('[name = foo_wait]'). val ();
+          var foo_wait_text = $('[name = foo_wait]'). val ();
           / * Execute processing if it is different from the previous value * /
           if (save_one_second_before_wait_text === foo_wait_text) {
-            $ ('.changed_text_wait'). text ('Change detection:' + foo_wait_text);
+            $('.changed_text_wait'). text ('Change detection:' + foo_wait_text);
           }
         }, 1000);
       };;
       closure ();
     });
   });
-</ script>
+</script>
 
 <div class = "changed_text_wait">
   Change detection:
-</ div>
+</div>
 
 <input type = "text" name = "foo_wait">
 
 <pre>
-<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </script>
 <script>
-  $ (function () {
+  $(function () {
     / * Detects key input * /
-    $ (document) .on ('input','[name = foo_wait]', function () {
+    $(document) .on ('input','[name = foo_wait]', function () {
       / * Save the current value of the text field in a closure variable * /
-      var save_one_second_before_wait_text = $ ('[name = foo_wait]'). val ();
+      var save_one_second_before_wait_text = $('[name = foo_wait]'). val ();
       
       / * Run Closure * /
       var closure = function () {
         setTimeout (function () {
-          var foo_wait_text = $ ('[name = foo_wait]'). val ();
+          var foo_wait_text = $('[name = foo_wait]'). val ();
           / * Execute processing if it is different from the previous value * /
           if (save_one_second_before_wait_text === foo_wait_text) {
-            $ ('.changed_text_wait'). text ('Change detection:' + foo_wait_text);
+            $('.changed_text_wait'). text ('Change detection:' + foo_wait_text);
           }
         }, 1000);
       };;
       closure ();
     });
   });
-</ script>
+</script>
 
 <div class = "changed_text_wait">
   Change detection:
-</ div>
+</div>
 
 <input type = "text" name = "foo_wait">
-</ pre>
+</pre>

@@ -1,4 +1,4 @@
-<h2> [HTML5] Text field-Form part for text input </ h2>
+<h2> [HTML5] Text field-Form part for text input </h2>
 
 Text fields are form parts for entering text. Specify "type =" text "" in the input tag.
 
@@ -6,25 +6,25 @@ Text fields are form parts for entering text. Specify "type =" text "" in the in
 
 <pre>
 <input type = "text" name = "address">
-</ pre>
+</pre>
 
 You can enter text. Since it is a form part, it is common to give it a name with the name attribute.
 
-<h3> Text fields are inline block elements </ h3>
+<h3> Text fields are inline block elements </h3>
 
 Text fields are inline block elements by default. Since it is an inline block element, it flows to the left and you can set the height and width.
 
 <div>
   <input type = "text" name = "address" style = "width: 100px; height: 50px;">
   <input type = "text" name = "tel" style = "width: 200px; height: 80px;">
-</ div>
+</div>
 
 <pre>
 <input type = "text" name = "address" style = "width: 100px; height: 50px;">
 <input type = "text" name = "tel" style = "width: 200px; height: 80px;">
-</ pre>
+</pre>
 
-<h3> Set the font size and padding in the text field </ h3>
+<h3> Set the font size and padding in the text field </h3>
 
 The default text field is a bit small, especially for smartphones. Let's set the appropriate padding for the text field.
 
@@ -32,141 +32,141 @@ The default text field is a bit small, especially for smartphones. Let's set the
 
 <pre>
 <input type = "text" name = "address" style = "padding: 12px 5px 10px 5px;">
-</ pre>
+</pre>
 
-<h3> To support iphone / safari, the font size of the text field should be 16px or more </ h3>
+<h3> To support iphone / safari, the font size of the text field should be 16px or more </h3>
 
-In order to support iphone / safari, the font size of the text field should be 16px or more. <a href="/blog/20200309145137.html"> This is to turn off the automatic enlargement function when filling out a form on iphone / safari </a>.
+In order to support iphone / safari, the font size of the text field should be 16px or more. <a href="/blog/20200309145137.html"> This is to turn off the automatic enlargement function when filling out a form on iphone / safari</a>.
 
-<h3> Prevent the default design from being applied to form parts on iphone / safari </ h3>
+<h3> Prevent the default design from being applied to form parts on iphone / safari </h3>
 
-In iphone / safari, specify "-webkit-appearance: none;" to prevent the default design from being applied to form parts. Please refer to <a href="/blog/20200228082258.html"> Resolved the default design of text fields and buttons applied in iphone / safari </a>.
+In iphone / safari, specify "-webkit-appearance: none;" to prevent the default design from being applied to form parts. Please refer to <a href="/blog/20200228082258.html"> Resolved the default design of text fields and buttons applied in iphone / safari</a>.
 
-<h3> Make sure the focus is on when you click the label in the text field </ h3>
+<h3> Make sure the focus is on when you click the label in the text field </h3>
 
 Use the label tag to get focus when you click on an item heading, not just a text field. Specify the name specified in the id attribute in the input tag in the for attribute of the label tag.
 
-<label for = "address"> Address: </ label> <input type = "text" name = "address" id = "address">
+<label for = "address"> Address: </label> <input type = "text" name = "address" id = "address">
 
 <pre>
-<label for = "address"> Address: </ label> <input type = "text" name = "address" id = "address">
-</ pre>
+<label for = "address"> Address: </label> <input type = "text" name = "address" id = "address">
+</pre>
 
 Try clicking on the label labeled Address. The text field is in focus.
 
-<h3> Get the value of the text field of the form with jQuery when submitting the form </ h3>
+<h3> Get the value of the text field of the form with jQuery when submitting the form </h3>
 
-This is a sample using <a href="/blog/20200219091414.html"> jQuery </a> to get the value of the text field when the submit button is pressed. It is often used when sending a POST request with ajax. The acquired contents are displayed by alert.
+This is a sample using <a href="/blog/20200219091414.html"> jQuery</a> to get the value of the text field when the submit button is pressed. It is often used when sending a POST request with ajax. The acquired contents are displayed by alert.
 
-<h4> How to get all the values ​​in a form </ h4>
+<h4> How to get all the values ​​in a form </h4>
 
 How to get all the values ​​in a form.
 
-<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </script>
 <script>
-  $ (function () {
-    $ (document) .on ('click','.form-text-field-all .submit_button', function () {
+  $(function () {
+    $(document) .on ('click','.form-text-field-all .submit_button', function () {
       
       / * How to get all the values ​​in a form * /
-      var data = $ (this) .closest ('form') .serialize ();
+      var data = $(this) .closest ('form') .serialize ();
       
       alert (data);
     });
   });
-</ script>
+</script>
 
 <div class = "form-text-field-all">
   <form>
     <div>
       Address: <input type = "text" name = "address">
-    </ div>
+    </div>
     <div>
       Phone number: <input type = "text" name = "tel">
-    </ div>
-    <button type = "button" class = "submit_button"> Submit </ button>
-  </ form>
-</ div>
+    </div>
+    <button type = "button" class = "submit_button"> Submit </button>
+  </form>
+</div>
 
 <pre>
-<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </script>
 <script>
-  $ (function () {
-    $ (document) .on ('click','.form-text-field-all .submit_button', function () {
+  $(function () {
+    $(document) .on ('click','.form-text-field-all .submit_button', function () {
       
       / * How to get all the values ​​in a form * /
-      var data = $ (this) .closest ('form') .serialize ();
+      var data = $(this) .closest ('form') .serialize ();
       
       alert (data);
     });
   });
-</ script>
+</script>
 
 <div class = "form-text-field-all">
   <form>
     <div>
       Address: <input type = "text" name = "address">
-    </ div>
+    </div>
     <div>
       Phone number: <input type = "text" name = "tel">
-    </ div>
-    <button type = "button" class = "submit_button"> Submit </ button>
-  </ form>
-</ div>
-</ pre>
+    </div>
+    <button type = "button" class = "submit_button"> Submit </button>
+  </form>
+</div>
+</pre>
 
-The reason for starting on ('click') from document is to support dynamic HTML rewriting. If you follow from the top of the document, it will work correctly even if the HTML part is dynamically rewritten. If you specify "type =" button "" for button, you can <a href="/blog/20200313095039.html"> eliminate the behavior of submitting the button of the form </a>.
+The reason for starting on ('click') from document is to support dynamic HTML rewriting. If you follow from the top of the document, it will work correctly even if the HTML part is dynamically rewritten. If you specify "type =" button "" for button, you can <a href="/blog/20200313095039.html"> eliminate the behavior of submitting the button of the form</a>.
 
-<h4> How to get the value of an individual text field </ h4>
+<h4> How to get the value of an individual text field </h4>
 
 How to get the value of an individual text field. I only get the address.
 
 <script>
-  $ (function () {
-    $ (document) .on ('click','.form-text-field-part .submit_button', function () {
+  $(function () {
+    $(document) .on ('click','.form-text-field-part .submit_button', function () {
       
       / * Get an address * /
-      var address = $ (this) .closest ('form'). find ('[name = address]'). val ();
+      var address = $(this) .closest ('form'). find ('[name = address]'). val ();
       
       alert (address);
     });
   });
-</ script>
+</script>
 
 <div class = "form-text-field-part">
   <form>
     <div>
       Address: <input type = "text" name = "address">
-    </ div>
+    </div>
     <div>
       Phone number: <input type = "text" name = "tel">
-    </ div>
-    <button type = "button" class = "submit_button"> Submit </ button>
-  </ form>
-</ div>
+    </div>
+    <button type = "button" class = "submit_button"> Submit </button>
+  </form>
+</div>
 
 <pre>
-<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </script>
 <script>
-  $ (function () {
-    $ (document) .on ('click','.form-text-field-part .submit_button', function () {
+  $(function () {
+    $(document) .on ('click','.form-text-field-part .submit_button', function () {
       
       / * Get an address * /
-      var address = $ (this) .closest ('form'). find ('[name = address]'). val ();
+      var address = $(this) .closest ('form'). find ('[name = address]'). val ();
       
       alert (address);
     });
   });
-</ script>
+</script>
 
 <div class = "form-text-field-part">
   <form>
     <div>
       Address: <input type = "text" name = "address">
-    </ div>
+    </div>
     <div>
       Phone number: <input type = "text" name = "tel">
-    </ div>
-    <button type = "button" class = "submit_button"> Submit </ button>
-  </ form>
-</ div>
-</ pre>
+    </div>
+    <button type = "button" class = "submit_button"> Submit </button>
+  </form>
+</div>
+</pre>

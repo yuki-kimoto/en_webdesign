@@ -1,37 +1,37 @@
-<h2> How to fix the anchor shift with simple HTML and CSS when the header is fixed </ h2>
+<h2> How to fix the anchor shift with simple HTML and CSS when the header is fixed </h2>
 
 I will show you how to fix the anchor shift with simple CSS when the header is fixed.
 
 Anchors are in-page links that start with "#".
 
-<a href="#design"> anchor link </a>
+<a href="#design"> anchor link</a>
 
 <pre>
-<a href="#design"> anchor link </a>
+<a href="#design"> anchor link</a>
 
-<h3 id = "design"> Anchor link jump destination </ h3>
-</ pre>
+<h3 id = "design"> Anchor link jump destination </h3>
+</pre>
 
 The fixed header design improves the user experience when creating smartphone sites, so it has become popular on PC sites as well.
 
 In this case, if you use an anchor to create a link, the heading of the destination will be hidden behind the fixed header. This is because if the lower margin of the upper element and the upper margin of the lower element are merged, the upper margin of the lower element is determined to be 0.
 
-<h3> Easy solution with HTML and CSS </ h3>
+<h3> Easy solution with HTML and CSS </h3>
 
 There is an easy solution with HTML and CSS. Instead of setting the id at the tip of the anchor itself, it creates a block element with a height of 1px in front of it and sets the id. Set a sufficient upper margin for the jump destination itself. If it is 1px, I don't think it will bother you so much in terms of design.
 
 <pre>
-<a href="#design"> anchor link </a>
+<a href="#design"> anchor link</a>
 
-<div id = "design" style = "height: 1px"> </ div>
+<div id = "design" style = "height: 1px"> </div>
 
-<h3 style = "margin-top: 50px"> Anchor link jump destination </ h3>
-</ pre>
+<h3 style = "margin-top: 50px"> Anchor link jump destination </h3>
+</pre>
 
 By writing like this, you can easily solve it.
 
 One caveat is that by including a block with a height of 1px, the lower margin of the upper element and the upper margin of the lower element are not summed, so it will be necessary to reduce the lower margin of the upper element. ..
 
-<h3 id = "design"> Anchor link jump destination </ h3>
+<h3 id = "design"> Anchor link jump destination </h3>
 
 This is where the anchor link jumps.

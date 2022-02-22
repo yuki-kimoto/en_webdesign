@@ -1,18 +1,18 @@
-<h2> How to download and load jQuery </ h2>
+<h2> How to download and load jQuery </h2>
 
 I will explain how to load jQuery, which is a JavaScript library. With jQuery, you can operate HTML tags / CSS and ajax communication with a short description.
 
-<h3> Download jQuery </ h3>
+<h3> Download jQuery </h3>
 
 This is the usual way to download and use jQuery.
 
-<a href="https://code.jquery.com/jquery/"> jQuery download page </a>
+<a href="https://code.jquery.com/jquery/"> jQuery download page</a>
 
 The latest version on February 26, 2020 is jQuery Core 3.4.1. Right-click on the link called "minified" in jQuery Core 3.4.1 and save it as a name. "Minified" is a miniaturized jQuery.
 
-<a href="https://code.jquery.com/jquery/"> <img src = "/ images / jquery / jquery-download.png"> </a>
+<a href="https://code.jquery.com/jquery/"> <img src = "/ images / jquery / jquery-download.png"></a>
 
-<h3> Place jQuery in the document root </ h3>
+<h3> Place jQuery in the document root </h3>
 
 Let's put jQuery in the document root of the server. Document roots are different for each web server and web framework. Place jQuery in the document root of your environment.
 
@@ -20,35 +20,35 @@ For the sake of clarity, place jQuery in a directory called js.
 
 <pre>
 js / jquery-3.4.1.min.js
-</ pre>
+</pre>
 
-<h3> Loading jQuery </ h3>
+<h3> Loading jQuery </h3>
 
 Let's load jQuery. Let's load jQuery in the HTML header.
 
 <pre>
-<script src = "/ js / jquery-3.4.1.min.js"> </ script>
-</ pre>
+<script src = "/ js / jquery-3.4.1.min.js"> </script>
+</pre>
 
 Let's write a code that displays "Hello, World!" To make sure jQuery is loaded correctly.
 
 <pre>
-<script src = "/ js / jquery-3.4.1.min.js"> </ script>
+<script src = "/ js / jquery-3.4.1.min.js"> </script>
 <script>
-  $ (function () {
+  $(function () {
     alert ('Hello, World!');
   });
-</ script>
-</ pre>
+</script>
+</pre>
 
 When "Hello, World!" Is displayed, jQuery has been loaded successfully.
 
-<h3> Load jQuery using CDN </ h3>
+<h3> Load jQuery using CDN </h3>
 
 How to load jQuery using a CDN without downloading. CDN is a method to load jQuery provided by other sites on your own site.
 
 <pre>
-<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </ script>
-</ pre>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </script>
+</pre>
 
 In the introduction to HTML / CSS, I will introduce how to download jQuery as a standard method for creating websites, and in the sample code, I would like to utilize the CDN so that I can try it by copy and paste.

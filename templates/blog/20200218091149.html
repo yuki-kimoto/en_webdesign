@@ -1,98 +1,98 @@
-<h2> How to arrange product cards evenly spaced </ h2>
+<h2> How to arrange product cards evenly spaced </h2>
 
 I will show you how to arrange the product cards evenly. I want to arrange products as cards, but is there an easy way to arrange them evenly on the left and right?
 
 Flex layout, less description, smartphone, IE11 compatible method.
 
-<h3> Arrange product cards evenly spaced </ h3>
+<h3> Arrange product cards evenly spaced </h3>
 
-First of all, set <a href="/blog/20200213070617.html"> multi-line flex layout </a>. This time, let's line up in two rows.
+First of all, set <a href="/blog/20200213070617.html"> multi-line flex layout</a>. This time, let's line up in two rows.
 
 <ul style = "display: flex; flex-wrap: wrap;">
-  <li style = "width: 50%; border: 1px solid green;"> Yakiniku </ li>
-  <li style = "width: 50%; border: 1px solid green;"> Yakitori </ li>
-  <li style = "width: 50%; border: 1px solid green;"> salad </ li>
-  <li style = "width: 50%; border: 1px solid green;"> tea </ li>
-</ ul>
+  <li style = "width: 50%; border: 1px solid green;"> Yakiniku </li>
+  <li style = "width: 50%; border: 1px solid green;"> Yakitori </li>
+  <li style = "width: 50%; border: 1px solid green;"> salad </li>
+  <li style = "width: 50%; border: 1px solid green;"> tea </li>
+</ul>
 
 <pre>
 <ul style = "display: flex; flex-wrap: wrap;">
-  <li style = "width: 50%; border: 1px solid green;"> Yakiniku </ li>
-  <li style = "width: 50%; border: 1px solid green;"> Yakitori </ li>
-  <li style = "width: 50%; border: 1px solid green;"> salad </ li>
-  <li style = "width: 50%; border: 1px solid green;"> tea </ li>
-</ ul>
-</ pre>
+  <li style = "width: 50%; border: 1px solid green;"> Yakiniku </li>
+  <li style = "width: 50%; border: 1px solid green;"> Yakitori </li>
+  <li style = "width: 50%; border: 1px solid green;"> salad </li>
+  <li style = "width: 50%; border: 1px solid green;"> tea </li>
+</ul>
+</pre>
 
-<h4> Set the left and right margins </ h4>
+<h4> Set the left and right margins </h4>
 
 Suppose you want to have an even spacing of 10px between the cards and to the left and right of the outermost ul. First, let's take 10px on the left and right of the ul of the outer frame.
 
-<ul style = "display: flex; flex-wrap: wrap; width: calc (100% --10px --10px); margin-left: auto; margin-right: auto;">
-  <li style = "width: 50%; border: 1px solid green;"> Yakiniku </ li>
-  <li style = "width: 50%; border: 1px solid green;"> Yakitori </ li>
-  <li style = "width: 50%; border: 1px solid green;"> salad </ li>
-  <li style = "width: 50%; border: 1px solid green;"> tea </ li>
-</ ul>
+<ul style = "display: flex; flex-wrap: wrap; width: calc (100%--10px --10px); margin-left: auto; margin-right: auto;">
+  <li style = "width: 50%; border: 1px solid green;"> Yakiniku </li>
+  <li style = "width: 50%; border: 1px solid green;"> Yakitori </li>
+  <li style = "width: 50%; border: 1px solid green;"> salad </li>
+  <li style = "width: 50%; border: 1px solid green;"> tea </li>
+</ul>
 
 <pre>
-<ul style = "display: flex; flex-wrap: wrap; width: calc (100% --10px --10px); margin-left: auto; margin-right: auto;">
-  <li style = "width: 50%; border: 1px solid green;"> Yakiniku </ li>
-  <li style = "width: 50%; border: 1px solid green;"> Yakitori </ li>
-  <li style = "width: 50%; border: 1px solid green;"> salad </ li>
-  <li style = "width: 50%; border: 1px solid green;"> tea </ li>
-</ ul>
-</ pre>
+<ul style = "display: flex; flex-wrap: wrap; width: calc (100%--10px --10px); margin-left: auto; margin-right: auto;">
+  <li style = "width: 50%; border: 1px solid green;"> Yakiniku </li>
+  <li style = "width: 50%; border: 1px solid green;"> Yakitori </li>
+  <li style = "width: 50%; border: 1px solid green;"> salad </li>
+  <li style = "width: 50%; border: 1px solid green;"> tea </li>
+</ul>
+</pre>
 
-Look at the 10px space on the left and right. Subtract 10px on each side from 100% width. To center the ul tag, set the left and right margins to automatic "margin-left: auto;" and "margin-right: auto;".
+Look at the 10px space on the left and right. Subtract 10px on each side from 100%width. To center the ul tag, set the left and right margins to automatic "margin-left: auto;" and "margin-right: auto;".
 
-<h4> Set the margin between vertical elements </ h4>
+<h4> Set the margin between vertical elements </h4>
 
 Next, let's set the margin between the vertical elements. "Margin-top: 5px;" "margin-bottom: 5px;". When arranging multiple lines in a flex layout, keep in mind that the margins do not overlap.
 
-<ul style = "display: flex; flex-wrap: wrap; width: calc (100% --10px --10px); margin-left: auto; margin-right: auto;">
-  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Yakiniku </ li>
-  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Yakitori </ li>
-  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Salad </ li>
-  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Tea </ li>
-</ ul>
+<ul style = "display: flex; flex-wrap: wrap; width: calc (100%--10px --10px); margin-left: auto; margin-right: auto;">
+  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Yakiniku </li>
+  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Yakitori </li>
+  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Salad </li>
+  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Tea </li>
+</ul>
 
 <pre>
-<ul style = "display: flex; flex-wrap: wrap; width: calc (100% --10px --10px); margin-left: auto; margin-right: auto;">
-  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Yakiniku </ li>
-  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Yakitori </ li>
-  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Salad </ li>
-  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Tea </ li>
-</ ul>
-</ pre>
+<ul style = "display: flex; flex-wrap: wrap; width: calc (100%--10px --10px); margin-left: auto; margin-right: auto;">
+  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Yakiniku </li>
+  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Yakitori </li>
+  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Salad </li>
+  <li style = "width: 50%; border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Tea </li>
+</ul>
+</pre>
 
-<h4> Set the margin between elements </ h4>
+<h4> Set the margin between elements </h4>
 
 Let's set the margin between the elements. The first column has a 10px margin on the right side. Since the width of the columns has increased by 10px, the width of each column should be reduced by 5px.
 
-<ul style = "display: flex; flex-wrap: wrap; width: calc (100% --10px --10px); margin-left: auto; margin-right: auto;">
-  <li style = "width: calc (50% -5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"> Yakiniku </ li>
-  <li style = "width: calc (50% -5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Yakitori </ li>
-  <li style = "width: calc (50% -5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"> Salad </ li>
-  <li style = "width: calc (50% -5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> tea </ li>
-</ ul>
+<ul style = "display: flex; flex-wrap: wrap; width: calc (100%--10px --10px); margin-left: auto; margin-right: auto;">
+  <li style = "width: calc (50%-5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"> Yakiniku </li>
+  <li style = "width: calc (50%-5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Yakitori </li>
+  <li style = "width: calc (50%-5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"> Salad </li>
+  <li style = "width: calc (50%-5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> tea </li>
+</ul>
 
 <pre>
-<ul style = "display: flex; flex-wrap: wrap; width: calc (100% --10px --10px); margin-left: auto; margin-right: auto;">
-  <li style = "width: calc (50% -5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"> Yakiniku </ li>
-  <li style = "width: calc (50% -5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Yakitori </ li>
-  <li style = "width: calc (50% -5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"> Salad </ li>
-  <li style = "width: calc (50% -5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> tea </ li>
-</ ul>
-</ pre>
+<ul style = "display: flex; flex-wrap: wrap; width: calc (100%--10px --10px); margin-left: auto; margin-right: auto;">
+  <li style = "width: calc (50%-5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"> Yakiniku </li>
+  <li style = "width: calc (50%-5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> Yakitori </li>
+  <li style = "width: calc (50%-5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"> Salad </li>
+  <li style = "width: calc (50%-5px); border: 1px solid green; margin-top: 5px; margin-bottom: 5px;"> tea </li>
+</ul>
+</pre>
 
 That's all there is to it.
 
-<h3> Sample of arranging product cards at even intervals </ h3>
+<h3> Sample of arranging product cards at even intervals </h3>
 
 This is a sample of arranging product cards at even intervals.
 
-<h4> Arrange product cards in two rows at equal intervals </ h4>
+<h4> Arrange product cards in two rows at equal intervals </h4>
 
 A two-row sample in which product cards are evenly spaced. You can write beautifully using nth-child. 2n + 1 is the odd li element.
 
@@ -100,12 +100,12 @@ A two-row sample in which product cards are evenly spaced. You can write beautif
   .card_arrange_2column ul {
     display: flex;
     flex-wrap: wrap;
-    width: calc (100% ―― 10px ―― 10px);
+    width: calc (100%―― 10px ―― 10px);
     margin-left: auto;
     margin-right: auto;
   }
   .card_arrange_2column li {
-    width: calc (50% -5px);
+    width: calc (50%-5px);
     border: 1px solid green;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -113,28 +113,28 @@ A two-row sample in which product cards are evenly spaced. You can write beautif
   .card_arrange_2column li: nth-child (2n + 1) {
     margin-right: 10px;
   }
-</ style>
+</style>
 
 <div class = "card_arrange_2column">
   <ul>
-    <li> Yakiniku </ li>
-    <li> Yakitori </ li>
-    <li> Salad </ li>
-    <li> Tea </ li>
-  </ ul>
-</ div>
+    <li> Yakiniku </li>
+    <li> Yakitori </li>
+    <li> Salad </li>
+    <li> Tea </li>
+  </ul>
+</div>
 
 <pre>
 <style>
   .card_arrange_2column ul {
     display: flex;
     flex-wrap: wrap;
-    width: calc (100% ―― 10px ―― 10px);
+    width: calc (100%―― 10px ―― 10px);
     margin-left: auto;
     margin-right: auto;
   }
   .card_arrange_2column li {
-    width: calc (50% -5px);
+    width: calc (50%-5px);
     border: 1px solid green;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -142,19 +142,19 @@ A two-row sample in which product cards are evenly spaced. You can write beautif
   .card_arrange_2column li: nth-child (2n + 1){
     margin-right: 10px;
   }
-</ style>
+</style>
 
 <div class = "card_arrange_2column">
   <ul>
-    <li> Yakiniku </ li>
-    <li> Yakitori </ li>
-    <li> Salad </ li>
-    <li> Tea </ li>
-  </ ul>
-</ div>
-</ pre>
+    <li> Yakiniku </li>
+    <li> Yakitori </li>
+    <li> Salad </li>
+    <li> Tea </li>
+  </ul>
+</div>
+</pre>
 
-<h4> Arrange product cards in three rows at equal intervals </ h4>
+<h4> Arrange product cards in three rows at equal intervals </h4>
 
 A sample of attendance in which product cards are arranged in three rows at equal intervals. You can write beautifully using nth-child. 3n + 1 is the li element in the first column and 3n + 2 is the element in the second column. Choose a multiple of 3px so that the interval is divisible. "33.4%" is set individually.
 
@@ -162,12 +162,12 @@ A sample of attendance in which product cards are arranged in three rows at equa
   .card_arrange_3column ul {
     display: flex;
     flex-wrap: wrap;
-    width: calc (100% ―― 9px ―― 9px);
+    width: calc (100%―― 9px ―― 9px);
     margin-left: auto;
     margin-right: auto;
   }
   .card_arrange_3column li {
-    width: calc (33.3% -6px);
+    width: calc (33.3%-6px);
     border: 1px solid green;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -178,30 +178,30 @@ A sample of attendance in which product cards are arranged in three rows at equa
   .card_arrange_3column li: nth-child (3n + 2) {
     margin-right: 9px;
   }
-</ style>
+</style>
 
 <div class = "card_arrange_3column">
   <ul>
-    <li> Yakiniku </ li>
-    <li> Yakitori </ li>
-    <li> Salad </ li>
-    <li> Tea </ li>
-    <li> potato </ li>
-    <li> soup </ li>
-  </ ul>
-</ div>
+    <li> Yakiniku </li>
+    <li> Yakitori </li>
+    <li> Salad </li>
+    <li> Tea </li>
+    <li> potato </li>
+    <li> soup </li>
+  </ul>
+</div>
 
 <pre>
 <style>
   .card_arrange_3column ul {
     display: flex;
     flex-wrap: wrap;
-    width: calc (100% ―― 9px ―― 9px);
+    width: calc (100%―― 9px ―― 9px);
     margin-left: auto;
     margin-right: auto;
   }
   .card_arrange_3column li {
-    width: calc (33.3% -6px);
+    width: calc (33.3%-6px);
     border: 1px solid green;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -212,16 +212,16 @@ A sample of attendance in which product cards are arranged in three rows at equa
   .card_arrange_3column li: nth-child (3n + 2) {
     margin-right: 9px;
   }
-</ style>
+</style>
 
 <div class = "card_arrange_3column">
   <ul>
-    <li> Yakiniku </ li>
-    <li> Yakitori </ li>
-    <li> Salad </ li>
-    <li> Tea </ li>
-    <li> potato </ li>
-    <li> soup </ li>
-  </ ul>
-</ div>
-</ pre>
+    <li> Yakiniku </li>
+    <li> Yakitori </li>
+    <li> Salad </li>
+    <li> Tea </li>
+    <li> potato </li>
+    <li> soup </li>
+  </ul>
+</div>
+</pre>
